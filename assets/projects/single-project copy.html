@@ -17,21 +17,12 @@
 	<link rel="stylesheet" type="text/css" href="./assets/fonts/unicons/unicons.css">
   <link rel="stylesheet" href="./assets/css/plugins.css">
   <link rel="stylesheet" href="./style.css">
-  <style>
-    .accordion-wrapper .card-header button.collapsed {
-    color: #343f52 !important;
-  }
-  .accordion-wrapper .card-header button:hover,
-  .accordion-wrapper .card-header button{
-      color: #605dba !important;
-    }
-    </style>
 </head>
 
 <body>
   <div class="grow shrink-0">
     <header class="relative wrapper bg-soft-primary !bg-[#edf2fc]">
-      <nav class="navbar navbar-expand-lg center-nav transparent navbar-light">
+      <nav class="navbar navbar-expand-lg center-nav transparent navbar-light xl:pt-[.3rem] lg:pt-[.3rem]">
         <div class="container xl:flex-row lg:flex-row !flex-nowrap items-center">
           <div class="navbar-brand w-full">
             <a href="./index.html">
@@ -471,13 +462,13 @@
                           </ul>
                           <h6 class="dropdown-header xl:!mt-6 lg:!mt-6">Styleguide</h6>
                           <ul class="pl-0 list-none  xl:columns-2 lg:columns-2 ">
-    <li class=" xl:inline-block xl:w-full lg:inline-block lg:w-full"><a class="dropdown-item" href="./docs/styleguide/colors.html">Colors</a></li>
-    <li class=" xl:inline-block xl:w-full lg:inline-block lg:w-full"><a class="dropdown-item" href="./docs/styleguide/fonts.html">Fonts</a></li>
-    <li class=" xl:inline-block xl:w-full lg:inline-block lg:w-full"><a class="dropdown-item" href="./docs/styleguide/icons-svg.html">SVG Icons</a></li>
-    <li class=" xl:inline-block xl:w-full lg:inline-block lg:w-full"><a class="dropdown-item" href="./docs/styleguide/icons-font.html">Font Icons</a></li>
-    <li class=" xl:inline-block xl:w-full lg:inline-block lg:w-full"><a class="dropdown-item" href="./docs/styleguide/illustrations.html">Illustrations</a></li>
-    <li class=" xl:inline-block xl:w-full lg:inline-block lg:w-full"><a class="dropdown-item" href="./docs/styleguide/backgrounds.html">Backgrounds</a></li>
-    <li class=" xl:inline-block xl:w-full lg:inline-block lg:w-full"><a class="dropdown-item" href="./docs/styleguide/misc.html">Misc</a></li>
+    <li class="xl:inline-block xl:w-full lg:inline-block lg:w-full"><a class="dropdown-item" href="./docs/styleguide/colors.html">Colors</a></li>
+    <li class="xl:inline-block xl:w-full lg:inline-block lg:w-full"><a class="dropdown-item" href="./docs/styleguide/fonts.html">Fonts</a></li>
+    <li class="xl:inline-block xl:w-full lg:inline-block lg:w-full"><a class="dropdown-item" href="./docs/styleguide/icons-svg.html">SVG Icons</a></li>
+    <li class="xl:inline-block xl:w-full lg:inline-block lg:w-full"><a class="dropdown-item" href="./docs/styleguide/icons-font.html">Font Icons</a></li>
+    <li class="xl:inline-block xl:w-full lg:inline-block lg:w-full"><a class="dropdown-item" href="./docs/styleguide/illustrations.html">Illustrations</a></li>
+    <li class="xl:inline-block xl:w-full lg:inline-block lg:w-full"><a class="dropdown-item" href="./docs/styleguide/backgrounds.html">Backgrounds</a></li>
+    <li class="xl:inline-block xl:w-full lg:inline-block lg:w-full"><a class="dropdown-item" href="./docs/styleguide/misc.html">Misc</a></li>
                           </ul>
                         </div>
                         <!--/column -->
@@ -569,11 +560,18 @@
     </header>
     <!-- /header -->
     <section class="wrapper !bg-[#edf2fc]">
-      <div class="container pt-10 pb-[8rem] md:!pb-[10rem] xl:!pt-[4.5rem] lg:!pt-[4.5rem] md:!pt-[4.5rem] xl:!pb-[12.5rem] lg:!pb-[12.5rem] !text-center">
+      <div class="container pt-10 pb-36 xl:pt-[4.5rem] lg:pt-[4.5rem] md:pt-[4.5rem] xl:pb-60 lg:pb-60 md:pb-60 !text-center">
         <div class="flex flex-wrap mx-[-15px]">
-          <div class="xl:w-8/12 lg:w-8/12 w-full flex-[0_0_auto] px-[15px] max-w-full !mx-auto mb-12">
-            <h1 class="!text-[.75rem] uppercase text-[#605dba] tracking-[0.02rem] !mb-3 !leading-[1.3]">Join Our Team</h1>
-            <h3 class="text-[calc(1.365rem_+_1.38vw)] font-bold !leading-[1.2] xl:text-[2.4rem]">We bring solutions to make life easier for our customers.</h3>
+          <div class="md:w-10/12 lg:w-8/12 xl:w-7/12 w-full flex-[0_0_auto] px-[15px] max-w-full !mx-auto">
+            <div class="post-header">
+              <div class="inline-flex mb-[.4rem] uppercase tracking-[0.02rem] text-[0.7rem] font-bold text-[#aab0bc] relative align-top pl-[1.4rem] before:content-[''] before:absolute before:inline-block before:translate-y-[-60%] before:w-3 before:h-[0.05rem] before:left-0 before:top-2/4 before:bg-[#605dba]">
+                <a href="#" class="hover" rel="category">Identity</a>
+              </div>
+              <!-- /.post-category -->
+              <h1 class="text-[calc(1.365rem_+_1.38vw)] font-bold leading-[1.2] xl:text-[2.4rem] !mb-3">Commodo Dolor Bibendum Parturient Cursus Mollis</h1>
+              <p class="lead leading-[1.65] text-[.9rem] font-medium md:!px-14 lg:!px-14 xl:!px-20 xxl:!px-32">Integer posuere erat a ante venenatis dapibus posuere. Maecenas faucibus mollis interdum.</p>
+            </div>
+            <!-- /.post-header -->
           </div>
           <!-- /column -->
         </div>
@@ -582,431 +580,106 @@
       <!-- /.container -->
     </section>
     <!-- /section -->
-    <section class="wrapper !bg-[#ffffff]">
-      <div class="container pb-[17.5rem] xl:pb-[22.5rem] lg:pb-[22.5rem] md:pb-[22.5rem]">
-        <div class="flex flex-wrap mx-[-15px] !mb-[4.5rem]">
-          <div class="w-full flex-[0_0_auto] px-[15px] max-w-full mt-[-8rem] md:!mt-[-10rem] xl:!mt-[-12.5rem] lg:!mt-[-12.5rem] !relative">
-            <div class="shape bg-dot red rellax !w-[6rem] !h-[8rem] absolute z-[1] bg-[radial-gradient(#e2626b_2px,transparent_2.5px)] opacity-50" data-rellax-speed="1" style="top: 1rem; left: -3.2rem;"></div>
-            <div class="shape pale-primary !w-[9rem] !h-[9rem] rellax absolute z-[1]" data-rellax-speed="1" style="bottom: 2rem; right: -3rem;"><img src="./assets/img/svg/hex.svg" class="svg-inject icon-svg !w-full !h-full" alt="image"></div>
-            <figure class="!rounded-[.4rem] relative z-[2]"><img class="!rounded-[.4rem]" src="./assets/img/photos/about18.jpg" srcset="./assets/img/photos/about18@2x.jpg 2x" alt="image"></figure>
+    <div class="wrapper !bg-[#ffffff]  border-b-[rgba(164,174,198,0.2)] border-b border-solid">
+      <div class="container !pb-[4.5rem] xl:!pb-24 lg:!pb-24 md:!pb-24">
+        <div class="flex flex-wrap mx-[-15px]">
+          <div class="w-full flex-[0_0_auto] px-[15px] max-w-full">
+            <article class="mt-[-12.5rem]">
+              <figure class="!rounded-[.4rem] !mb-8 xl:!mb-[3.5rem] lg:!mb-[3.5rem] md:!mb-[3.5rem]"><img class="!rounded-[.4rem]" src="./assets/img/photos/pp1.jpg" alt="image"></figure>
+              <div class="flex flex-wrap mx-[-15px]">
+                <div class="xl:w-10/12 xl:!ml-[8.33333333%] lg:w-10/12 lg:!ml-[8.33333333%] w-full flex-[0_0_auto] px-[15px] max-w-full">
+                  <h2 class="text-[calc(1.265rem_+_0.18vw)] font-bold xl:text-[1.4rem] leading-[1.35] mb-4">About the Project</h2>
+                  <div class="flex flex-wrap mx-0">
+                    <div class="xl:w-9/12 lg:w-9/12 md:w-9/12 w-full flex-[0_0_auto] max-w-full">
+                      <p>Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Integer posuere erat a ante venenatis. Etiam porta sem malesuada magna mollis euismod. Aenean lacinia bibendum.</p>
+                      <p>Donec id elit non mi porta gravida at eget metus. Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+                    </div>
+                    <!--/column -->
+                    <div class="xl:w-2/12 lg:w-2/12 md:w-2/12 w-full flex-[0_0_auto] max-w-full !ml-auto">
+                      <ul class="pl-0 list-none">
+                        <li>
+                          <h5 class="!mb-1">Date</h5>
+                          <p>17 May 2018</p>
+                        </li>
+                        <li>
+                          <h5 class="!mb-1">Client Name</h5>
+                          <p>Cool House</p>
+                        </li>
+                      </ul>
+                      <a href="#" class="more hover">See Project</a>
+                    </div>
+                    <!--/column -->
+                  </div>
+                  <!--/.row -->
+                </div>
+                <!-- /column -->
+              </div>
+              <!--/.row -->
+              <div class="flex flex-wrap mx-[-15px] md:mx-[-15px] mt-[25px]">
+                <div class="item xl:w-6/12 lg:w-6/12 md:w-6/12 w-full flex-[0_0_auto] px-[15px] max-w-full mt-[30px]">
+                  <figure class="overflow-hidden translate-y-0 group rounded cursor-dark"><a href="./assets/img/photos/pp2.jpg" data-glightbox data-gallery="project-1"><img class=" transition-all duration-[0.35s] ease-in-out group-hover:scale-105" src="./assets/img/photos/pp2.jpg" alt="image"></a></figure>
+                </div>
+                <!--/column -->
+                <div class="item xl:w-6/12 lg:w-6/12 md:w-6/12 w-full flex-[0_0_auto] px-[15px] max-w-full mt-[30px]">
+                  <figure class="overflow-hidden translate-y-0 group rounded cursor-dark"><a href="./assets/img/photos/pp3.jpg" data-glightbox data-gallery="project-1"><img class=" transition-all duration-[0.35s] ease-in-out group-hover:scale-105" src="./assets/img/photos/pp3.jpg" alt="image"></a></figure>
+                </div>
+                <!--/column -->
+                <div class="item xl:w-6/12 lg:w-6/12 md:w-6/12 w-full flex-[0_0_auto] px-[15px] max-w-full mt-[30px]">
+                  <figure class="overflow-hidden translate-y-0 group rounded cursor-dark"><a href="./assets/img/photos/pp4.jpg" data-glightbox data-gallery="project-1"><img class=" transition-all duration-[0.35s] ease-in-out group-hover:scale-105" src="./assets/img/photos/pp4.jpg" alt="image"></a></figure>
+                </div>
+                <!--/column -->
+                <div class="item xl:w-6/12 lg:w-6/12 md:w-6/12 w-full flex-[0_0_auto] px-[15px] max-w-full mt-[30px]">
+                  <figure class="overflow-hidden translate-y-0 group rounded cursor-dark"><a href="./assets/img/photos/pp5.jpg" data-glightbox data-gallery="project-1"><img class=" transition-all duration-[0.35s] ease-in-out group-hover:scale-105" src="./assets/img/photos/pp5.jpg" alt="image"></a></figure>
+                </div>
+                <!--/column -->
+              </div>
+              <!-- /.row -->
+              <div class="flex flex-wrap mx-[-15px] mt-8 xl:!mt-[4.5rem] lg:!mt-[4.5rem] md:!mt-[4.5rem]">
+                <div class="xl:w-10/12 xl:!ml-[8.33333333%] lg:w-10/12 lg:!ml-[8.33333333%] md:w-10/12 md:!ml-[8.33333333%] flex-[0_0_auto] px-[15px] max-w-full">
+                  <h2 class="!mb-4">Quam Mollis Bibendum</h2>
+                  <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Donec ullamcorper nulla non metus auctor fringilla. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur. Curabitur blandit tempus porttitor. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec id elit non mi porta gravida at eget metus. Donec id elit non mi porta gravida at eget metus. Cras mattis consectetur purus sit amet fermentum.</p>
+                  <p>Aenean lacinia bibendum nulla sed consectetur. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Maecenas faucibus mollis interdum. Maecenas sed diam eget risus varius blandit sit amet non magna. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nulla vitae elit libero, a pharetra augue. Maecenas faucibus mollis interdum etiam porta.</p>
+                </div>
+                <!-- /column -->
+              </div>
+              <!-- /.row -->
+            </article>
+            <!-- /.project -->
           </div>
           <!-- /column -->
         </div>
         <!-- /.row -->
-        <div class="flex flex-wrap mx-[-15px] xl:mx-[-35px] lg:mx-[-20px] mt-[-40px]">
-          <div class="md:w-6/12 lg:w-4/12 xl:w-4/12 w-full flex-[0_0_auto] px-[15px] max-w-full mt-[40px] xl:px-[35px] lg:px-[20px]">
-            <div class="flex flex-row">
-              <div>
-                <img src="./assets/img/icons/solid/target.svg" class="svg-inject icon-svg !w-[2.2rem] !h-[2.2rem]  solid-mono text-[#605dba]  !mr-4" alt="image">
-              </div>
-              <div>
-                <h4 class="!mb-1">Career Growth</h4>
-                <p class="!mb-0">Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.</p>
-              </div>
-            </div>
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /section -->
+    <div class="wrapper !bg-[#ffffff]">
+      <div class="container py-10">
+        <div class="flex flex-wrap mx-[-15px] md:mx-[-15px] mt-[-15px] xl:mt-0 lg:mt-0 md:mt-0">
+          <div class="xl:w-8/12 lg:w-8/12 md:w-8/12 w-full flex-[0_0_auto] px-[15px] max-w-full self-center text-center xl:text-left lg:text-left md:text-left navigation">
+            <a href="" class="btn btn-soft-ash !rounded-[50rem] btn-icon btn-icon-start !mb-0 !mr-[.25rem] hover:translate-y-[-0.15rem]"><i class="uil uil-arrow-left before:content-['\e949']"></i> Prev Post</a>
+            <a href="" class="btn btn-soft-ash !rounded-[50rem] btn-icon btn-icon-end hover:translate-y-[-0.15rem] !mb-0">Next Post <i class="uil uil-arrow-right before:content-['\e94c']"></i></a>
           </div>
           <!--/column -->
-          <div class="md:w-6/12 lg:w-4/12 xl:w-4/12 w-full flex-[0_0_auto] px-[15px] max-w-full mt-[40px] xl:px-[35px] lg:px-[20px]">
-            <div class="flex flex-row">
-              <div>
-                <img src="./assets/img/icons/solid/video-chat.svg" class="svg-inject icon-svg !w-[2.2rem] !h-[2.2rem]  solid-mono text-[#605dba]  !mr-4" alt="image">
+          <aside class="xl:w-4/12 lg:w-4/12 md:w-4/12 w-full flex-[0_0_auto] px-[15px] max-w-full sm:mt-[15px] xsm:mt-[15px] sidebar text-center xl:text-right lg:text-right md:text-right">
+            <!--/.share-dropdown -->
+            <div class="dropdown share-dropdown btn-group">
+              <button class="btn btn-red text-white !bg-[#e2626b] border-[#e2626b] hover:text-white hover:bg-[#e2626b] hover:border-[#e2626b] focus:shadow-[rgba(92,140,229,1)] active:text-white active:bg-[#e2626b] active:border-[#e2626b] disabled:text-white disabled:bg-[#e2626b] disabled:border-[#e2626b] !rounded-[50rem] btn-icon btn-icon-start dropdown-toggle  !mb-0 mr-0 hover:translate-y-[-0.15rem] hover:shadow-[0_0.25rem_0.75rem_rgba(30,34,40,0.15)]" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="uil uil-share-alt mr-[0.3rem] text-[0.8rem] before:content-['\ecb0']"></i> Share </button>
+              <div class="dropdown-menu !shadow-[rgba(30,34,40,0.06)_0px_0px_25px_0px]" style="">
+              <a class="dropdown-item text-[0.7rem] !p-[.25rem_1.15rem]" href="#"><i class="uil uil-twitter w-4 text-[0.8rem] pr-[0.4rem] align-[-.1rem] before:content-['\ed59']"></i>Twitter</a>
+              <a class="dropdown-item text-[0.7rem] !p-[.25rem_1.15rem]" href="#"><i class="uil uil-facebook-f w-4 text-[0.8rem] pr-[0.4rem] align-[-.1rem] before:content-['\eae2']"></i>Facebook</a>
+              <a class="dropdown-item text-[0.7rem] !p-[.25rem_1.15rem]" href="#"><i class="uil uil-linkedin w-4 text-[0.8rem] pr-[0.4rem] align-[-.1rem] before:content-['\ebd1']"></i>Linkedin</a>
               </div>
-              <div>
-                <h4 class="!mb-1">Work From Anywhere</h4>
-                <p class="!mb-0">Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.</p>
-              </div>
+              <!--/.dropdown-menu -->
             </div>
-          </div>
-          <!--/column -->
-          <div class="md:w-6/12 lg:w-4/12 xl:w-4/12 w-full flex-[0_0_auto] px-[15px] max-w-full mt-[40px] xl:px-[35px] lg:px-[20px]">
-            <div class="flex flex-row">
-              <div>
-                <img src="./assets/img/icons/solid/wallet.svg" class="svg-inject icon-svg !w-[2.2rem] !h-[2.2rem]  solid-mono text-[#605dba]  !mr-4" alt="image">
-              </div>
-              <div>
-                <h4 class="!mb-1">Smart Salary</h4>
-                <p class="!mb-0">Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.</p>
-              </div>
-            </div>
-          </div>
-          <!--/column -->
-          <div class="md:w-6/12 lg:w-4/12 xl:w-4/12 w-full flex-[0_0_auto] px-[15px] max-w-full mt-[40px] xl:px-[35px] lg:px-[20px]">
-            <div class="flex flex-row">
-              <div>
-                <img src="./assets/img/icons/solid/building.svg" class="svg-inject icon-svg !w-[2.2rem] !h-[2.2rem]  solid-mono text-[#605dba]  !mr-4" alt="image">
-              </div>
-              <div>
-                <h4 class="!mb-1">Medical Insurance</h4>
-                <p class="!mb-0">Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.</p>
-              </div>
-            </div>
-          </div>
-          <!--/column -->
-          <div class="md:w-6/12 lg:w-4/12 xl:w-4/12 w-full flex-[0_0_auto] px-[15px] max-w-full mt-[40px] xl:px-[35px] lg:px-[20px]">
-            <div class="flex flex-row">
-              <div>
-                <img src="./assets/img/icons/solid/alarm.svg" class="svg-inject icon-svg !w-[2.2rem] !h-[2.2rem]  solid-mono text-[#605dba]  !mr-4" alt="image">
-              </div>
-              <div>
-                <h4 class="!mb-1">Flexible Hours</h4>
-                <p class="!mb-0">Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.</p>
-              </div>
-            </div>
-          </div>
-          <!--/column -->
-          <div class="md:w-6/12 lg:w-4/12 xl:w-4/12 w-full flex-[0_0_auto] px-[15px] max-w-full mt-[40px] xl:px-[35px] lg:px-[20px]">
-            <div class="flex flex-row">
-              <div>
-                <img src="./assets/img/icons/solid/employees.svg" class="svg-inject icon-svg !w-[2.2rem] !h-[2.2rem]  solid-mono text-[#605dba]  !mr-4" alt="image">
-              </div>
-              <div>
-                <h4 class="!mb-1">Amazing Work Culture</h4>
-                <p class="!mb-0">Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.</p>
-              </div>
-            </div>
-          </div>
-          <!--/column -->
+          </aside>
+          <!-- /column .sidebar -->
         </div>
         <!--/.row -->
-        <div class="text-center mt-10"><a href="#" class="btn btn-primary text-white !bg-[#605dba] border-[#605dba] hover:text-white hover:bg-[#605dba] hover:border-[#605dba] focus:shadow-[rgba(92,140,229,1)] active:text-white active:bg-[#605dba] active:border-[#605dba] disabled:text-white disabled:bg-[#605dba] disabled:border-[#605dba] !rounded-[50rem] hover:translate-y-[-0.15rem] hover:shadow-[0_0.25rem_0.75rem_rgba(30,34,40,0.15)]">Join Our Team</a></div>
       </div>
       <!-- /.container -->
-    </section>
-    <!-- /section -->
-    <section class="wrapper !bg-[#edf2fc]">
-      <div class="container py-[4.5rem] xl:!py-28 lg:!py-28 md:!py-28">
-        <div class="flex flex-wrap mx-[-15px] xl:!mt-[-22.5rem] lg:!mt-[-22.5rem] md:!mt-[-22.5rem] !relative">
-          <div class="md:w-10/12 md:!ml-[8.33333333%] lg:w-8/12 lg:!ml-[16.66666667%] xl:w-8/12 xl:!ml-[16.66666667%] w-full flex-[0_0_auto] px-[15px] max-w-full !mx-auto !text-center">
-            <h2 class="!text-[.75rem] uppercase text-[#605dba] tracking-[0.02rem] leading-[1.35] !mb-3">Happy Team</h2>
-            <h3 class="text-[calc(1.305rem_+_0.66vw)] font-bold xl:text-[1.8rem] !leading-[1.3] mb-10 xl:!px-10 xxl:!px-20">Don't take our word for it. See what our team members say about us.</h3>
-          </div>
-          <!-- /column -->
-        </div>
-        <!-- /.row -->
-        <div class="itemgrid">
-          <div class="flex flex-wrap mx-[-15px] isotope mt-[-30px]">
-            <div class="item md:w-6/12 lg:w-6/12 xl:w-4/12 w-full flex-[0_0_auto] px-[15px] max-w-full mt-[30px]">
-              <div class="card !shadow-[0_0.25rem_1.75rem_rgba(30,34,40,0.07)]">
-                <div class="card-body p-[40px]">
-                  <span class="ratings  inline-block relative w-20 h-[0.8rem] text-[0.9rem] leading-none before:text-[rgba(38,43,50,0.1)] after:inline-block after:not-italic after:font-normal after:absolute after:text-[#fcc032] after:content-['\2605\2605\2605\2605\2605'] after:overflow-hidden after:left-0 after:top-0 before:inline-block before:not-italic before:font-normal before:absolute before:text-[#fcc032] before:content-['\2605\2605\2605\2605\2605'] before:overflow-hidden before:left-0 before:top-0 five !mb-3"></span>
-                  <blockquote class="text-[0.85rem] leading-[1.7] font-medium pl-4 icon !mb-0 relative p-0 border-0 before:content-['\201d'] before:absolute before:top-[-1.5rem] before:left-[-0.9rem] before:text-[rgba(52,63,82,0.05)] before:text-[10rem] before:leading-none before:z-[1]">
-                    <p>“Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum id ligula porta felis euismod semper. Cras justo odio dapibus facilisis sociis.”</p>
-                    <div class="flex items-center text-left">
-                      <img class="!rounded-[50%] !w-[3.5rem]" src="./assets/img/avatars/te1.jpg" srcset="./assets/img/avatars/te1@2x.jpg 2x" alt="image">
-                      <div class="info pl-4">
-                        <h5 class="!mb-1 text-[.95rem] !leading-[1.5]">Coriss Ambady</h5>
-                        <p class="!mb-0 text-[.85rem]">Financial Analyst</p>
-                      </div>
-                    </div>
-                  </blockquote>
-                </div>
-                <!-- /.card-body -->
-              </div>
-              <!-- /.card -->
-            </div>
-            <!--/column -->
-            <div class="item md:w-6/12 lg:w-6/12 xl:w-4/12 w-full flex-[0_0_auto] px-[15px] max-w-full mt-[30px]">
-              <div class="card !shadow-[0_0.25rem_1.75rem_rgba(30,34,40,0.07)]">
-                <div class="card-body p-[40px]">
-                  <span class="ratings  inline-block relative w-20 h-[0.8rem] text-[0.9rem] leading-none before:text-[rgba(38,43,50,0.1)] after:inline-block after:not-italic after:font-normal after:absolute after:text-[#fcc032] after:content-['\2605\2605\2605\2605\2605'] after:overflow-hidden after:left-0 after:top-0 before:inline-block before:not-italic before:font-normal before:absolute before:text-[#fcc032] before:content-['\2605\2605\2605\2605\2605'] before:overflow-hidden before:left-0 before:top-0 five !mb-3"></span>
-                  <blockquote class="text-[0.85rem] leading-[1.7] font-medium pl-4 icon !mb-0 relative p-0 border-0 before:content-['\201d'] before:absolute before:top-[-1.5rem] before:left-[-0.9rem] before:text-[rgba(52,63,82,0.05)] before:text-[10rem] before:leading-none before:z-[1]">
-                    <p>“Fusce dapibus, tellus ac cursus tortor mauris condimentum fermentum massa justo sit amet. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia.”</p>
-                    <div class="flex items-center text-left">
-                      <img class="!rounded-[50%] !w-[3.5rem]" src="./assets/img/avatars/te2.jpg" srcset="./assets/img/avatars/te2@2x.jpg 2x" alt="image">
-                      <div class="info pl-4">
-                        <h5 class="!mb-1 text-[.95rem] !leading-[1.5]">Cory Zamora</h5>
-                        <p class="!mb-0 text-[.85rem]">Marketing Specialist</p>
-                      </div>
-                    </div>
-                  </blockquote>
-                </div>
-                <!-- /.card-body -->
-              </div>
-              <!-- /.card -->
-            </div>
-            <!--/column -->
-            <div class="item md:w-6/12 lg:w-6/12 xl:w-4/12 w-full flex-[0_0_auto] px-[15px] max-w-full mt-[30px]">
-              <div class="card !shadow-[0_0.25rem_1.75rem_rgba(30,34,40,0.07)]">
-                <div class="card-body p-[40px]">
-                  <span class="ratings  inline-block relative w-20 h-[0.8rem] text-[0.9rem] leading-none before:text-[rgba(38,43,50,0.1)] after:inline-block after:not-italic after:font-normal after:absolute after:text-[#fcc032] after:content-['\2605\2605\2605\2605\2605'] after:overflow-hidden after:left-0 after:top-0 before:inline-block before:not-italic before:font-normal before:absolute before:text-[#fcc032] before:content-['\2605\2605\2605\2605\2605'] before:overflow-hidden before:left-0 before:top-0 five !mb-3"></span>
-                  <blockquote class="text-[0.85rem] leading-[1.7] font-medium pl-4 icon !mb-0 relative p-0 border-0 before:content-['\201d'] before:absolute before:top-[-1.5rem] before:left-[-0.9rem] before:text-[rgba(52,63,82,0.05)] before:text-[10rem] before:leading-none before:z-[1]">
-                    <p>“Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nullam quis risus eget porta ac consectetur vestibulum. Donec sed odio dui.”</p>
-                    <div class="flex items-center text-left">
-                      <img class="!rounded-[50%] !w-[3.5rem]" src="./assets/img/avatars/te3.jpg" srcset="./assets/img/avatars/te3@2x.jpg 2x" alt="image">
-                      <div class="info pl-4">
-                        <h5 class="!mb-1 text-[.95rem] !leading-[1.5]">Nikolas Brooten</h5>
-                        <p class="!mb-0 text-[.85rem]">Sales Manager</p>
-                      </div>
-                    </div>
-                  </blockquote>
-                </div>
-                <!-- /.card-body -->
-              </div>
-              <!-- /.card -->
-            </div>
-            <!--/column -->
-            <div class="item md:w-6/12 lg:w-6/12 xl:w-4/12 w-full flex-[0_0_auto] px-[15px] max-w-full mt-[30px]">
-              <div class="card !shadow-[0_0.25rem_1.75rem_rgba(30,34,40,0.07)]">
-                <div class="card-body p-[40px]">
-                  <span class="ratings  inline-block relative w-20 h-[0.8rem] text-[0.9rem] leading-none before:text-[rgba(38,43,50,0.1)] after:inline-block after:not-italic after:font-normal after:absolute after:text-[#fcc032] after:content-['\2605\2605\2605\2605\2605'] after:overflow-hidden after:left-0 after:top-0 before:inline-block before:not-italic before:font-normal before:absolute before:text-[#fcc032] before:content-['\2605\2605\2605\2605\2605'] before:overflow-hidden before:left-0 before:top-0 five !mb-3"></span>
-                  <blockquote class="text-[0.85rem] leading-[1.7] font-medium pl-4 icon !mb-0 relative p-0 border-0 before:content-['\201d'] before:absolute before:top-[-1.5rem] before:left-[-0.9rem] before:text-[rgba(52,63,82,0.05)] before:text-[10rem] before:leading-none before:z-[1]">
-                    <p>“Etiam adipiscing tincidunt elit convallis felis suscipit ut. Phasellus rhoncus tincidunt auctor. Nullam eu sagittis mauris. Donec non dolor ac elit aliquam tincidunt at at sapien. Aenean tortor.”</p>
-                    <div class="flex items-center text-left">
-                      <img class="!rounded-[50%] !w-[3.5rem]" src="./assets/img/avatars/te4.jpg" srcset="./assets/img/avatars/te4@2x.jpg 2x" alt="image">
-                      <div class="info pl-4">
-                        <h5 class="!mb-1 text-[.95rem] !leading-[1.5]">Coriss Ambady</h5>
-                        <p class="!mb-0 text-[.85rem]">Financial Analyst</p>
-                      </div>
-                    </div>
-                  </blockquote>
-                </div>
-                <!-- /.card-body -->
-              </div>
-              <!-- /.card -->
-            </div>
-            <!--/column -->
-            <div class="item md:w-6/12 lg:w-6/12 xl:w-4/12 w-full flex-[0_0_auto] px-[15px] max-w-full mt-[30px]">
-              <div class="card !shadow-[0_0.25rem_1.75rem_rgba(30,34,40,0.07)]">
-                <div class="card-body p-[40px]">
-                  <span class="ratings  inline-block relative w-20 h-[0.8rem] text-[0.9rem] leading-none before:text-[rgba(38,43,50,0.1)] after:inline-block after:not-italic after:font-normal after:absolute after:text-[#fcc032] after:content-['\2605\2605\2605\2605\2605'] after:overflow-hidden after:left-0 after:top-0 before:inline-block before:not-italic before:font-normal before:absolute before:text-[#fcc032] before:content-['\2605\2605\2605\2605\2605'] before:overflow-hidden before:left-0 before:top-0 five !mb-3"></span>
-                  <blockquote class="text-[0.85rem] leading-[1.7] font-medium pl-4 icon !mb-0 relative p-0 border-0 before:content-['\201d'] before:absolute before:top-[-1.5rem] before:left-[-0.9rem] before:text-[rgba(52,63,82,0.05)] before:text-[10rem] before:leading-none before:z-[1]">
-                    <p>“Maecenas sed diam eget risus varius blandit sit amet non magna. Cum sociis natoque penatibus magnis dis montes, nascetur ridiculus mus. Donec sed odio.”</p>
-                    <div class="flex items-center text-left">
-                      <img class="!rounded-[50%] !w-[3.5rem]" src="./assets/img/avatars/te5.jpg" srcset="./assets/img/avatars/te5@2x.jpg 2x" alt="image">
-                      <div class="info pl-4">
-                        <h5 class="!mb-1 text-[.95rem] !leading-[1.5]">Jackie Sanders</h5>
-                        <p class="!mb-0 text-[.85rem]">Investment Planner</p>
-                      </div>
-                    </div>
-                  </blockquote>
-                </div>
-                <!-- /.card-body -->
-              </div>
-              <!-- /.card -->
-            </div>
-            <!--/column -->
-            <div class="item md:w-6/12 lg:w-6/12 xl:w-4/12 w-full flex-[0_0_auto] px-[15px] max-w-full mt-[30px]">
-              <div class="card !shadow-[0_0.25rem_1.75rem_rgba(30,34,40,0.07)]">
-                <div class="card-body p-[40px]">
-                  <span class="ratings  inline-block relative w-20 h-[0.8rem] text-[0.9rem] leading-none before:text-[rgba(38,43,50,0.1)] after:inline-block after:not-italic after:font-normal after:absolute after:text-[#fcc032] after:content-['\2605\2605\2605\2605\2605'] after:overflow-hidden after:left-0 after:top-0 before:inline-block before:not-italic before:font-normal before:absolute before:text-[#fcc032] before:content-['\2605\2605\2605\2605\2605'] before:overflow-hidden before:left-0 before:top-0 five !mb-3"></span>
-                  <blockquote class="text-[0.85rem] leading-[1.7] font-medium pl-4 icon !mb-0 relative p-0 border-0 before:content-['\201d'] before:absolute before:top-[-1.5rem] before:left-[-0.9rem] before:text-[rgba(52,63,82,0.05)] before:text-[10rem] before:leading-none before:z-[1]">
-                    <p>“Donec id elit non mi porta gravida at eget metus. Nulla vitae elit libero, a pharetra augue. Cum sociis natoque penatibus et magnis dis parturient.”</p>
-                    <div class="flex items-center text-left">
-                      <img class="!rounded-[50%] !w-[3.5rem]" src="./assets/img/avatars/te6.jpg" srcset="./assets/img/avatars/te6@2x.jpg 2x" alt="image">
-                      <div class="info pl-4">
-                        <h5 class="!mb-1 text-[.95rem] !leading-[1.5]">Laura Widerski</h5>
-                        <p class="!mb-0 text-[.85rem]">Sales Specialist</p>
-                      </div>
-                    </div>
-                  </blockquote>
-                </div>
-                <!-- /.card-body -->
-              </div>
-              <!-- /.card -->
-            </div>
-            <!--/column -->
-          </div>
-          <!-- /.row -->
-        </div>
-        <!-- /.grid-view -->
-      </div>
-      <!-- /.container -->
-    </section>
-    <!-- /section -->
-    <section class="wrapper !bg-[#ffffff]">
-      <div class="container py-[4.5rem] xl:!py-24 lg:!py-24 md:!py-24">
-        <div class="flex flex-wrap mx-[-15px] !text-center">
-          <div class="xl:w-10/12 w-full flex-[0_0_auto] px-[15px] max-w-full !mx-auto">
-            <h2 class="!text-[.75rem] uppercase text-[#605dba] tracking-[0.02rem] leading-[1.35] !mb-3">Job Positions</h2>
-            <h3 class="text-[calc(1.305rem_+_0.66vw)] font-bold xl:text-[1.8rem] !leading-[1.3] mb-10 xxl:!px-20">We’re always searching for amazing people to join our team. Take a look at our current openings.</h3>
-          </div>
-          <!-- /column -->
-        </div>
-        <!-- /.row -->
-        <div class="flex flex-wrap mx-[-15px] mt-[-30px]">
-          <div class="md:w-6/12 lg:w-4/12 xl:w-4/12 w-full flex-[0_0_auto] px-[15px] max-w-full mt-[30px]">
-            <a href="#" class="card !shadow-[0_0.25rem_1.75rem_rgba(30,34,40,0.07)] lift !h-full">
-              <div class="card-body p-5 flex flex-row">
-                <div>
-                  <span class=" flex items-center justify-center font-bold leading-[1.7] tracking-[-0.01rem] rounded-[100%] bg-[rgba(226,98,107)] opacity-100 text-white !w-[3rem] !h-[3rem] text-[1rem] !mr-4">SD</span>
-                </div>
-                <div>
-                  <span class="badge bg-[#e0e9fa] !text-[#605dba] rounded py-1 mb-2">Full Time</span>
-                  <h4 class="!mb-1">Senior Graphic Designer</h4>
-                  <p class="mb-0 text-[#60697b]">San Francisco, US</p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <!--/column -->
-          <div class="md:w-6/12 lg:w-4/12 xl:w-4/12 w-full flex-[0_0_auto] px-[15px] max-w-full mt-[30px]">
-            <a href="#" class="card !shadow-[0_0.25rem_1.75rem_rgba(30,34,40,0.07)] lift !h-full">
-              <div class="card-body p-5 flex flex-row">
-                <div>
-                  <span class=" flex items-center justify-center font-bold leading-[1.7] tracking-[-0.01rem] rounded-[100%] bg-[rgba(69,196,160)] opacity-100 text-white !w-[3rem] !h-[3rem] text-[1rem] !mr-4">UX</span>
-                </div>
-                <div>
-                  <span class="badge bg-[#e4f1f6] !text-[#54a8c7] rounded py-1 mb-2">Remote</span>
-                  <h4 class="!mb-1">UI/UX Designer</h4>
-                  <p class="mb-0 text-[#60697b]">Anywhere</p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <!--/column -->
-          <div class="md:w-6/12 lg:w-4/12 xl:w-4/12 w-full flex-[0_0_auto] px-[15px] max-w-full mt-[30px]">
-            <a href="#" class="card !shadow-[0_0.25rem_1.75rem_rgba(30,34,40,0.07)] lift !h-full">
-              <div class="card-body p-5 flex flex-row">
-                <div>
-                  <span class=" flex items-center justify-center font-bold leading-[1.7] tracking-[-0.01rem] rounded-[100%] bg-[rgba(250,183,88)] opacity-100 text-white !w-[3rem] !h-[3rem] text-[1rem] !mr-4">AN</span>
-                </div>
-                <div>
-                  <span class="badge bg-[#e0e9fa] !text-[#605dba] rounded py-1 mb-2">Full Time</span>
-                  <h4 class="!mb-1">Multimedia Artist &amp; Animator</h4>
-                  <p class="mb-0 text-[#60697b]">Birmingham, UK</p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <!--/column -->
-          <div class="md:w-6/12 lg:w-4/12 xl:w-4/12 w-full flex-[0_0_auto] px-[15px] max-w-full mt-[30px]">
-            <a href="#" class="card !shadow-[0_0.25rem_1.75rem_rgba(30,34,40,0.07)] lift !h-full">
-              <div class="card-body p-5 flex flex-row">
-                <div>
-                  <span class=" flex items-center justify-center font-bold leading-[1.7] tracking-[-0.01rem] rounded-[100%] bg-[rgba(116,126,209)] opacity-100 text-white !w-[3rem] !h-[3rem] text-[1rem] !mr-4">FD</span>
-                </div>
-                <div>
-                  <span class="badge bg-[#f0eaf6] !text-[#a07cc5] rounded py-1 mb-2">Part Time</span>
-                  <h4 class="!mb-1">Front End Developer</h4>
-                  <p class="mb-0 text-[#60697b]">Sydney, AU</p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <!--/column -->
-          <div class="md:w-6/12 lg:w-4/12 xl:w-4/12 w-full flex-[0_0_auto] px-[15px] max-w-full mt-[30px]">
-            <a href="#" class="card !shadow-[0_0.25rem_1.75rem_rgba(30,34,40,0.07)] lift !h-full">
-              <div class="card-body p-5 flex flex-row">
-                <div>
-                  <span class=" flex items-center justify-center font-bold leading-[1.7] tracking-[-0.01rem] rounded-[100%] bg-[rgba(247,139,119)] opacity-100 text-white !w-[3rem] !h-[3rem] text-[1rem] !mr-4">MD</span>
-                </div>
-                <div>
-                  <span class="badge bg-[#e0e9fa] !text-[#605dba] rounded py-1 mb-2">Full Time</span>
-                  <h4 class="!mb-1">Mobile Developer</h4>
-                  <p class="mb-0 text-[#60697b]">San Francisco, US</p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <!--/column -->
-          <div class="md:w-6/12 lg:w-4/12 xl:w-4/12 w-full flex-[0_0_auto] px-[15px] max-w-full mt-[30px]">
-            <a href="#" class="card !shadow-[0_0.25rem_1.75rem_rgba(30,34,40,0.07)] lift !h-full">
-              <div class="card-body p-5 flex flex-row">
-                <div>
-                  <span class=" flex items-center justify-center font-bold leading-[1.7] tracking-[-0.01rem] rounded-[100%] !bg-[rgba(209,107,134)] !opacity-100 text-white !w-[3rem] !h-[3rem] text-[1rem] !mr-4">ND</span>
-                </div>
-                <div>
-                  <span class="badge bg-[#e0e9fa] !text-[#605dba] rounded py-1 mb-2">Full Time</span>
-                  <h4 class="!mb-1">.NET Developer</h4>
-                  <p class="mb-0 text-[#60697b]">Manchester, UK</p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <!--/column -->
-        </div>
-        <!--/.row -->
-        <div class="flex flex-wrap mx-[-15px] !mt-[3rem]">
-          <div class="lg:w-6/12 xl:w-5/12 w-full flex-[0_0_auto] px-[15px] max-w-full !mx-auto !text-center">
-            <h2 class="text-[calc(1.265rem_+_0.18vw)] font-bold xl:text-[1.4rem] leading-[1.35] !mb-3">Can't find the right position?</h2>
-            <p class="lead text-[0.9rem] font-medium leading-[1.65] !mb-5 xl:!px-3 lg:!px-3 md:!px-24">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur.</p>
-            <a href="#" class="btn btn-primary text-white !bg-[#605dba] border-[#605dba] hover:text-white hover:bg-[#605dba] hover:border-[#605dba] focus:shadow-[rgba(92,140,229,1)] active:text-white active:bg-[#605dba] active:border-[#605dba] disabled:text-white disabled:bg-[#605dba] disabled:border-[#605dba] !rounded-[50rem] hover:translate-y-[-0.15rem] hover:shadow-[0_0.25rem_0.75rem_rgba(30,34,40,0.15)]">Get in Touch</a>
-          </div>
-          <!-- /column -->
-        </div>
-        <!-- /.row -->
-      </div>
-      <!-- /.container -->
-    </section>
-    <!-- /section -->
-    <section class="wrapper !bg-[#edf2fc]">
-      <div class="container py-[4.5rem] xl:!py-24 lg:!py-24 md:!py-24">
-        <div class="flex flex-wrap mx-[-15px]">
-          <div class="lg:w-11/12 xl:w-11/12 xxl:w-10/12 w-full flex-[0_0_auto] px-[15px] max-w-full !mx-auto !text-center">
-            <h2 class="!text-[.75rem] uppercase text-[#605dba] tracking-[0.02rem] leading-[1.35] !mb-3">FAQ</h2>
-            <h3 class="text-[calc(1.305rem_+_0.66vw)] font-bold xl:text-[1.8rem] !leading-[1.3] mb-10 lg:!px-14 xl:!px-10 xxl:!px-20">If you don't see an answer to your question, you can send us an email from our contact form.</h3>
-          </div>
-          <!--/column -->
-        </div>
-        <!--/.row -->
-        <div class="flex flex-wrap mx-[-15px]">
-          <div class="xl:w-7/12 lg:w-7/12 w-full flex-[0_0_auto] px-[15px] max-w-full !mx-auto">
-            <div id="accordion-3" class="accordion-wrapper">
-              <div class="card accordion-item !shadow-[0_0.25rem_1.75rem_rgba(30,34,40,0.07)] mb-5">
-                <div class="card-header mb-0 !p-[.9rem_1.3rem_.85rem] !border-0 bg-inherit" id="accordion-heading-3-1">
-                  <button class="!text-[#343f52] !text-[0.9rem] hover:!text-[#605dba] before:!text-[#605dba] collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-3-1" aria-expanded="false" aria-controls="accordion-collapse-3-1">How do I get my subscription receipt?</button>
-                </div>
-                <!-- /.card-header -->
-                <div id="accordion-collapse-3-1" class="collapse" aria-labelledby="accordion-heading-3-1" data-bs-target="#accordion-3">
-                  <div class="card-body flex-[1_1_auto]  p-[0_1.25rem_.25rem_2.35rem]">
-                    <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui. Cras justo odio, dapibus ac facilisis.</p>
-                  </div>
-                  <!-- /.card-body -->
-                </div>
-                <!-- /.collapse -->
-              </div>
-              <!-- /.card -->
-              <div class="card accordion-item !shadow-[0_0.25rem_1.75rem_rgba(30,34,40,0.07)] mb-5">
-                <div class="card-header mb-0 !p-[.9rem_1.3rem_.85rem] !border-0 bg-inherit" id="accordion-heading-3-2">
-                  <button class="!text-[#343f52] !text-[0.9rem] hover:!text-[#605dba] before:!text-[#605dba] collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-3-2" aria-expanded="false" aria-controls="accordion-collapse-3-2">Are there any discounts for people in need?</button>
-                </div>
-                <!-- /.card-header -->
-                <div id="accordion-collapse-3-2" class="collapse" aria-labelledby="accordion-heading-3-2" data-bs-target="#accordion-3">
-                  <div class="card-body flex-[1_1_auto]  p-[0_1.25rem_.25rem_2.35rem]">
-                    <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui. Cras justo odio, dapibus ac facilisis.</p>
-                  </div>
-                  <!-- /.card-body -->
-                </div>
-                <!-- /.collapse -->
-              </div>
-              <!-- /.card -->
-              <div class="card accordion-item !shadow-[0_0.25rem_1.75rem_rgba(30,34,40,0.07)] mb-5">
-                <div class="card-header mb-0 !p-[.9rem_1.3rem_.85rem] !border-0 bg-inherit" id="accordion-heading-3-3">
-                  <button class="!text-[#343f52] !text-[0.9rem] hover:!text-[#605dba] before:!text-[#605dba] collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-3-3" aria-expanded="false" aria-controls="accordion-collapse-3-3">Do you offer a free trial edit?</button>
-                </div>
-                <!-- /.card-header -->
-                <div id="accordion-collapse-3-3" class="collapse" aria-labelledby="accordion-heading-3-3" data-bs-target="#accordion-3">
-                  <div class="card-body flex-[1_1_auto]  p-[0_1.25rem_.25rem_2.35rem]">
-                    <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui. Cras justo odio, dapibus ac facilisis.</p>
-                  </div>
-                  <!-- /.card-body -->
-                </div>
-                <!-- /.collapse -->
-              </div>
-              <!-- /.card -->
-              <div class="card accordion-item !shadow-[0_0.25rem_1.75rem_rgba(30,34,40,0.07)] mb-5">
-                <div class="card-header mb-0 !p-[.9rem_1.3rem_.85rem] !border-0 bg-inherit" id="accordion-heading-3-4">
-                  <button class="!text-[#343f52] !text-[0.9rem] hover:!text-[#605dba] before:!text-[#605dba] collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-3-4" aria-expanded="false" aria-controls="accordion-collapse-3-4">How do I reset my Account password?</button>
-                </div>
-                <!-- /.card-header -->
-                <div id="accordion-collapse-3-4" class="collapse" aria-labelledby="accordion-heading-3-4" data-bs-target="#accordion-3">
-                  <div class="card-body flex-[1_1_auto]  p-[0_1.25rem_.25rem_2.35rem]">
-                    <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui. Cras justo odio, dapibus ac facilisis.</p>
-                  </div>
-                  <!-- /.card-body -->
-                </div>
-                <!-- /.collapse -->
-              </div>
-              <!-- /.card -->
-            </div>
-            <!-- /.accordion-wrapper -->
-          </div>
-          <!-- /column -->
-        </div>
-        <!-- /.row -->
-      </div>
-      <!-- /.container -->
-    </section>
+    </div>
     <!-- /section -->
   </div>
   <!-- /.content-wrapper -->
@@ -1033,7 +706,7 @@
           <div class="widget text-[#cacaca]">
             <h4 class="widget-title text-white !mb-3">Get in Touch</h4>
             <address class="xl:pr-20 xxl:!pr-28 not-italic leading-[inherit] block mb-4">Moonshine St. 14/05 Light City, London, United Kingdom</address>
-            <a class="text-[#cacaca] hover:text-[#605dba]" href="mailto:first.last@email.com">info@email.com</a><br> 00 (123) 456 78 90
+            <a class="text-[#cacaca] hover:text-[#605dba]" href="mailto:#">info@email.com</a><br> 00 (123) 456 78 90
           </div>
           <!-- /.widget -->
         </div>
@@ -1089,7 +762,7 @@
   </footer>
   <div class="progress-wrap fixed w-[2.3rem] h-[2.3rem] cursor-pointer block shadow-[inset_0_0_0_0.1rem_rgba(128,130,134,0.25)] z-[1010] opacity-0 invisible translate-y-3 transition-all duration-[0.2s] ease-[linear,margin-right] delay-[0s] rounded-[100%] right-6 bottom-6 motion-reduce:transition-none after:absolute after:content-['\e951'] after:text-center after:leading-[2.3rem] after:text-[1.2rem] after:text-[#605dba] after:h-[2.3rem] after:w-[2.3rem] after:cursor-pointer after:block after:z-[1] after:transition-all after:duration-[0.2s] after:ease-linear after:left-0 after:top-0 motion-reduce:after:transition-none after:font-Unicons">
     <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-      <path class="fill-none stroke-[#605dba] stroke-[4] box-border transition-all duration-[0.2s] ease-linear motion-reduce:transition-none" d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+      <path class="fill-none stroke-[#605dba] stroke-[4] box-border transition-all duration-[0.2s] ease-linear motion-reduce:transition-none" d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
     </svg>
   </div>
   <script src="./assets/js/plugins.js"></script>
