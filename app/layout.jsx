@@ -7,6 +7,7 @@ import { usePathname } from "next/navigation";
 import scrollQue from "../utlis/scrollCue.min.js";
 import ProgressWrap from "@/components/common/ProgressWrap";
 import initPlayer from "@/utlis/initPlayer";
+import { GoogleTagManager } from '@next/third-parties/google'
 
 export default function RootLayout({ children }) {
   const pathname = usePathname();
@@ -206,6 +207,7 @@ export default function RootLayout({ children }) {
           href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@1,300;1,400;1,500;1,600;1,700&display=swap"
           rel="stylesheet"
         />
+        <GoogleTagManager gtmId="GTM-P562SQ6N" />
       </head>
 
       <body>
