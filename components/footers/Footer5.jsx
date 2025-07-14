@@ -61,9 +61,9 @@ export default function Footer5({ hasMarginTop = true }) {
                 <br />
                 <a
                   className="!text-[#cacaca] hover:!text-[#ef3f6e]"
-                  href="tel:0096170712315"
+                  href="tel:+96181206923"
                 >
-                  00 (961) 707 123 15
+                  +961 81 206 923
                 </a>
               </div>
               {/* /.widget */}
