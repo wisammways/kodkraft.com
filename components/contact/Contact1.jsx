@@ -43,7 +43,7 @@ export default function Contact1() {
                       </div>
                       <div>
                         <h5 className="!mb-1">Phone</h5>
-                        <p><a href="tel:+96170712315">+961 707 123 15</a></p>
+                        <p><a href="tel:+96181206923">+961 81 206 923</a></p>
                       </div>
                     </div>
                     {/*/div */}
