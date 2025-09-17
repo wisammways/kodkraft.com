@@ -6,6 +6,7 @@ import OurValue from "@/components/home/OurValue";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Clients3 from "@/components/blocks/clients/Clients3";
+import { useTranslations } from 'next-intl';
 
 export const metadata = {
   title:
@@ -15,10 +16,12 @@ export const metadata = {
 };
 
 export default function Home() {
+  const t = useTranslations();
   return (
     <>
+      <h1>{t('About')}</h1>
       <div className="color-purple demo11">
-        
+
         <div className="grow shrink-0">
 
           <Header />
