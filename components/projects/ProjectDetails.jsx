@@ -4,10 +4,10 @@ import Image from "next/image";
 import { Gallery, Item } from "react-photoswipe-gallery";
 
 const images = [
-  { src: "/assets/img/photos/pp2.jpg", alt: "image" },
-  { src: "/assets/img/photos/pp3.jpg", alt: "image" },
-  { src: "/assets/img/photos/pp4.jpg", alt: "image" },
-  { src: "/assets/img/photos/pp5.jpg", alt: "image" },
+  { src: "/assets/images/projects/jimmy-blink/j1.jpg", alt: "image" },
+  { src: "/assets/images/projects/jimmy-blink/j2.jpg", alt: "image" },
+  { src: "/assets/images/projects/jimmy-blink/j3.jpg", alt: "image" },
+  { src: "/assets/images/projects/jimmy-blink/j4.jpg", alt: "image" },
 ];
 export default function ProjectDetails() {
   return (
@@ -20,7 +20,7 @@ export default function ProjectDetails() {
                 <Image
                   className="!rounded-[.4rem]"
                   alt="image"
-                  src="/assets/images/projects/full/4.jpg"
+                  src="/assets/images/projects/jimmy-blink/main.jpg"
                   width={2400}
                   height={1640}
                 />
@@ -33,21 +33,13 @@ export default function ProjectDetails() {
                   <div className="flex flex-wrap mx-0">
                     <div className="xl:w-9/12 lg:w-9/12 md:w-9/12 w-full flex-[0_0_auto] max-w-full">
                       <p>
-                        Cras mattis consectetur purus sit amet fermentum. Fusce
-                        dapibus, tellus ac cursus commodo, tortor mauris
-                        condimentum nibh, ut fermentum massa justo sit amet
-                        risus. Integer posuere erat a ante venenatis. Etiam
-                        porta sem malesuada magna mollis euismod. Aenean lacinia
-                        bibendum.
+                        "Sound Smart" is an illustrated book that helps school students learn fun local phrases and idioms in French and Spanish. Our task was to create a landing page that felt as engaging and accessible as the book itself.
                       </p>
                       <p>
-                        Donec id elit non mi porta gravida at eget metus. Cras
-                        mattis consectetur purus sit amet fermentum. Praesent
-                        commodo cursus magna, vel scelerisque nisl consectetur
-                        et. Donec sed odio dui. Aenean eu leo quam. Pellentesque
-                        ornare sem lacinia quam venenatis vestibulum. Sed
-                        posuere consectetur est at lobortis. Vivamus sagittis
-                        lacus vel augue laoreet rutrum faucibus dolor auctor.
+                        We brought the book's interior to life by using its charming illustrations as the core design elements, ensuring immediate appeal for its young audience. Light, playful animations enhance the experience, making the page itself feel fun and interactive.
+                      </p>
+                      <p>
+                        Built to be fully responsive, the site provides a seamless experience for students whether they're on a computer or a mobile phone. To support its international reach, we delivered the site in four languages: English, French, Spanish, and Chinese, perfectly mirroring the book's goal of connecting with local culture.
                       </p>
                     </div>
                     {/*/column */}
@@ -55,14 +47,14 @@ export default function ProjectDetails() {
                       <ul className="pl-0 list-none">
                         <li>
                           <h5 className="!mb-1">Date</h5>
-                          <p>17 May 2018</p>
+                          <p>Feb 2025</p>
                         </li>
                         <li>
                           <h5 className="!mb-1">Client Name</h5>
-                          <p>Cool House</p>
+                          <p>Jimmy Blink</p>
                         </li>
                       </ul>
-                      <a href="#" className="more hover">
+                      <a href="https://jimmyblink.com/" target="_blank" className="more hover">
                         See Project
                       </a>
                     </div>
@@ -105,34 +97,6 @@ export default function ProjectDetails() {
                   ))}
                 </div>{" "}
               </Gallery>
-              {/* /.row */}
-              <div className="flex flex-wrap mx-[-15px] !mt-8 xl:!mt-[4.5rem] lg:!mt-[4.5rem] md:!mt-[4.5rem]">
-                <div className="xl:w-10/12 xl:!ml-[8.33333333%] lg:w-10/12 lg:!ml-[8.33333333%] md:w-10/12 md:!ml-[8.33333333%] flex-[0_0_auto] !px-[15px] max-w-full">
-                  <h2 className="!mb-4">Quam Mollis Bibendum</h2>
-                  <p>
-                    Maecenas sed diam eget risus varius blandit sit amet non
-                    magna. Donec ullamcorper nulla non metus auctor fringilla.
-                    Cras mattis consectetur purus sit amet fermentum. Aenean
-                    lacinia bibendum nulla sed consectetur. Curabitur blandit
-                    tempus porttitor. Praesent commodo cursus magna, vel
-                    scelerisque nisl consectetur et. Donec id elit non mi porta
-                    gravida at eget metus. Donec id elit non mi porta gravida at
-                    eget metus. Cras mattis consectetur purus sit amet
-                    fermentum.
-                  </p>
-                  <p>
-                    Aenean lacinia bibendum nulla sed consectetur. Duis mollis,
-                    est non commodo luctus, nisi erat porttitor ligula, eget
-                    lacinia odio sem nec elit. Maecenas faucibus mollis
-                    interdum. Maecenas sed diam eget risus varius blandit sit
-                    amet non magna. Morbi leo risus, porta ac consectetur ac,
-                    vestibulum at eros. Nulla vitae elit libero, a pharetra
-                    augue. Maecenas faucibus mollis interdum etiam porta.
-                  </p>
-                </div>
-                {/* /column */}
-              </div>
-              {/* /.row */}
             </article>
             {/* /.project */}
           </div>
