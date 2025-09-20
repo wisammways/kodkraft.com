@@ -447,3 +447,67 @@ export const posts6 = [
     likes: 5,
   },
 ];
+
+// New trending tech blog posts for /blog page
+export const trendingTechPosts = [
+  {
+    id: 1,
+    image: "/assets/img/photos/b4.jpg",
+    category: "AI Development",
+    title: "GitHub Copilot AI: Revolutionizing Code Development",
+    content:
+      "Discover how GitHub Copilot is transforming the way developers write code with AI-powered suggestions. Learn about its capabilities, integration with popular IDEs, and impact on development productivity. Explore real-world use cases and best practices for maximizing AI assistance in your coding workflow.",
+    date: "15 Dec 2024",
+    author: "By KodKraft Team",
+    comments: 12,
+    likes: 28,
+  },
+  {
+    id: 2,
+    image: "/assets/img/photos/b5.jpg",
+    category: "Backend Development",  
+    title: "Laravel 11: The Future of PHP Web Development",
+    content:
+      "Explore the latest features and improvements in Laravel 11, including enhanced performance, new Artisan commands, and modern PHP 8.3 compatibility. Discover why Laravel continues to be the preferred choice for robust, scalable web applications and API development in 2024.",
+    date: "10 Dec 2024",
+    author: "By KodKraft Team",
+    comments: 8,
+    likes: 15,
+  },
+  {
+    id: 3,
+    image: "/assets/img/photos/b6.jpg",
+    category: "Frontend Development",
+    title: "React.js 18: Modern Frontend Development Trends",
+    content:
+      "Dive into React 18's concurrent features, automatic batching, and the new Suspense capabilities. Learn how these innovations are shaping modern frontend development, improving user experience, and enabling more efficient component rendering in large-scale applications.",
+    date: "8 Dec 2024", 
+    author: "By KodKraft Team",
+    comments: 15,
+    likes: 22,
+  },
+  {
+    id: 4,
+    image: "/assets/img/photos/b7.jpg",
+    category: "Full-stack Development",
+    title: "Next.js 15: The Complete Full-Stack React Framework",
+    content:
+      "Uncover the power of Next.js 15 with its advanced App Router, server components, and built-in optimization features. Learn how to build fast, SEO-friendly, and scalable full-stack applications that deliver exceptional performance and developer experience.",
+    date: "5 Dec 2024",
+    author: "By KodKraft Team", 
+    comments: 20,
+    likes: 35,
+  },
+  {
+    id: 5,
+    image: "/assets/img/photos/b4.jpg",
+    category: "CMS Development",
+    title: "WordPress Headless: The Evolution of Content Management",
+    content:
+      "Explore the world of headless WordPress and how it's revolutionizing content management. Learn about decoupled architectures, REST API integration, and how to leverage WordPress as a powerful backend while building modern frontend experiences with React, Next.js, and other technologies.",
+    date: "1 Dec 2024",
+    author: "By KodKraft Team",
+    comments: 10,
+    likes: 18,
+  },
+];
