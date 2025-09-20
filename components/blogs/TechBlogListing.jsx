@@ -20,7 +20,7 @@ export default function TechBlogListing({
               <figure className="card-img-top overlay overlay-1 hover-scale group">
                 <Link
                   className="!text-[#343f52] hover:!text-[#605dba]"
-                  href={`/blog-post`}
+                  href={`/blog/${post.slug}`}
                 >
                   <Image
                     className="!transition-all !duration-[0.35s] !ease-in-out group-hover:scale-105"
@@ -47,7 +47,7 @@ export default function TechBlogListing({
                   <h2 className="post-title !mt-1 !leading-[1.35] !mb-0">
                     <Link
                       className="!text-[#343f52] hover:!text-[#605dba]"
-                      href={`/blog-post`}
+                      href={`/blog/${post.slug}`}
                     >
                       {post.title}
                     </Link>
@@ -63,34 +63,6 @@ export default function TechBlogListing({
                   <li className="post-date inline-block">
                     <i className="uil uil-calendar-alt pr-[0.2rem] align-[-.05rem] before:content-['\e9ba']" />
                     <span>{post.date}</span>
-                  </li>
-                  <li className="post-author inline-block before:content-[''] before:inline-block before:w-[0.2rem] before:h-[0.2rem] before:opacity-50 before:m-[0_.6rem_0] before:rounded-[100%] before:align-[.15rem] before:bg-[#aab0bc]">
-                    <a
-                      className="!text-[#aab0bc] hover:!text-[#605dba] hover:!border-[#605dba]"
-                      href="#"
-                    >
-                      <i className="uil uil-user pr-[0.2rem] align-[-.05rem] before:content-['\ed6f']" />
-                      <span>{post.author}</span>
-                    </a>
-                  </li>
-                  <li className="post-comments inline-block before:content-[''] before:inline-block before:w-[0.2rem] before:h-[0.2rem] before:opacity-50 before:m-[0_.6rem_0] before:rounded-[100%] before:align-[.15rem] before:bg-[#aab0bc]">
-                    <a
-                      className="!text-[#aab0bc] hover:!text-[#605dba] hover:!border-[#605dba]"
-                      href="#"
-                    >
-                      <i className="uil uil-comment pr-[0.2rem] align-[-.05rem] before:content-['\ea54']" />
-                      {post.comments}
-                      <span> Comments</span>
-                    </a>
-                  </li>
-                  <li className="post-likes !ml-auto inline-block">
-                    <a
-                      className="!text-[#aab0bc] hover:!text-[#605dba] hover:!border-[#605dba]"
-                      href="#"
-                    >
-                      <i className="uil uil-heart-alt pr-[0.2rem] align-[-.05rem] before:content-['\eb60']" />
-                      {post.likes}
-                    </a>
                   </li>
                 </ul>
               </div>
