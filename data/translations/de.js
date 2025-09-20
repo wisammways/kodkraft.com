@@ -83,6 +83,23 @@ export const translations = {
     digitalMarketing: "digitales Marketing."
   },
 
+  // Footer
+  footer: {
+    copyright: "Alle Rechte vorbehalten.",
+    getInTouch: "Kontakt aufnehmen",
+    learnMore: "Mehr erfahren",
+    ourNewsletter: "Unser Newsletter",
+    newsletterDescription: "Abonnieren Sie unseren Newsletter, um unsere Neuigkeiten und Angebote zu erhalten.",
+    emailAddress: "E-Mail-Adresse",
+    join: "Beitreten",
+    links: {
+      aboutUs: "Über uns",
+      services: "Dienstleistungen", 
+      projects: "Projekte",
+      contactUs: "Kontakt"
+    }
+  },
+
   // Common
   common: {
     loading: "Laden...",

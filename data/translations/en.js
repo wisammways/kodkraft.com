@@ -83,6 +83,23 @@ export const translations = {
     digitalMarketing: "digital marketing."
   },
 
+  // Footer
+  footer: {
+    copyright: "All rights reserved.",
+    getInTouch: "Get in Touch",
+    learnMore: "Learn More",
+    ourNewsletter: "Our Newsletter",
+    newsletterDescription: "Subscribe to our newsletter to get our news & deals delivered to you.",
+    emailAddress: "Email Address",
+    join: "Join",
+    links: {
+      aboutUs: "About Us",
+      services: "Services", 
+      projects: "Projects",
+      contactUs: "Contact us"
+    }
+  },
+
   // Common
   common: {
     loading: "Loading...",
