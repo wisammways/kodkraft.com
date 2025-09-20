@@ -106,5 +106,75 @@ export const translations = {
     readMore: "Read More",
     learnMore: "Learn More",
     getStarted: "Get Started"
+  },
+
+  // Page titles and breadcrumbs
+  pages: {
+    home: "Home",
+    about: "About us", 
+    services: "Services",
+    projects: "Projects",
+    contact: "Contact us",
+    getInTouch: "Get in Touch"
+  },
+
+  // How We Do It Section
+  howWeDoIt: {
+    title: "How We Do It?",
+    subtitle: "We make your",
+    subtitleHighlight: "vision",
+    subtitleEnd: "reality for you to achieve digital success.",
+    steps: {
+      discovery: {
+        title: "Discovery & Planning",
+        description: "We define your goals, scope, and requirements to create a clear project roadmap."
+      },
+      design: {
+        title: "Design & Prototyping",
+        description: "We craft user-friendly, responsive designs and interactive prototypes for your approval."
+      },
+      development: {
+        title: "Development & Testing",
+        description: "We build and rigorously test your application to ensure performance, security, and scalability."
+      },
+      launch: {
+        title: "Launch & Support",
+        description: "We deploy your application and provide ongoing support to keep it running smoothly."
+      }
+    }
+  },
+
+  // Contact Section
+  contact: {
+    address: "Address",
+    phone: "Phone",
+    email: "E-mail"
+  },
+
+  // Call to Action Section
+  cta: {
+    hireUs: "Hire us",
+    subtitle: "Trusted by businesses worldwide, we delivers high-quality digital solutions.",
+    values: {
+      precision: {
+        title: "Precision",
+        description: "is at the core of our crafted solutions."
+      },
+      innovation: {
+        title: "Innovation",
+        description: "drives our approach to digital solutions."
+      },
+      excellence: {
+        title: "Excellence",
+        description: "defines every project we deliver."
+      }
+    }
+  },
+
+  // Project Categories
+  projectCategories: {
+    webPlatform: "Web Platform",
+    landingPage: "Landing Page",
+    website: "Website"
   }
 };

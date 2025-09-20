@@ -2,6 +2,8 @@
 import { projectData } from "@/data/projects";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { t } from "@/utlis/translations";
 
 import React, { useEffect, useRef, useState } from "react";
 const filters = [
@@ -12,6 +14,20 @@ const filters = [
   { name: "Still Life", filter: ".still-life" },
 ];
 export default function Projects4() {
+  const pathname = usePathname();
+  
+  const getTranslatedCategory = (category) => {
+    switch (category) {
+      case 'Web Platform':
+        return t(pathname, 'projectCategories.webPlatform');
+      case 'Landing Page':
+        return t(pathname, 'projectCategories.landingPage');
+      case 'Website':
+        return t(pathname, 'projectCategories.website');
+      default:
+        return category;
+    }
+  };
   const [activeFilter, setActiveFilter] = useState("*");
 
   const isotopRef = useRef(null);
@@ -115,7 +131,7 @@ export default function Projects4() {
                         className="before:content-[''] before:absolute before:inline-block before:translate-y-[-60%] before:w-3 before:h-[0.05rem] before:left-0 before:top-2/4"
                         style={{ color: project.categoryColor }}
                       >
-                        {project.category}
+                        {getTranslatedCategory(project.category)}
                       </span>
                     </div>
                     <h3 className="post-title">{project.title}</h3>

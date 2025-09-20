@@ -38,7 +38,7 @@ export const translations = {
       description: "Entwicklung überzeugender Markenstrategien und Visualisierungen zur Unterscheidung Ihres Unternehmens."
     },
     uxui: {
-      title: "UX/UI Design",
+      title: "UX/UI-Design",
       description: "Gestaltung nahtloser, benutzerzentrierter Schnittstellen, die das Engagement und die Benutzerfreundlichkeit verbessern."
     },
     seo: {
@@ -116,5 +116,65 @@ export const translations = {
     projects: "Projekte",
     contact: "Kontakt",
     getInTouch: "Kontakt aufnehmen"
+  },
+
+  // How We Do It Section
+  howWeDoIt: {
+    title: "Wie wir es machen?",
+    subtitle: "Wir verwandeln Ihre",
+    subtitleHighlight: "Vision",
+    subtitleEnd: "in die Realität, damit Sie digitalen Erfolg erzielen können.",
+    steps: {
+      discovery: {
+        title: "Entdeckung & Planung",
+        description: "Wir definieren Ihre Ziele, den Umfang und die Anforderungen, um eine klare Projekt-Roadmap zu erstellen."
+      },
+      design: {
+        title: "Design & Prototyping",
+        description: "Wir erstellen benutzerfreundliche, responsive Designs und interaktive Prototypen zur Genehmigung."
+      },
+      development: {
+        title: "Entwicklung & Testing",
+        description: "Wir entwickeln und testen Ihre Anwendung gründlich, um Leistung, Sicherheit und Skalierbarkeit zu gewährleisten."
+      },
+      launch: {
+        title: "Launch & Support",
+        description: "Wir stellen Ihre Anwendung bereit und bieten laufenden Support, um sie reibungslos am Laufen zu halten."
+      }
+    }
+  },
+
+  // Contact Section
+  contact: {
+    address: "Adresse",
+    phone: "Telefon",
+    email: "E-Mail"
+  },
+
+  // Call to Action Section
+  cta: {
+    hireUs: "Engagieren Sie uns",
+    subtitle: "Von Unternehmen weltweit vertraut, liefern wir hochwertige digitale Lösungen.",
+    values: {
+      precision: {
+        title: "Präzision",
+        description: "steht im Mittelpunkt unserer handgefertigten Lösungen."
+      },
+      innovation: {
+        title: "Innovation",
+        description: "treibt unseren Ansatz für digitale Lösungen an."
+      },
+      excellence: {
+        title: "Exzellenz",
+        description: "definiert jedes Projekt, das wir liefern."
+      }
+    }
+  },
+
+  // Project Categories
+  projectCategories: {
+    webPlatform: "Web-Plattform",
+    landingPage: "Landing Page",
+    website: "Website"
   }
 };

@@ -7,6 +7,8 @@ import Header from "@/components/Header";
 import ProjectNavigation from "@/components/projects/ProjectNavigation";
 import Link from "next/link";
 import React from "react";
+import { usePathname } from "next/navigation";
+import { t, getBasePath } from "@/utlis/translations";
 
 const images = [
   { src: "/assets/images/projects/5.jpg", alt: "CTI PYP Grading System" },
@@ -18,6 +20,8 @@ const images = [
 
 
 export default function CTIPYPSystemProjectPage() {
+  const pathname = usePathname();
+  const basePath = getBasePath(pathname);
   return (
     <>
       <div className="grow shrink-0">
@@ -35,8 +39,8 @@ export default function CTIPYPSystemProjectPage() {
                 <nav className="inline-block" aria-label="breadcrumb">
                   <ol className="breadcrumb flex flex-wrap bg-[none] p-0 !rounded-none list-none !mb-[20px]">
                     <li className="breadcrumb-item flex !text-[#60697b]">
-                      <Link className="!text-white hover:text-white" href="/">
-                        Home
+                      <Link className="!text-white hover:text-white" href={basePath === '' ? '/' : basePath}>
+                        {t(pathname, 'pages.home')}
                       </Link>
                     </li>
                     <li
