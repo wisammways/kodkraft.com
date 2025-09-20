@@ -2,9 +2,21 @@
 import React from "react";
 import Image from "next/image";
 import { socialLinks } from "@/data/socials";
-import { footerLinks } from "@/data/footerLinks";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { t, getBasePath } from "@/utlis/translations";
 export default function Footer({ hasMarginTop = true }) {
+  const pathname = usePathname();
+  const basePath = getBasePath(pathname);
+
+  // Define footer links with translations
+  const footerLinksWithTranslations = [
+    { href: "/about", textKey: "footer.links.aboutUs" },
+    { href: "/services", textKey: "footer.links.services" },
+    { href: "/projects", textKey: "footer.links.projects" },
+    { href: "/contact", textKey: "footer.links.contactUs" },
+  ];
+
   return (
     <>
       <div className="wrapper !bg-[#ffffff] angled upper-end lower-end relative border-0 before:top-[-4rem] before:border-l-transparent before:border-r-[100vw] before:border-t-[4rem] before:border-[#fefefe] before:content-[''] before:block before:absolute before:z-0 before:!border-y-transparent before:border-0 before:border-solid before:right-0 after:bottom-[-4rem] after:border-l-transparent after:border-r-[100vw] after:border-b-[4rem] after:border-[#fefefe] after:content-[''] after:block after:absolute after:z-0 after:!border-y-transparent after:border-0 after:border-solid after:right-0"></div>
@@ -26,7 +38,7 @@ export default function Footer({ hasMarginTop = true }) {
                 <p className="!mb-4">
                   © {new Date().getFullYear()} KodKraft.
                   <br className="hidden xl:block lg:block !text-[#cacaca]" />
-                  All rights reserved.
+                  {t(pathname, 'footer.copyright')}
                 </p>
                 <nav className="nav social social-white">
                   {socialLinks.map((elm, i) => (
@@ -49,7 +61,7 @@ export default function Footer({ hasMarginTop = true }) {
             {/* /column */}
             <div className="md:w-4/12 xl:w-3/12 lg:w-3/12 w-full flex-[0_0_auto] !px-[15px] max-w-full xl:!mt-0 lg:!mt-0 !mt-[30px]">
               <div className="widget !text-[#cacaca]">
-                <h4 className="widget-title !text-white !mb-3">Get in Touch</h4>
+                <h4 className="widget-title !text-white !mb-3">{t(pathname, 'footer.getInTouch')}</h4>
                 <address className="xl:!pr-20 xxl:!pr-28 not-italic !leading-[inherit] block !mb-4">
                   Mar Mekhael, Beirut, Lebanon
                 </address>
@@ -72,15 +84,15 @@ export default function Footer({ hasMarginTop = true }) {
             {/* /column */}
             <div className="md:w-4/12 xl:w-3/12 lg:w-3/12 w-full flex-[0_0_auto] !px-[15px] max-w-full xl:!mt-0 lg:!mt-0 !mt-[30px]">
               <div className="widget !text-[#cacaca]">
-                <h4 className="widget-title !text-white !mb-3">Learn More</h4>
+                <h4 className="widget-title !text-white !mb-3">{t(pathname, 'footer.learnMore')}</h4>
                 <ul className="pl-0 list-none !mb-0">
-                  {footerLinks.map((elm, i) => (
+                  {footerLinksWithTranslations.map((elm, i) => (
                     <li className={i != 0 ? "!mt-[0.35rem]" : ""} key={i}>
                       <Link
                         className="!text-[#cacaca] hover:!text-[#ef3f6e]"
-                        href={elm.href}
+                        href={`${basePath}${elm.href}`}
                       >
-                        {elm.text}
+                        {t(pathname, elm.textKey)}
                       </Link>
                     </li>
                   ))}
@@ -91,10 +103,9 @@ export default function Footer({ hasMarginTop = true }) {
             {/* /column */}
             <div className="md:w-full xl:w-3/12 lg:w-3/12 w-full flex-[0_0_auto] !px-[15px] max-w-full xl:!mt-0 lg:!mt-0 !mt-[30px]">
               <div className="widget !text-[#cacaca]">
-                <h4 className="widget-title !text-white !mb-3">Our Newsletter</h4>
+                <h4 className="widget-title !text-white !mb-3">{t(pathname, 'footer.ourNewsletter')}</h4>
                 <p className="!mb-5">
-                  Subscribe to our newsletter to get our news &amp; deals
-                  delivered to you.
+                  {t(pathname, 'footer.newsletterDescription')}
                 </p>
                 <div className="newsletter-wrapper">
                   {/* Begin Mailchimp Signup Form */}
@@ -119,11 +130,11 @@ export default function Footer({ hasMarginTop = true }) {
                             className="!ml-[0.05rem] !text-[#959ca9] text-[.75rem] absolute z-[2] h-full overflow-hidden text-start text-ellipsis whitespace-nowrap pointer-events-none origin-[0_0] px-4 py-[0.6rem] left-0 top-0"
                             htmlFor="mce-EMAIL2"
                           >
-                            Email Address
+                            {t(pathname, 'footer.emailAddress')}
                           </label>
                           <input
                             type="submit"
-                            defaultValue="Join"
+                            defaultValue={t(pathname, 'footer.join')}
                             name="subscribe"
                             id="mc-embedded-subscribe2"
                             className="btn btn-primary !text-white !bg-[#605dba] border-[#605dba] hover:text-white hover:!bg-[#ef3f6e] hover:!border-[#ef3f6e] active:text-white active:bg-[#ef3f6e] active:border-[#ef3f6e] disabled:text-white disabled:bg-[#605dba] disabled:border-[#605dba] !relative z-[2] focus:z-[5] hover:!transform-none hover:!translate-none border-0"
