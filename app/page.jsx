@@ -19,7 +19,6 @@ export default function Home() {
   const t = useTranslations();
   return (
     <>
-      <h1>{t('About')}</h1>
       <div className="color-purple demo11">
 
         <div className="grow shrink-0">
