@@ -1,16 +1,21 @@
+"use client";
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { socialLinks } from "@/data/socials";
 import Nav from "./Nav";
+import { usePathname } from "next/navigation";
+import { getBasePath, t } from "@/utlis/translations";
 
 export default function Header() {
+  const pathname = usePathname();
+  const basePath = getBasePath(pathname);
   return (
     <header className="relative wrapper !bg-[#f2f3fb]">
       <nav className="navbar navbar-expand-lg classic transparent !absolute navbar-dark">
         <div className="container xl:!flex-row lg:!flex-row !flex-nowrap items-center">
           <div className="navbar-brand">
-            <Link href={`/`}>
+            <Link href={basePath === '' ? '/' : basePath}>
               <Image
                 className="logo-dark"
                 srcSet="/assets/img/logo-purple@2x.png 2x"
