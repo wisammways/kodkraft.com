@@ -1,17 +1,23 @@
+"use client";
 import React from "react";
 import Nav2 from "../Nav";
 import Link from "next/link";
 import Image from "next/image";
 import LanguageSelect from "./LanguageSelect";
 import { socialLinks } from "@/data/socials";
+import { usePathname } from "next/navigation";
+import { getBasePath, t } from "@/utlis/translations";
 
 export default function Header33() {
+  const pathname = usePathname();
+  const basePath = getBasePath(pathname);
+  
   return (
     <header className="relative wrapper bg-soft-primary !bg-[#edf2fc]">
       <nav className="navbar navbar-expand-lg center-nav transparent position-absolute navbar-dark xl:pt-[.3rem] lg:pt-[.3rem]">
         <div className="container xl:!flex-row lg:!flex-row !flex-nowrap items-center">
           <div className="navbar-brand w-full">
-            <Link href={`/`}>
+            <Link href={basePath === '' ? '/' : basePath}>
               <Image
                 className="logo-dark"
                 srcSet="/assets/img/logo@2x.png 2x"
@@ -85,10 +91,10 @@ export default function Header33() {
               </li>
               <li className="nav-item hidden xl:block lg:block md:block">
                 <Link
-                  href={`/contact`}
+                  href={`${basePath}/contact`}
                   className="btn btn-sm btn-white !rounded-[50rem] hover:translate-y-[-0.15rem] hover:shadow-[0_0.25rem_0.75rem_rgba(30,34,40,0.15)]"
                 >
-                  Contact
+                  {t(pathname, 'nav.contact')}
                 </Link>
               </li>
               <li className="nav-item xl:!hidden lg:!hidden">

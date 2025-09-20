@@ -1,16 +1,23 @@
+"use client";
 import React from "react";
 import Nav3 from "./Nav3";
 import Link from "next/link";
 import Image from "next/image";
 import { socialLinks } from "@/data/socials";
+import { usePathname } from "next/navigation";
+import { getBasePath } from "@/utlis/translations";
+
 export default function Header14() {
+  const pathname = usePathname();
+  const basePath = getBasePath(pathname);
+  
   return (
     <header className="relative wrapper !bg-[#f2f3fb]">
       <nav className="navbar navbar-expand-lg center-logo transparent position-absolute navbar-dark">
         <div className="container justify-between items-center">
           <div className="flex flex-row w-full justify-between items-center xl:!hidden lg:!hidden">
             <div className="navbar-brand">
-              <Link href={`/`}>
+              <Link href={basePath === '' ? '/' : basePath}>
                 <Image
                   className="logo-dark"
                   srcSet="/assets/img/logo-purple@2x.png 2x"
@@ -46,7 +53,7 @@ export default function Header14() {
             <div className="navbar-collapse offcanvas offcanvas-nav offcanvas-start">
               <div className="offcanvas-header lg:mx-auto xl:mx-auto order-0 lg:!order-1 lg:!px-[5rem] xl:!order-1 xl:!px-[5rem] p-[1.5rem] !flex items-center justify-between flex-row">
                 <Link
-                  href={`/`}
+                  href={basePath === '' ? '/' : basePath}
                   className="transition-none hidden lg:!flex xl:!flex"
                 >
                   <Image

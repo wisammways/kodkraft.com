@@ -106,5 +106,15 @@ export const translations = {
     readMore: "Mehr lesen",
     learnMore: "Mehr erfahren",
     getStarted: "Loslegen"
+  },
+
+  // Page titles and breadcrumbs
+  pages: {
+    home: "Startseite",
+    about: "Über uns", 
+    services: "Dienstleistungen",
+    projects: "Projekte",
+    contact: "Kontakt",
+    getInTouch: "Kontakt aufnehmen"
   }
 };
