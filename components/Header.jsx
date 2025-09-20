@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { socialLinks } from "@/data/socials";
 import Nav from "./Nav";
+import LanguageSelect from "./headers/LanguageSelect";
 
 export default function Header() {
   return (
@@ -86,6 +87,9 @@ export default function Header() {
         {/* /.navbar-collapse */}
         <div className="navbar-other lg:!ml-4 xl:!ml-4">
           <ul className="navbar-nav !flex-row !items-center !ml-auto">
+            <li className="nav-item dropdown language-select uppercase group">
+              <LanguageSelect />
+            </li>
             <li className="nav-item hidden xl:block lg:block md:block">
               <a href="#" className="btn btn-sm btn-white !rounded-[50rem]">
                 Book A Consultancy
