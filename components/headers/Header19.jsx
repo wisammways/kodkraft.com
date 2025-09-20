@@ -1,15 +1,22 @@
+"use client";
 import React from "react";
 import Nav from "./Nav";
 import Link from "next/link";
 import Image from "next/image";
 import { socialLinks } from "@/data/socials";
+import { usePathname } from "next/navigation";
+import { getBasePath, t } from "@/utlis/translations";
+
 export default function Header19() {
+  const pathname = usePathname();
+  const basePath = getBasePath(pathname);
+  
   return (
     <header className="relative wrapper !bg-[#ffffff]">
       <nav className="navbar navbar-expand-lg classic transparent navbar-light">
         <div className="container xl:!flex-row lg:!flex-row !flex-nowrap items-center">
           <div className="navbar-brand w-full">
-            <Link href={`/`}>
+            <Link href={basePath === '' ? '/' : basePath}>
               <Image
                 srcSet="/assets/img/logo-dark@2x.png 2x"
                 alt="image"
@@ -69,10 +76,10 @@ export default function Header19() {
             <ul className="navbar-nav !flex-row !items-center !ml-auto">
               <li className="nav-item hidden xl:block lg:block md:block">
                 <Link
-                  href={`/contact`}
+                  href={`${basePath}/contact`}
                   className="btn btn-sm btn-sky !text-white !bg-[#5eb9f0] border-[#5eb9f0] hover:text-white hover:!bg-[#5eb9f0] hover:!border-[#5eb9f0] focus:shadow-[rgba(88,167,216,1)] active:text-white active:!bg-[#5eb9f0] active:border-[#5eb9f0] disabled:text-white disabled:!bg-[#5eb9f0] disabled:border-[#5eb9f0] !rounded-[50rem]"
                 >
-                  Contact
+                  {t(pathname, 'nav.contact')}
                 </Link>
               </li>
               <li className="nav-item xl:!hidden lg:!hidden">
