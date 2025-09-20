@@ -38,7 +38,7 @@ export const translations = {
       description: "Entwicklung überzeugender Markenstrategien und Visualisierungen zur Unterscheidung Ihres Unternehmens."
     },
     uxui: {
-      title: "UX/UI Design",
+      title: "UX/UI-Design",
       description: "Gestaltung nahtloser, benutzerzentrierter Schnittstellen, die das Engagement und die Benutzerfreundlichkeit verbessern."
     },
     seo: {
