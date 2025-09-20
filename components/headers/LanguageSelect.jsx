@@ -11,13 +11,16 @@ export default function LanguageSelect({ color = "#605dba" }) {
   // Define language mappings
   const languages = [
     { code: "En", label: "English" },
-    { code: "De", label: "Deutsch" }
+    { code: "De", label: "Deutsch" },
+    { code: "Ar", label: "العربية" }
   ];
 
   // Detect current language based on pathname
   useEffect(() => {
     if (pathname.startsWith('/de')) {
       setActiveLang("De");
+    } else if (pathname.startsWith('/ar')) {
+      setActiveLang("Ar");
     } else {
       setActiveLang("En");
     }
@@ -33,13 +36,28 @@ export default function LanguageSelect({ color = "#605dba" }) {
         newPath = "/de";
       } else if (pathname.startsWith('/de')) {
         newPath = pathname; // Already on German
+      } else if (pathname.startsWith('/ar')) {
+        newPath = pathname.replace('/ar', '/de');
       } else {
         newPath = `/de${pathname}`;
+      }
+    } else if (langCode === "Ar") {
+      // Switch to Arabic
+      if (pathname === "/" || pathname === "") {
+        newPath = "/ar";
+      } else if (pathname.startsWith('/ar')) {
+        newPath = pathname; // Already on Arabic
+      } else if (pathname.startsWith('/de')) {
+        newPath = pathname.replace('/de', '/ar');
+      } else {
+        newPath = `/ar${pathname}`;
       }
     } else {
       // Switch to English
       if (pathname.startsWith('/de')) {
         newPath = pathname.replace('/de', '') || '/';
+      } else if (pathname.startsWith('/ar')) {
+        newPath = pathname.replace('/ar', '') || '/';
       } else {
         newPath = pathname; // Already on English
       }

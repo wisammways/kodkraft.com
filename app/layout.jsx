@@ -8,9 +8,15 @@ import scrollQue from "../utlis/scrollCue.min.js";
 import ProgressWrap from "@/components/common/ProgressWrap";
 import initPlayer from "@/utlis/initPlayer";
 import { GoogleTagManager } from '@next/third-parties/google'
+import { getCurrentLanguage, isRTL } from "@/utlis/translations";
 
 export default async function RootLayout({ children }) {
   const pathname = usePathname();
+  
+  // Determine current language and direction
+  const currentLang = getCurrentLanguage(pathname);
+  const isRtl = isRTL(pathname);
+  
   useEffect(() => {
     if (typeof window !== "undefined") {
       import("bootstrap/dist/js/bootstrap.esm").then((module) => {
@@ -18,6 +24,19 @@ export default async function RootLayout({ children }) {
       });
     }
   }, []);
+  
+  // Update document attributes when language changes
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const html = document.documentElement;
+      html.setAttribute('lang', currentLang);
+      html.setAttribute('dir', isRtl ? 'rtl' : 'ltr');
+      
+      // Also update body class for styling purposes
+      document.body.classList.toggle('rtl', isRtl);
+    }
+  }, [currentLang, isRtl]);
+  
   // const rellaxRef = useRef(null);
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -197,7 +216,7 @@ export default async function RootLayout({ children }) {
     });
   }, [pathname]);
   return (
-    <html lang="en">
+    <html lang={currentLang} dir={isRtl ? 'rtl' : 'ltr'}>
       <head>
         <link
           href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Manrope:wght@400;500;700"
@@ -207,10 +226,17 @@ export default async function RootLayout({ children }) {
           href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@1,300;1,400;1,500;1,600;1,700&display=swap"
           rel="stylesheet"
         />
+        {/* Add Arabic font for better RTL support */}
+        {isRtl && (
+          <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+          />
+        )}
         <GoogleTagManager gtmId="GTM-P562SQ6N" />
       </head>
 
-      <body>
+      <body className={isRtl ? 'rtl' : ''}>
         {children}
         <ProgressWrap />
       </body>
