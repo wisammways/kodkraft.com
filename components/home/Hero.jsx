@@ -5,6 +5,8 @@ import Link from "next/link";
 import { useState } from "react";
 import { Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { usePathname } from "next/navigation";
+import { t, getBasePath } from "@/utlis/translations";
 
 const sliderItems = [
   {
@@ -17,6 +19,9 @@ const sliderItems = [
 
 export default function Hero() {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
+  const basePath = getBasePath(pathname);
+
   return (
     <>
       <section
@@ -35,11 +40,11 @@ export default function Hero() {
               data-delay={600}
             >
               <h1 className="xl:!text-[2.2rem] !text-[calc(1.345rem_+_1.14vw)] font-bold !leading-[1.25] !mb-5 !text-white">
-                Coding the web,<br />
-                Crafting business growth
+                {t(pathname, 'hero.title')}<br />
+                {t(pathname, 'hero.titleLine2')}
               </h1>
               <p className="lead text-[1.05rem] !leading-[1.5] font-medium !mb-7 xl:!pr-10">
-                We partner with you to transform your online presence into a powerful tool for growth and success. Let's build something amazing together.
+                {t(pathname, 'hero.subtitle')}
               </p>
               <div
                 className="flex justify-center lg:!justify-start xl:!justify-start"
@@ -52,15 +57,15 @@ export default function Hero() {
                     href={`#services`}
                     className="btn btn-lg btn-white !rounded-[50rem] !mr-2"
                   >
-                    What We Do
+                    {t(pathname, 'hero.whatWeDo')}
                   </Link>
                 </span>
                 <span>
                   <Link
-                    href={`/contact`}
+                    href={`${basePath}/contact`}
                     className="btn btn-lg btn-outline-white !text-white bg-[#ffffff] !border-white !border-[2px] hover:!text-[#343f52] hover:bg-[#ffffff] hover:border-white focus:shadow-[rgba(255,255,255,1)] active:!text-[#343f52] active:bg-[#ffffff] active:border-white disabled:text-white disabled:bg-transparent disabled:border-white !rounded-[50rem]"
                   >
-                    Contact Us
+                    {t(pathname, 'hero.contactUs')}
                   </Link>
                 </span>
               </div>

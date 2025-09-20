@@ -13,13 +13,13 @@ import {
 import { usePathname } from "next/navigation";
 import { useEffect } from "react";
 import LanguageSelect from "./headers/LanguageSelect";
+import { t, getBasePath } from "@/utlis/translations";
 
 export default function Nav() {
   const pathname = usePathname();
   
-  // Detect if we're on German version
-  const isGerman = pathname.startsWith('/de');
-  const basePath = isGerman ? '/de' : '';
+  // Get base path for current language
+  const basePath = getBasePath(pathname);
   
   const getActiveParent = (menuLinks) => {
     return menuLinks.find((parent) => {
@@ -82,7 +82,7 @@ export default function Nav() {
             } `}
           href={basePath === '' ? '/' : basePath}
         >
-          {isGerman ? 'Startseite' : 'Home'}
+          {t(pathname, 'nav.home')}
         </Link>
       </li>
       <li className="nav-item dropdown dropdown-mega">
@@ -91,7 +91,7 @@ export default function Nav() {
             } `}
           href={`${basePath}/about`}
         >
-          {isGerman ? 'Über uns' : 'About us'}
+          {t(pathname, 'nav.about')}
         </Link>
       </li>
       <li className="nav-item dropdown dropdown-mega">
@@ -100,7 +100,7 @@ export default function Nav() {
             } `}
           href={`${basePath}/services`}
         >
-          {isGerman ? 'Dienstleistungen' : 'Services'}
+          {t(pathname, 'nav.services')}
         </Link>
       </li>
       <li className="nav-item dropdown dropdown-mega">
@@ -109,7 +109,7 @@ export default function Nav() {
             } `}
           href={`${basePath}/projects`}
         >
-          {isGerman ? 'Projekte' : 'Projects'}
+          {t(pathname, 'nav.projects')}
         </Link>
       </li>
       <li className="nav-item dropdown dropdown-mega">
@@ -118,7 +118,7 @@ export default function Nav() {
             } `}
           href={`${basePath}/contact`}
         >
-          {isGerman ? 'Kontakt' : 'Contact us'}
+          {t(pathname, 'nav.contact')}
         </Link>
       </li>
       <li className="nav-item dropdown">

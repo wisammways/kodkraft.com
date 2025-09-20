@@ -2,8 +2,12 @@
 import React from "react";
 import Image from "next/image";
 import ProgressCircle from "../common/CircularProgress";
+import { usePathname } from "next/navigation";
+import { t } from "@/utlis/translations";
 
 export default function OurValue() {
+    const pathname = usePathname();
+
     return (
         <section className="wrapper !bg-[#ffffff]">
             <div className="container pt-[75px] md:pt-25 pb-[75px] md:pb-25">
@@ -65,7 +69,7 @@ export default function OurValue() {
                                                 100+
                                             </h3>
                                             <p className="!text-[0.8rem] leading-normal !mb-0 whitespace-nowrap">
-                                                Happy Clients
+                                                {t(pathname, 'ourValue.happyClients')}
                                             </p>
                                         </div>
                                     </div>
@@ -81,7 +85,7 @@ export default function OurValue() {
                                     <div className="progressbar semi-circle fuchsia !relative !mb-3 !m-[0_auto_1rem] !w-[8.5rem] !h-[4.25rem]">
                                         <ProgressCircle max={80} />
                                     </div>
-                                    <h4 className="!mb-0">Creativity</h4>
+                                    <h4 className="!mb-0">{t(pathname, 'ourValue.creativity')}</h4>
                                 </div>
                                 {/*/.card-body */}
                             </div>
@@ -90,27 +94,27 @@ export default function OurValue() {
                         {/*/column */}
                         <div className="xl:w-5/12 lg:w-5/12 w-full flex-[0_0_auto] xl:!px-[20px] lg:!px-[20px] md:!px-[20px] !px-[15px] max-w-full !mt-[50px]">
                             <h2 className="!text-[0.8rem] !tracking-[0.02rem] !leading-[1.35] uppercase text-gradient gradient-1 !mb-3">
-                                What Makes Us Different?
+                                {t(pathname, 'ourValue.title')}
                             </h2>
                             <h3 className="xl:!text-[1.9rem] !text-[calc(1.315rem_+_0.78vw)] font-semibold !leading-[1.25] !tracking-[normal] !mb-4 xl:mr-[-1.25rem] lg:mr-[-1.25rem]">
-                                Crafted with Care,<br />
-                                Coded for You.
+                                {t(pathname, 'ourValue.subtitle')}<br />
+                                {t(pathname, 'ourValue.subtitleLine2')}
                             </h3>
                             <p className="!mb-6">
-                                We believe that every digital experience should be a reflection of its creator. That's why we pour our heart and soul into every project. Our passion for crafting beautiful, intuitive, and effective websites sets us apart. We take pride in paying attention to the smallest details, ensuring that your online presence is not only visually stunning but also user-friendly and accessible worldwide.
+                                {t(pathname, 'ourValue.description')}
                             </p>
                             <ul className="pl-0 list-none bullet-bg bullet-soft-primary">
                                 <li className="relative !pl-6">
                                     <i className="uil uil-check absolute left-0 w-4 h-4 text-[0.8rem] leading-none !tracking-[normal] !text-center flex items-center justify-center bg-secondary !text-white rounded-[100%] top-[0.2rem] before:content-['\e9dd'] before:align-middle before:table-cell" />
-                                    Every project is a masterpiece, crafted to perfection..
+                                    {t(pathname, 'ourValue.features.masterpiece')}
                                 </li>
                                 <li className="relative !pl-6">
                                     <i className="uil uil-check absolute left-0 w-4 h-4 text-[0.8rem] leading-none !tracking-[normal] !text-center flex items-center justify-center bg-secondary !text-white rounded-[100%] top-[0.2rem] before:content-['\e9dd'] before:align-middle before:table-cell" />
-                                    From typography to color palettes, we obsess over the details.
+                                    {t(pathname, 'ourValue.features.details')}
                                 </li>
                                 <li className="relative !pl-6">
                                     <i className="uil uil-check absolute left-0 w-4 h-4 text-[0.8rem] leading-none !tracking-[normal] !text-center flex items-center justify-center bg-secondary !text-white rounded-[100%] top-[0.2rem] before:content-['\e9dd'] before:align-middle before:table-cell" />
-                                    Creating intuitive interfaces that are easy to navigate and enjoyable to use.
+                                    {t(pathname, 'ourValue.features.intuitive')}
                                 </li>
                             </ul>
                         </div>

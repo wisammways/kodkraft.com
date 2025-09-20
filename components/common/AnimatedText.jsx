@@ -1,14 +1,18 @@
 "use client";
 import React, { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
+import { t } from "@/utlis/translations";
 
-const stringsDefault = [
-  "your business.",
-  "your portfolio.",
-  "your startup.",
-  "digital marketing.",
-];
+const AnimatedText = () => {
+  const pathname = usePathname();
+  
+  const strings = [
+    t(pathname, 'animatedText.business'),
+    t(pathname, 'animatedText.portfolio'),
+    t(pathname, 'animatedText.startup'),
+    t(pathname, 'animatedText.digitalMarketing'),
+  ];
 
-const AnimatedText = ({ strings = stringsDefault }) => {
   const [currentStr, setCurrentStr] = useState(strings[0]);
   const [animatedText, setAnimatedText] = useState(true);
 
@@ -31,7 +35,7 @@ const AnimatedText = ({ strings = stringsDefault }) => {
     }, 2000);
 
     return () => clearInterval(interval); // Cleanup interval on component unmount
-  }, []);
+  }, [strings]);
 
   return (
     <>
