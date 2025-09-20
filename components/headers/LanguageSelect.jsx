@@ -1,10 +1,56 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { usePathname, useRouter } from "next/navigation";
 
 export default function LanguageSelect({ color = "#605dba" }) {
-  const languages = ["En", "De", "Es"];
+  const pathname = usePathname();
+  const router = useRouter();
   const [activeLang, setActiveLang] = useState("En");
+
+  // Define language mappings
+  const languages = [
+    { code: "En", label: "English" },
+    { code: "De", label: "Deutsch" }
+  ];
+
+  // Detect current language based on pathname
+  useEffect(() => {
+    if (pathname.startsWith('/de')) {
+      setActiveLang("De");
+    } else {
+      setActiveLang("En");
+    }
+  }, [pathname]);
+
+  // Handle language switch
+  const handleLanguageSwitch = (langCode) => {
+    let newPath;
+    
+    if (langCode === "De") {
+      // Switch to German
+      if (pathname === "/" || pathname === "") {
+        newPath = "/de";
+      } else if (pathname.startsWith('/de')) {
+        newPath = pathname; // Already on German
+      } else {
+        newPath = `/de${pathname}`;
+      }
+    } else {
+      // Switch to English
+      if (pathname.startsWith('/de')) {
+        newPath = pathname.replace('/de', '') || '/';
+      } else {
+        newPath = pathname; // Already on English
+      }
+    }
+    
+    if (newPath !== pathname) {
+      router.push(newPath);
+    }
+    setActiveLang(langCode);
+  };
+
   return (
     <>
       {" "}
@@ -20,15 +66,18 @@ export default function LanguageSelect({ color = "#605dba" }) {
       </a>
       <ul className="dropdown-menu group-hover:shadow-[0_0.25rem_0.75rem_rgba(30,34,40,0.15)]">
         {languages.map((lang) => (
-          <li className="nav-item" key={lang}>
+          <li className="nav-item" key={lang.code}>
             <a
               href="#"
-              onClick={() => setActiveLang(lang)}
+              onClick={(e) => {
+                e.preventDefault();
+                handleLanguageSwitch(lang.code);
+              }}
               className={`dropdown-item hover:!text-[${color}] hover:bg-[inherit] ${
-                activeLang === lang ? `!text-[${color}]` : ""
+                activeLang === lang.code ? `!text-[${color}]` : ""
               }`}
             >
-              {lang}
+              {lang.label}
             </a>
           </li>
         ))}
