@@ -1,7 +1,10 @@
 "use client";
 import React from "react";
+import { usePathname } from "next/navigation";
+import { t } from "@/utlis/translations";
 
 export default function Contact1() {
+  const pathname = usePathname();
   return (
     <section className="wrapper !bg-[#ffffff] relative border-0 upper-end before:top-[-4rem] before:border-l-transparent before:border-r-[100vw] before:border-t-[4rem] before:border-[#fefefe] before:content-[''] before:block before:absolute before:z-0 before:border-y-transparent before:border-0 before:border-solid before:right-0">
       <div className="container pb-12">
@@ -26,7 +29,7 @@ export default function Contact1() {
                         </div>
                       </div>
                       <div className="!self-start !justify-start">
-                        <h5 className="!mb-1">Address</h5>
+                        <h5 className="!mb-1">{t(pathname, 'contact.address')}</h5>
                         <address className="not-italic !leading-[inherit] !mb-4">
                           Mar Mekhael,
                           <br />
@@ -42,7 +45,7 @@ export default function Contact1() {
                         </div>
                       </div>
                       <div>
-                        <h5 className="!mb-1">Phone</h5>
+                        <h5 className="!mb-1">{t(pathname, 'contact.phone')}</h5>
                         <p><a href="tel:+96181206923">+961 81 206 923</a></p>
                       </div>
                     </div>
@@ -54,7 +57,7 @@ export default function Contact1() {
                         </div>
                       </div>
                       <div>
-                        <h5 className="!mb-1">E-mail</h5>
+                        <h5 className="!mb-1">{t(pathname, 'contact.email')}</h5>
                         <p className="!mb-0">
                           <a
                             href="mailto:info@kodkraft.com"

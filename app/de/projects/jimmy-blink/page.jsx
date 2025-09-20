@@ -1,4 +1,8 @@
+"use client";
 import Footer5 from "@/components/footers/Footer5";
+
+import { usePathname } from "next/navigation";
+import { t, getBasePath } from "@/utlis/translations";
 import Header from "@/components/Header";
 import ProjectDetails from "@/components/projects/ProjectDetails";
 import ProjectNavigation from "@/components/projects/ProjectNavigation";
@@ -6,13 +10,9 @@ import Link from "next/link";
 
 import React from "react";
 
-export const metadata = {
-  title:
-    "Single Project 01 || Sandbox - Modern & Multipurpose React Next.js Template with Tailwind CSS",
-  description:
-    "Sandbox - Modern & Multipurpose React Next.js Template with Tailwind CSS",
-};
 export default function SingleProjectPage() {
+  const pathname = usePathname();
+  const basePath = getBasePath(pathname);
   return (
     <>
       <div className="grow shrink-0">
@@ -30,8 +30,8 @@ export default function SingleProjectPage() {
                 <nav className="inline-block" aria-label="breadcrumb">
                   <ol className="breadcrumb flex flex-wrap bg-[none] p-0 !rounded-none list-none !mb-[20px]">
                     <li className="breadcrumb-item flex !text-[#60697b]">
-                      <Link className="!text-white hover:text-white" href="/">
-                        Home
+                      <Link className="!text-white hover:text-white" href={basePath === '' ? '/' : basePath}>
+                        {t(pathname, 'pages.home')}
                       </Link>
                     </li>
                     <li

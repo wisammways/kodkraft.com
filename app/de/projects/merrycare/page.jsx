@@ -1,5 +1,8 @@
 "use client";
 
+import { usePathname } from "next/navigation";
+import { t, getBasePath } from "@/utlis/translations";
+
 import Image from "next/image";
 import { Gallery, Item } from "react-photoswipe-gallery";
 import Footer5 from "@/components/footers/Footer5";
@@ -18,6 +21,8 @@ const images = [
 
 
 export default function MerryCareProjectPage() {
+  const pathname = usePathname();
+  const basePath = getBasePath(pathname);
   return (
     <>
       <div className="grow shrink-0">
@@ -35,8 +40,8 @@ export default function MerryCareProjectPage() {
                 <nav className="inline-block" aria-label="breadcrumb">
                   <ol className="breadcrumb flex flex-wrap bg-[none] p-0 !rounded-none list-none !mb-[20px]">
                     <li className="breadcrumb-item flex !text-[#60697b]">
-                      <Link className="!text-white hover:text-white" href="/">
-                        Home
+                      <Link className="!text-white hover:text-white" href={basePath === '' ? '/' : basePath}>
+                        {t(pathname, 'pages.home')}
                       </Link>
                     </li>
                     <li
