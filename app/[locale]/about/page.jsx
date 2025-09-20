@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Contact from "@/components/homes/home-15/Contact";
 import Image from "next/image";
 import React from "react";
+import { useTranslations } from 'next-intl';
 
 export const metadata = {
   title:
@@ -12,6 +13,7 @@ export const metadata = {
 };
 
 export default function About() {
+  const t = useTranslations();
   return (
     <>
       <div className="grow shrink-0">
@@ -26,20 +28,20 @@ export default function About() {
             <div className="flex flex-wrap mx-[-15px]">
               <div className="xl:w-8/12 lg:w-8/12 w-full flex-[0_0_auto] !px-[15px] max-w-full !mx-auto">
                 <h1 className="!text-[calc(1.365rem_+_1.38vw)] font-bold !leading-[1.2] xl:!text-[2.4rem] !mb-3 !text-white">
-                  About Us
+                  {t('About')}
                 </h1>
                 <nav className="inline-block" aria-label="breadcrumb">
                   <ol className="breadcrumb flex flex-wrap bg-[none] p-0 !rounded-none list-none !mb-[20px]">
                     <li className="breadcrumb-item flex !text-[#60697b]">
                       <a className="!text-white hover:text-white" href="/">
-                        Home
+                        {t('Home')}
                       </a>
                     </li>
                     <li
                       className="breadcrumb-item flex !text-white !pl-2 before:font-normal before:!flex before:items-center before:text-[rgba(255,255,255,.5)] before:content-['\e931'] before:text-[0.9rem] before:-mt-px before:!pr-2 before:font-Unicons active"
                       aria-current="page"
                     >
-                      About us
+                      {t('About')}
                     </li>
                   </ol>
                 </nav>
@@ -119,13 +121,13 @@ export default function About() {
                   />
                 </svg>
                 <h2 className="!text-[calc(1.305rem_+_0.66vw)] font-bold xl:!text-[1.8rem] !leading-[1.3] !mb-3">
-                  Who Are We?
+                  {t('Who_Are_We')}
                 </h2>
                 <p className="lead !text-[1.05rem] !leading-[1.6] font-medium">
-                  We are an agency that combines innovative strategy with cutting-edge design and development expertise.
+                  {t('We_are_an_agency_that_combines_innovative_strategy')}
                 </p>
                 <p className="!mb-6">
-                  We are a team of skilled developers, graphic designers, and UX specialists united by a shared passion for crafting exceptional digital experiences. At KodKraft, we bring creativity, precision, and innovation to every project, ensuring that each solution is tailored to meet your unique needs. Together, we strive to create websites and apps that are visually stunning, user-friendly, and built to drive success.
+                  {t('We_are_a_team_of_skilled_developers')}
                 </p>
                 {/*/.row */}
               </div>
@@ -153,7 +155,7 @@ export default function About() {
                   />
                 </svg>
                 <h2 className="!text-[calc(1.305rem_+_0.66vw)] font-bold xl:!text-[1.8rem] !leading-[1.3] !mb-4 xl:!px-[4.5rem] lg:!px-[4.5rem]">
-                  Here are 3 streamlined steps to bring your digital projects to life.
+                  {t('Here_are_3_streamlined_steps')}
                 </h2>
               </div>
               {/* /column */}
@@ -172,9 +174,9 @@ export default function About() {
                         </span>
                       </div>
                       <div>
-                        <h4 className="!mb-1">Define & Plan</h4>
+                        <h4 className="!mb-1">{t('Define_Plan')}</h4>
                         <p className="!mb-0">
-                          We collaborate to outline your goals, scope, and requirements.
+                          {t('We_collaborate_to_outline')}
                         </p>
                       </div>
                     </div>
@@ -193,9 +195,9 @@ export default function About() {
                         </span>
                       </div>
                       <div>
-                        <h4 className="!mb-1">Design & Develop</h4>
+                        <h4 className="!mb-1">{t('Design_Develop')}</h4>
                         <p className="!mb-0">
-                          We create stunning designs and build robust, scalable solutions.
+                          {t('We_create_stunning_designs')}
                         </p>
                       </div>
                     </div>
@@ -214,9 +216,9 @@ export default function About() {
                         </span>
                       </div>
                       <div>
-                        <h4 className="!mb-1">Test & Launch</h4>
+                        <h4 className="!mb-1">{t('Test_Launch')}</h4>
                         <p className="!mb-0">
-                          We rigorously test and deploy your project for seamless performance.
+                          {t('We_rigorously_test')}
                         </p>
                       </div>
                     </div>
@@ -228,21 +230,19 @@ export default function About() {
               {/*/column */}
               <div className="xl:w-6/12 lg:w-6/12 w-full flex-[0_0_auto] xl:!px-[35px] lg:!px-[20px] !px-[15px] !mt-[50px] max-w-full">
                 <h2 className="!text-[calc(1.265rem_+_0.18vw)] font-bold xl:!text-[1.4rem] !leading-[1.35] !mb-3">
-                  How It Works?
+                  {t('How_It_Works')}
                 </h2>
                 <p className="lead !text-[1.05rem] !leading-[1.6] font-medium xl:!pr-5 lg:!pr-5">
-                  Discover how we transform your ideas into powerful solutions with our proven process.
+                  {t('Discover_how_we_transform')}
                 </p>
                 <p>
-                  We combine creativity, technology, and strategy to deliver exceptional results. Our team works closely with you to ensure every detail aligns with your vision and business goals. From concept to launch, we prioritize quality, innovation, and user experience.
-
-
+                  {t('We_combine_creativity')}
                 </p>
                 <a
                   href="contact"
                   className="btn btn-primary !text-white !bg-[#605dba] border-[#605dba] hover:text-white hover:bg-[#605dba] hover:!border-[#605dba] active:text-white active:bg-[#605dba] active:border-[#605dba] disabled:text-white disabled:bg-[#605dba] disabled:border-[#605dba] !rounded-[50rem] !mb-0 hover:translate-y-[-0.15rem] hover:shadow-[0_0.25rem_0.75rem_rgba(30,34,40,0.15)]"
                 >
-                  Book A Consultancy
+                  {t('Book_A_Consultancy')}
                 </a>
               </div>
               {/*/column */}

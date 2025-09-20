@@ -1,10 +1,38 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useRouter, usePathname } from "next/navigation";
+import { useLocale } from 'next-intl';
 
 export default function LanguageSelect({ color = "#605dba" }) {
-  const languages = ["En", "De", "Es"];
-  const [activeLang, setActiveLang] = useState("En");
+  const router = useRouter();
+  const pathname = usePathname();
+  const locale = useLocale();
+  
+  const languages = [
+    { code: "en", label: "En" },
+    { code: "de", label: "De" },
+  ];
+  
+  const [activeLang, setActiveLang] = useState(
+    languages.find(lang => lang.code === locale)?.label || "En"
+  );
+
+  const handleLanguageChange = (langCode, langLabel) => {
+    setActiveLang(langLabel);
+    
+    // Get the current pathname without the locale prefix
+    const currentPath = pathname.replace(`/${locale}`, '') || '/';
+    
+    // Navigate to the new locale
+    if (langCode === 'en') {
+      // For English, we want to redirect to the [locale] route
+      router.push(`/en${currentPath}`);
+    } else {
+      router.push(`/${langCode}${currentPath}`);
+    }
+  };
+
   return (
     <>
       {" "}
@@ -20,15 +48,18 @@ export default function LanguageSelect({ color = "#605dba" }) {
       </a>
       <ul className="dropdown-menu group-hover:shadow-[0_0.25rem_0.75rem_rgba(30,34,40,0.15)]">
         {languages.map((lang) => (
-          <li className="nav-item" key={lang}>
+          <li className="nav-item" key={lang.code}>
             <a
               href="#"
-              onClick={() => setActiveLang(lang)}
+              onClick={(e) => {
+                e.preventDefault();
+                handleLanguageChange(lang.code, lang.label);
+              }}
               className={`dropdown-item hover:!text-[${color}] hover:bg-[inherit] ${
-                activeLang === lang ? `!text-[${color}]` : ""
+                activeLang === lang.label ? `!text-[${color}]` : ""
               }`}
             >
-              {lang}
+              {lang.label}
             </a>
           </li>
         ))}

@@ -4,6 +4,7 @@ import Footer5 from "@/components/footers/Footer5";
 import Header from "@/components/Header";
 
 import React from "react";
+import { useTranslations } from 'next-intl';
 
 export const metadata = {
   title:
@@ -12,6 +13,7 @@ export const metadata = {
     "Ready to elevate your digital presence? Contact KodKraft’s team today for custom web, mobile, and branding solutions. Let’s collaborate!",
 };
 export default function ContactPage() {
+  const t = useTranslations();
   return (
     <>
       <div className="grow shrink-0">
@@ -24,20 +26,20 @@ export default function ContactPage() {
             <div className="flex flex-wrap mx-[-15px]">
               <div className="xl:w-8/12 lg:w-8/12 w-full flex-[0_0_auto] !px-[15px] max-w-full !mx-auto">
                 <h1 className="!text-[calc(1.365rem_+_1.38vw)] font-bold !leading-[1.2] xl:!text-[2.4rem] !mb-3 !text-white">
-                  Get in Touch
+                  {t('Get_in_Touch')}
                 </h1>
                 <nav className="inline-block" aria-label="breadcrumb">
                   <ol className="breadcrumb flex flex-wrap bg-[none] p-0 !rounded-none list-none !mb-[20px]">
                     <li className="breadcrumb-item flex !text-[#60697b]">
                       <a className="!text-white hover:text-white" href="#">
-                        Home
+                        {t('Home')}
                       </a>
                     </li>
                     <li
                       className="breadcrumb-item flex !text-white !pl-2 before:font-normal before:!flex before:items-center before:text-[rgba(255,255,255,.5)] before:content-['\e931'] before:text-[0.9rem] before:-mt-px before:!pr-2 before:font-Unicons active"
                       aria-current="page"
                     >
-                      Contact
+                      {t('Contact')}
                     </li>
                   </ol>
                 </nav>
