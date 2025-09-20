@@ -12,9 +12,15 @@ import {
 } from "@/data/menu";
 import { usePathname } from "next/navigation";
 import { useEffect } from "react";
+import LanguageSelect from "./headers/LanguageSelect";
 
 export default function Nav() {
   const pathname = usePathname();
+  
+  // Detect if we're on German version
+  const isGerman = pathname.startsWith('/de');
+  const basePath = isGerman ? '/de' : '';
+  
   const getActiveParent = (menuLinks) => {
     return menuLinks.find((parent) => {
       if (parent.links) {
@@ -74,46 +80,49 @@ export default function Nav() {
         <Link
           className={`nav-link !text-[.85rem] !tracking-[normal]   ${demos.some((link) => link.href == pathname) ? "!text-[#54a8c7]" : ""
             } `}
-          href="/"
+          href={basePath === '' ? '/' : basePath}
         >
-          Home
+          {isGerman ? 'Startseite' : 'Home'}
         </Link>
       </li>
       <li className="nav-item dropdown dropdown-mega">
         <Link
           className={`nav-link !text-[.85rem] !tracking-[normal]   ${demos.some((link) => link.href == pathname) ? "!text-[#54a8c7]" : ""
             } `}
-          href="/about"
+          href={`${basePath}/about`}
         >
-          About us
+          {isGerman ? 'Über uns' : 'About us'}
         </Link>
       </li>
       <li className="nav-item dropdown dropdown-mega">
         <Link
           className={`nav-link !text-[.85rem] !tracking-[normal]   ${demos.some((link) => link.href == pathname) ? "!text-[#54a8c7]" : ""
             } `}
-          href="/services"
+          href={`${basePath}/services`}
         >
-          Services
+          {isGerman ? 'Dienstleistungen' : 'Services'}
         </Link>
       </li>
       <li className="nav-item dropdown dropdown-mega">
         <Link
           className={`nav-link !text-[.85rem] !tracking-[normal]   ${demos.some((link) => link.href == pathname) ? "!text-[#54a8c7]" : ""
             } `}
-          href="/projects"
+          href={`${basePath}/projects`}
         >
-          Projects
+          {isGerman ? 'Projekte' : 'Projects'}
         </Link>
       </li>
       <li className="nav-item dropdown dropdown-mega">
         <Link
           className={`nav-link !text-[.85rem] !tracking-[normal]   ${demos.some((link) => link.href == pathname) ? "!text-[#54a8c7]" : ""
             } `}
-          href="/contact"
+          href={`${basePath}/contact`}
         >
-          Contact us
+          {isGerman ? 'Kontakt' : 'Contact us'}
         </Link>
+      </li>
+      <li className="nav-item dropdown">
+        <LanguageSelect />
       </li>
     </ul>
   );

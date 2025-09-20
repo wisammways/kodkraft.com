@@ -9,9 +9,9 @@ import Clients3 from "@/components/blocks/clients/Clients3";
 
 export const metadata = {
   title:
-    "KodKraft - Leading Software Development Company in Lebanon",
+    "KodKraft - Führendes Softwareentwicklungsunternehmen im Libanon",
   description:
-    "KodKraft crafts stunning, user-friendly websites & apps. Skilled developers, designers, and UX specialists united to drive your digital success. Let’s build something great!",
+    "KodKraft erstellt atemberaubende, benutzerfreundliche Websites und Apps. Erfahrene Entwickler, Designer und UX-Spezialisten vereint, um Ihren digitalen Erfolg voranzutreiben. Lassen Sie uns etwas Großartiges schaffen!",
 };
 
 export default function Home() {

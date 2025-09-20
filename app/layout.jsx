@@ -8,7 +8,6 @@ import scrollQue from "../utlis/scrollCue.min.js";
 import ProgressWrap from "@/components/common/ProgressWrap";
 import initPlayer from "@/utlis/initPlayer";
 import { GoogleTagManager } from '@next/third-parties/google'
-import { NextIntlClientProvider } from 'next-intl';
 
 export default async function RootLayout({ children }) {
   const pathname = usePathname();
@@ -212,10 +211,8 @@ export default async function RootLayout({ children }) {
       </head>
 
       <body>
-        <NextIntlClientProvider locale="en">
-          {children}
-          <ProgressWrap />
-        </NextIntlClientProvider>
+        {children}
+        <ProgressWrap />
       </body>
     </html>
   );
