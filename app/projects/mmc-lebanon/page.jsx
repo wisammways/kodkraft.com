@@ -9,10 +9,10 @@ import Link from "next/link";
 import React from "react";
 
 const images = [
-  { src: "/assets/images/projects/1.jpg", alt: "MMC Lebanon Website" },
-  { src: "/assets/images/projects/1.jpg", alt: "MMC Lebanon Design" },
-  { src: "/assets/images/projects/1.jpg", alt: "MMC Lebanon Mobile" },
-  { src: "/assets/images/projects/1.jpg", alt: "MMC Lebanon Features" },
+  { src: "/assets/images/projects/mmc-lebanon/1.jpg", alt: "MMC Lebanon Website" },
+  { src: "/assets/images/projects/mmc-lebanon/2.jpg", alt: "MMC Lebanon Design" },
+  { src: "/assets/images/projects/mmc-lebanon/3.jpg", alt: "MMC Lebanon Mobile" },
+  { src: "/assets/images/projects/mmc-lebanon/4.jpg", alt: "MMC Lebanon Features" },
 ];
 
 
@@ -66,7 +66,7 @@ export default function MMCLebanonProjectPage() {
                     <Image
                       className="!rounded-[.4rem]"
                       alt="MMC Lebanon Website"
-                      src="/assets/images/projects/1.jpg"
+                      src="/assets/images/projects/mmc-lebanon/mmc-main.jpg"
                       width={2400}
                       height={1640}
                     />
