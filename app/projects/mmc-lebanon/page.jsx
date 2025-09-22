@@ -73,13 +73,31 @@ export default function MMCLebanonProjectPage() {
                   </figure>
                   <div className="flex flex-wrap mx-[-15px]">
                     <div className="xl:w-10/12 xl:!ml-[8.33333333%] lg:w-10/12 lg:!ml-[8.33333333%] w-full flex-[0_0_auto] !px-[15px] max-w-full">
-                      <h2 className="!text-[calc(1.265rem_+_0.18vw)] font-bold xl:!text-[1.4rem] !leading-[1.35] !mb-4">
-                        About the Project
-                      </h2>
                       <div className="flex flex-wrap mx-0">
                         <div className="xl:w-9/12 lg:w-9/12 md:w-9/12 w-full flex-[0_0_auto] max-w-full">
                           <p>
-                            MMC Lebanon is a leading medical center that required a modern, professional website to showcase their comprehensive healthcare services. Our goal was to create a trustworthy digital presence that reflects their medical expertise and caring approach.
+                            MMC Lebanon is a well-established real estate developer based in Lebanon. They approached us with the need for a modern digital presence that reflects their reputation and showcases their diverse portfolio of developments. Our challenge was to design and build a website that not only highlights their flagship projects but also communicates the values and services that make MMC a trusted name in the Lebanese real estate market.
+                          </p>
+                          <h3 className="!text-[calc(1.125rem_+_0.18vw)] font-bold !leading-[1.35] !mb-4">
+                            Key Objectives
+                          </h3>
+                          <p>
+                            The primary goal was to create a platform that places MMC’s projects at the center, with special emphasis on the Ain Aar development. At the same time, the website needed to be fully responsive, optimized for search engines, and aligned with the brand’s visual identity.
+                          </p>
+                          <h3 className="!text-[calc(1.125rem_+_0.18vw)] font-bold !leading-[1.35] !mb-4">
+                            Our Approach
+                          </h3>
+                          <p>
+                            We began with a content-first strategy, mapping out how visitors would explore the projects and services. The design adopts a modern, minimal aesthetic, using MMC’s brand colors and typography to ensure consistency and recognition. A dedicated section was developed for the Ain Aar project, allowing potential clients to easily find detailed information, visuals, and contact options.
+                          </p>
+                          <p>
+                            On the technical side, we implemented SEO-ready structures, including clean code, optimized metadata, and fast-loading pages to support higher search rankings. The site was carefully adapted for small screens, ensuring a seamless browsing experience on mobile devices and tablets, which make up a large portion of web traffic in Lebanon.
+                          </p>
+                          <h3 className="!text-[calc(1.125rem_+_0.18vw)] font-bold !leading-[1.35] !mb-4">
+                            Results
+                          </h3>
+                          <p>
+                            The final website offers a professional, user-friendly showcase of MMC Lebanon’s projects and services. It positions the company as a forward-thinking developer with a strong digital presence, while giving visitors clear pathways to learn about and engage with MMC’s real estate offerings.
                           </p>
                           <p>
                             We designed a clean, accessible website with an intuitive navigation system that helps patients easily find information about medical services, book appointments, and access important health resources. The design emphasizes trust and professionalism through careful typography and a medical-appropriate color palette.
@@ -93,14 +111,14 @@ export default function MMCLebanonProjectPage() {
                           <ul className="pl-0 list-none">
                             <li>
                               <h5 className="!mb-1">Date</h5>
-                              <p>Jan 2025</p>
+                              <p>Jan 2024</p>
                             </li>
                             <li>
                               <h5 className="!mb-1">Client Name</h5>
                               <p>MMC Lebanon</p>
                             </li>
                           </ul>
-                          <a href="#" className="more hover">
+                          <a href="https://mmclebanon.com/" target="_blank" className="more hover">
                             See Project
                           </a>
                         </div>
@@ -151,10 +169,10 @@ export default function MMCLebanonProjectPage() {
             {/* /.row */}
           </div>
           {/* /.container */}
-        </div>
+        </div >
 
         <ProjectNavigation />
-      </div>
+      </div >
       <Footer5 hasMarginTop={false} />
     </>
   );
