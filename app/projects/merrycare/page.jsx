@@ -9,10 +9,10 @@ import Link from "next/link";
 import React from "react";
 
 const images = [
-  { src: "/assets/images/projects/merrycare/1.jpg", alt: "MerryCare Platform" },
-  { src: "/assets/images/projects/merrycare/2.jpg", alt: "MerryCare Dashboard" },
-  { src: "/assets/images/projects/merrycare/3.jpg", alt: "MerryCare Mobile App" },
-  { src: "/assets/images/projects/merrycare/4.jpg", alt: "MerryCare Features" },
+  { src: "/assets/images/projects/merrycare/m1.jpg", alt: "MerryCare Platform" },
+  { src: "/assets/images/projects/merrycare/m2.jpg", alt: "MerryCare Dashboard" },
+  { src: "/assets/images/projects/merrycare/m3.jpg", alt: "MerryCare Mobile App" },
+  { src: "/assets/images/projects/merrycare/m4.jpg", alt: "MerryCare Features" },
 ];
 
 
@@ -30,7 +30,7 @@ export default function MerryCareProjectPage() {
             <div className="flex flex-wrap mx-[-15px]">
               <div className="xl:w-8/12 lg:w-8/12 w-full flex-[0_0_auto] !px-[15px] max-w-full !mx-auto">
                 <h1 className="!text-[calc(1.365rem_+_1.38vw)] font-bold !leading-[1.2] xl:!text-[2.4rem] !mb-3 !text-white">
-                  MerryCare Platform
+                  MerryCare Website
                 </h1>
                 <nav className="inline-block" aria-label="breadcrumb">
                   <ol className="breadcrumb flex flex-wrap bg-[none] p-0 !rounded-none list-none !mb-[20px]">
@@ -43,7 +43,7 @@ export default function MerryCareProjectPage() {
                       className="breadcrumb-item flex !text-white !pl-2 before:font-normal before:!flex before:items-center before:text-[rgba(255,255,255,.5)] before:content-['\e931'] before:text-[0.9rem] before:-mt-px before:!pr-2 before:font-Unicons active"
                       aria-current="page"
                     >
-                      MerryCare Platform
+                      MerryCare Website
                     </li>
                   </ol>
                 </nav>
@@ -56,7 +56,6 @@ export default function MerryCareProjectPage() {
           {/* /.container */}
         </section>
 
-        {/* Inlined Project Details Component */}
         <div className="wrapper !bg-[#ffffff] border-b-[rgba(164,174,198,0.2)] border-b border-solid">
           <div className="container !pb-[4.5rem] xl:!pb-24 lg:!pb-24 md:!pb-24">
             <div className="flex flex-wrap mx-[-15px]">
@@ -78,29 +77,46 @@ export default function MerryCareProjectPage() {
                       </h2>
                       <div className="flex flex-wrap mx-0">
                         <div className="xl:w-9/12 lg:w-9/12 md:w-9/12 w-full flex-[0_0_auto] max-w-full">
-                          <p>
-                            MerryCare is an innovative healthcare platform designed to streamline patient care and improve healthcare delivery. Our challenge was to create a comprehensive digital solution that could handle complex healthcare workflows while remaining intuitive for medical professionals and patients alike.
-                          </p>
-                          <p>
-                            We developed a robust platform featuring patient management systems, appointment scheduling, medical records management, and telemedicine capabilities. The interface prioritizes clarity and efficiency, with role-based access controls ensuring data security and HIPAA compliance.
-                          </p>
-                          <p>
-                            The platform includes advanced features such as automated reminders, prescription management, and real-time communication tools between healthcare providers and patients. Built with scalability in mind, MerryCare can accommodate healthcare facilities of all sizes, from small clinics to large hospital networks.
-                          </p>
+
+                          <p>Merry Care is a Melbourne-based service provider dedicated to supporting people with disabilities in their daily lives. Their services cover essential areas such as Household Tasks, Daily Living and Life Skills, Innovative Community Participation, Travel and Transport, and more.</p>
+
+                          <h3>Project Goal</h3>
+
+                          <p>Merry Care approached us with a clear mission: to build a user-friendly, inclusive, and accessible website that reflects their values of care, community, and empowerment. The site needed to cater to a wide range of users, including individuals with disabilities, their families, and carers.</p>
+
+                          <h3>Our Approach</h3>
+
+                          <p>We designed and developed a website that prioritizes accessibility, clarity, and inclusivity. Our focus was not just on visual appeal, but also on ensuring the site is functional, intuitive, and easy to navigate for all users.</p>
+
+                          <h3>Key Features</h3>
+
+                          <p>Accessibility Switcher: Custom settings for high contrast, sharper and larger fonts, and adaptable layouts to ensure the site is usable for people with varying visual needs.</p>
+
+                          <p>Inclusive Design: Careful choice of fonts, color palettes, and layouts to meet accessibility standards (WCAG compliance) while maintaining a clean and professional aesthetic.</p>
+
+                          <p>Easy Information Access: Clear navigation structure and service descriptions that make information readily understandable and reachable with minimal clicks.</p>
+
+                          <p>Multilingual Support: English and Arabic language versions to serve Melbourne's diverse community.</p>
+
+                          <p>Mobile-Friendly: Fully responsive design ensuring smooth experience on mobile phones and tablets.</p>
+
+                          <h3>Outcome</h3>
+
+                          <p>The final website provides Merry Care with a digital presence that is both inclusive and professional. It reflects their commitment to supporting individuals with disabilities while ensuring that their services and resources are accessible to everyone, anytime, anywhere.</p>
+
                         </div>
-                        {/*/column */}
                         <div className="xl:w-2/12 lg:w-2/12 md:w-2/12 w-full flex-[0_0_auto] max-w-full !ml-auto">
                           <ul className="pl-0 list-none">
                             <li>
                               <h5 className="!mb-1">Date</h5>
-                              <p>Nov 2024</p>
+                              <p>Nov 2022</p>
                             </li>
                             <li>
                               <h5 className="!mb-1">Client Name</h5>
-                              <p>MerryCare</p>
+                              <p>Merry Care, Melbourne, Australia</p>
                             </li>
                           </ul>
-                          <a href="#" className="more hover">
+                          <a href="https://merrycare.net.au/" target="_blank" className="more hover">
                             See Project
                           </a>
                         </div>

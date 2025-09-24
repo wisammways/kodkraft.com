@@ -645,7 +645,7 @@ export const projectData = [
     imageHeight: 1600,
     categoryColor: "#747ed1",
     projectType: "still-life",
-    projectId: 1,
+    projectId: 2,
   },
   {
     category: "Website",
@@ -655,7 +655,7 @@ export const projectData = [
     imageHeight: 1600,
     categoryColor: "#747ed1",
     projectType: "product",
-    projectId: 2, // Added a unique ID for each project
+    projectId: 3,
   },
   {
     category: "Website",
@@ -665,7 +665,7 @@ export const projectData = [
     imageHeight: 1600,
     categoryColor: "#747ed1",
     projectType: "workshop",
-    projectId: 3,
+    projectId: 4,
   },
   {
     category: "Website",
@@ -675,7 +675,7 @@ export const projectData = [
     imageHeight: 1600,
     categoryColor: "#747ed1",
     projectType: "still-life",
-    projectId: 4,
+    projectId: 5,
   },
 ];
 

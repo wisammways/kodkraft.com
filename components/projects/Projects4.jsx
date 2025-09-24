@@ -6,6 +6,18 @@ import { usePathname } from "next/navigation";
 import { t } from "@/utlis/translations";
 
 import React, { useEffect, useRef, useState } from "react";
+
+// Project slug mapping for routing
+const projectSlugs = {
+  1: "cti-pyp-system", // CTI PYP Grading - exclude for now
+  2: "jimmy-blink",    // JimmyBlink
+  3: "mmc-lebanon",    // MMC Lebanon
+  4: "merrycare",      // MerryCare
+  5: "fady-bader",     // Fady Bader - exclude for now
+};
+
+// Projects to exclude (not ready yet)
+const excludedProjects = [1, 5]; // CTI PYP and Fady Bader
 const filters = [
   { name: "All", filter: "*", active: true },
   { name: "Concept", filter: ".concept" },
@@ -106,39 +118,64 @@ export default function Projects4() {
             ref={isotopContainer}
             className="flex  flex-wrap mx-[-15px] xl:mx-[-20px] lg:mx-[-20px] md:mx-[-20px] !mt-[-50px] xl:!mt-[-80px] lg:!mt-[-80px] md:!mt-[-80px] isotope"
           >
-            {projectData.map((project) => (
-              <div
-                key={project.projectId}
-                className={`project item xl:w-4/12 lg:w-6/12 md:w-6/12 w-full flex-[0_0_auto] xl:!mt-[80px] xl:!px-[20px] lg:!mt-[80px] lg:!px-[20px] md:!mt-[80px] md:!px-[20px] !px-[15px] !mt-[50px] max-w-full ${project.projectType}`}
-              >
-                <figure className="lift rounded !mb-6">
-                  {/*<Link href={`/single-project`}>*/}
-                    <Image
-                      alt="image"
-                      src={project.imageUrl}
-                      width={project.imageWidth}
-                      height={project.imageHeight}
-                    />
-                  {/*</Link>*/}
-                </figure>
-                <div className="project-details flex justify-center flex-col">
-                  <div className="post-header">
-                    <div
-                      className="inline-flex uppercase !tracking-[0.02rem] text-[0.7rem] font-bold relative align-top !pl-[1.4rem] opacity-100  before:content-[''] before:absolute before:inline-block before:translate-y-[-60%] before:w-3 before:h-[0.05rem] before:left-0 before:top-2/4 before:bg-[#7cb798] !mb-2"
-                      style={{ color: project.categoryColor }}
-                    >
-                      <span
-                        className="before:content-[''] before:absolute before:inline-block before:translate-y-[-60%] before:w-3 before:h-[0.05rem] before:left-0 before:top-2/4"
+            {projectData.map((project) => {
+              const isClickable = !excludedProjects.includes(project.projectId);
+              const projectSlug = projectSlugs[project.projectId];
+              
+              return (
+                <div
+                  key={project.projectId}
+                  className={`project item xl:w-4/12 lg:w-6/12 md:w-6/12 w-full flex-[0_0_auto] xl:!mt-[80px] xl:!px-[20px] lg:!mt-[80px] lg:!px-[20px] md:!mt-[80px] md:!px-[20px] !px-[15px] !mt-[50px] max-w-full ${project.projectType}`}
+                >
+                  <figure className="lift rounded !mb-6 group overflow-hidden">
+                    {isClickable && projectSlug ? (
+                      <Link href={`/projects/${projectSlug}`}>
+                        <Image
+                          alt={project.title}
+                          src={project.imageUrl}
+                          width={project.imageWidth}
+                          height={project.imageHeight}
+                        />
+                      </Link>
+                    ) : (
+                      <Image
+                        alt={project.title}
+                        src={project.imageUrl}
+                        width={project.imageWidth}
+                        height={project.imageHeight}
+                      />
+                    )}
+                  </figure>
+                  <div className="project-details flex justify-center flex-col">
+                    <div className="post-header">
+                      <div
+                        className="inline-flex uppercase !tracking-[0.02rem] text-[0.7rem] font-bold relative align-top !pl-[1.4rem] opacity-100  before:content-[''] before:absolute before:inline-block before:translate-y-[-60%] before:w-3 before:h-[0.05rem] before:left-0 before:top-2/4 before:bg-[#7cb798] !mb-2"
                         style={{ color: project.categoryColor }}
                       >
-                        {getTranslatedCategory(project.category)}
-                      </span>
+                        <span
+                          className="before:content-[''] before:absolute before:inline-block before:translate-y-[-60%] before:w-3 before:h-[0.05rem] before:left-0 before:top-2/4"
+                          style={{ color: project.categoryColor }}
+                        >
+                          {getTranslatedCategory(project.category)}
+                        </span>
+                      </div>
+                      {isClickable && projectSlug ? (
+                        <h3 className="post-title">
+                          <Link 
+                            href={`/projects/${projectSlug}`}
+                            className="!text-[#353451] !hover:text-[var(--current-color)] transition-colors"
+                          >
+                            {project.title}
+                          </Link>
+                        </h3>
+                      ) : (
+                        <h3 className="post-title">{project.title}</h3>
+                      )}
                     </div>
-                    <h3 className="post-title">{project.title}</h3>
                   </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
           {/* /.row */}
         </div>
