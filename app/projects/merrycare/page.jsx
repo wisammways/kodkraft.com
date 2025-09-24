@@ -9,10 +9,10 @@ import Link from "next/link";
 import React from "react";
 
 const images = [
-  { src: "/assets/images/projects/2.jpg", alt: "MerryCare Platform" },
-  { src: "/assets/images/projects/2.jpg", alt: "MerryCare Dashboard" },
-  { src: "/assets/images/projects/2.jpg", alt: "MerryCare Mobile App" },
-  { src: "/assets/images/projects/2.jpg", alt: "MerryCare Features" },
+  { src: "/assets/images/projects/merrycare/1.jpg", alt: "MerryCare Platform" },
+  { src: "/assets/images/projects/merrycare/2.jpg", alt: "MerryCare Dashboard" },
+  { src: "/assets/images/projects/merrycare/3.jpg", alt: "MerryCare Mobile App" },
+  { src: "/assets/images/projects/merrycare/4.jpg", alt: "MerryCare Features" },
 ];
 
 
@@ -66,7 +66,7 @@ export default function MerryCareProjectPage() {
                     <Image
                       className="!rounded-[.4rem]"
                       alt="MerryCare Platform"
-                      src="/assets/images/projects/2.jpg"
+                      src="/assets/images/projects/merrycare/main.jpg"
                       width={2400}
                       height={1640}
                     />
