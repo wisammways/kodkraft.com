@@ -10895,3 +10895,60 @@ footer.bg-dark {
   margin-right: 0.255em;
   margin-left: 0;
 }
+
+/* Blog content styling */
+.blog-content {
+  @apply text-base leading-relaxed;
+}
+
+.blog-content h2 {
+  @apply text-2xl font-bold mb-6 mt-8 text-[#1a1a1a] leading-tight;
+}
+
+.blog-content h3 {
+  @apply text-xl font-semibold mb-4 mt-6 text-[#2a2a2a] leading-tight;
+}
+
+.blog-content h4 {
+  @apply text-lg font-medium mb-3 mt-5 text-[#2a2a2a];
+}
+
+.blog-content p {
+  @apply mb-6 text-[#4a4a4a] leading-relaxed;
+}
+
+.blog-content ul {
+  @apply mb-6 pl-6 space-y-2;
+}
+
+.blog-content li {
+  @apply text-[#4a4a4a] leading-relaxed;
+}
+
+.blog-content blockquote {
+  @apply border-l-4 border-primary pl-6 py-4 mb-6 bg-[#f8f9fa] italic text-[#2a2a2a];
+}
+
+.blog-content code {
+  @apply bg-[#f1f3f4] px-2 py-1 rounded text-sm font-mono text-[#2a2a2a];
+}
+
+.blog-content pre {
+  @apply bg-[#1a1a1a] text-[#f1f3f4] p-4 rounded-lg mb-6 overflow-x-auto;
+}
+
+.blog-content pre code {
+  @apply bg-transparent px-0 py-0 text-[#f1f3f4];
+}
+
+.blog-content strong {
+  @apply font-semibold text-[#1a1a1a];
+}
+
+.blog-content em {
+  @apply italic;
+}
+
+.blog-content a {
+  @apply text-primary hover:text-secondary underline;
+}
