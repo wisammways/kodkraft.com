@@ -1,15 +1,50 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import BlogIndex from "./page/shared/BlogIndex";
-import React from "react";
+import BlogIndex from "../shared/BlogIndex";
+import { getAllPosts } from "@/lib/posts";
+import { notFound } from "next/navigation";
 
-export const metadata = {
-  title: "Blog - KodKraft - Latest Web Development Insights",
-  description:
-    "Discover the latest trends in web development, from AI-powered tools like GitHub Copilot to modern frameworks like Laravel, React.js, Next.js, and WordPress. Stay updated with KodKraft's tech insights.",
-};
+const PAGE_SIZE = 6;
 
-export default function Blog() {
+export async function generateStaticParams() {
+  const allPosts = getAllPosts();
+  const totalPages = Math.ceil(allPosts.length / PAGE_SIZE);
+  
+  const params = [];
+  for (let i = 2; i <= totalPages; i++) {
+    params.push({ page: i.toString() });
+  }
+  
+  return params;
+}
+
+export async function generateMetadata({ params }) {
+  const page = parseInt(params.page);
+  const allPosts = getAllPosts();
+  const totalPages = Math.ceil(allPosts.length / PAGE_SIZE);
+  
+  if (page < 2 || page > totalPages) {
+    return {
+      title: "Page Not Found - KodKraft Blog",
+    };
+  }
+  
+  return {
+    title: `Blog - Page ${page} - KodKraft`,
+    description: `Page ${page} of KodKraft's web development blog featuring insights on Laravel, React.js, Next.js, and modern web technologies.`,
+  };
+}
+
+export default function BlogPage({ params }) {
+  const page = parseInt(params.page);
+  const allPosts = getAllPosts();
+  const totalPages = Math.ceil(allPosts.length / PAGE_SIZE);
+  
+  // Redirect page 1 to main blog route and 404 for invalid pages
+  if (page < 2 || page > totalPages) {
+    notFound();
+  }
+  
   return (
     <>
       <div className="grow shrink-0">
@@ -43,20 +78,15 @@ export default function Blog() {
                     </li>
                   </ol>
                 </nav>
-                {/* /nav */}
               </div>
-              {/* /column */}
             </div>
-            {/* /.row */}
           </div>
-          {/* /.container */}
         </section>
 
         <section className="wrapper !bg-[#ffffff] angled upper-end lower-end relative border-0 before:top-[-4rem] before:border-l-transparent before:border-r-[100vw] before:border-t-[4rem] before:border-[#fefefe] before:content-[''] before:block before:absolute before:z-0 before:!border-y-transparent before:border-0 before:border-solid before:right-0 after:bottom-[-4rem] after:border-l-transparent after:border-r-[100vw] after:border-b-[4rem] after:border-[#fefefe] after:content-[''] after:block after:absolute after:z-0 after:!border-y-transparent after:border-0 after:border-solid after:right-0">
           <div className="container py-[4.5rem] xl:!py-24 lg:!py-24 md:!py-24">
-            <BlogIndex page={1} />
+            <BlogIndex page={page} />
           </div>
-          {/* /.container */}
         </section>
       </div>
       <Footer hasMarginTop={false} />
