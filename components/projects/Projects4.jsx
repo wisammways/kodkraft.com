@@ -17,7 +17,7 @@ const projectSlugs = {
 };
 
 // Projects to exclude (not ready yet)
-const excludedProjects = [1, 5]; // CTI PYP and Fady Bader
+const excludedProjects = [5]; // Fady Bader
 const filters = [
   { name: "All", filter: "*", active: true },
   { name: "Concept", filter: ".concept" },
