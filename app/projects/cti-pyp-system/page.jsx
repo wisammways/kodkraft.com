@@ -9,10 +9,10 @@ import Link from "next/link";
 import React from "react";
 
 const images = [
-  { src: "/assets/images/projects/5.jpg", alt: "CTI PYP Grading System" },
-  { src: "/assets/images/projects/5.jpg", alt: "CTI PYP Dashboard" },
-  { src: "/assets/images/projects/5.jpg", alt: "CTI PYP Analytics" },
-  { src: "/assets/images/projects/5.jpg", alt: "CTI PYP Reports" },
+  { src: "/assets/images/projects/cti-pyp/c1.png", alt: "CTI PYP Grading System" },
+  { src: "/assets/images/projects/cti-pyp/c2.png", alt: "CTI PYP Dashboard" },
+  { src: "/assets/images/projects/cti-pyp/c3.png", alt: "CTI PYP Analytics" },
+  { src: "/assets/images/projects/cti-pyp/c4.png", alt: "CTI PYP Reports" },
 ];
 
 
@@ -56,7 +56,7 @@ export default function CTIPYPSystemProjectPage() {
           {/* /.container */}
         </section>
 
-        {/* Inlined Project Details Component */}
+
         <div className="wrapper !bg-[#ffffff] border-b-[rgba(164,174,198,0.2)] border-b border-solid">
           <div className="container !pb-[4.5rem] xl:!pb-24 lg:!pb-24 md:!pb-24">
             <div className="flex flex-wrap mx-[-15px]">
@@ -66,7 +66,7 @@ export default function CTIPYPSystemProjectPage() {
                     <Image
                       className="!rounded-[.4rem]"
                       alt="CTI PYP Grading System"
-                      src="/assets/images/projects/5.jpg"
+                      src="/assets/images/projects/cti-pyp/main.jpg"
                       width={2400}
                       height={1640}
                     />
@@ -78,14 +78,57 @@ export default function CTIPYPSystemProjectPage() {
                       </h2>
                       <div className="flex flex-wrap mx-0">
                         <div className="xl:w-9/12 lg:w-9/12 md:w-9/12 w-full flex-[0_0_auto] max-w-full">
-                          <p>
-                            The CTI Primary Years Programme (PYP) Grading System is a comprehensive educational platform designed specifically for international schools following the IB Primary Years Programme curriculum. Our goal was to create a sophisticated yet user-friendly system that handles the complex assessment requirements of the PYP framework.
+                          <p className="!mb-6">
+                            The CTI PYP Grading Platform was developed as a custom web application to streamline grading and academic management for an international school. Built with Laravel (backend) and React.js (frontend), the platform provides a secure, role-based system for administrators, teachers, coordinators, students, and parents.
                           </p>
-                          <p>
-                            We developed a robust grading platform that supports both formative and summative assessments, aligns with PYP learning outcomes, and provides detailed analytics for teachers, students, and parents. The system includes features for rubric-based assessment, portfolio management, and comprehensive reporting tools.
+
+                          <h3 className="!text-[calc(1.235rem_+_0.06vw)] font-bold xl:!text-[1.25rem] !leading-[1.4] !mb-3">
+                            Objectives
+                          </h3>
+                          <p className="!mb-6">
+                            Create a centralized system to manage student grades, subjects, and semester data. Provide different access levels for admin, teachers, coordinators, and parents. Improve efficiency and accuracy in grade reporting. Ensure long-term data management across academic years. Deliver a user-friendly interface accessible to non-technical staff and parents.
                           </p>
-                          <p>
-                            The platform integrates seamlessly with existing school management systems and provides real-time data visualization to help educators track student progress across all areas of learning. Built with modern security standards, it ensures student data privacy while enabling effective communication between all stakeholders in the educational process.
+
+                          <h3 className="!text-[calc(1.235rem_+_0.06vw)] font-bold xl:!text-[1.25rem] !leading-[1.4] !mb-3">
+                            Key Features
+                          </h3>
+                          <p className="!mb-6">
+                            <strong>Role-Based Access Control:</strong> Admins, coordinators, and teachers each have dedicated panels with tailored permissions.
+                          </p>
+                          <p className="!mb-6">
+                            <strong>Teacher Access:</strong> Each teacher manages only their assigned students and subjects.
+                          </p>
+                          <p className="!mb-6">
+                            <strong>Admin & Coordinator Tools:</strong> Manage subjects, semesters, students, and overall academic data across multiple years.
+                          </p>
+                          <p className="!mb-6">
+                            <strong>Parent Portal:</strong> Parents can log in to view their children's academic results and download PDF reports.
+                          </p>
+                          <p className="!mb-6">
+                            <strong>Data Continuity:</strong> Historical academic records are preserved, allowing smooth management over years.
+                          </p>
+                          <p className="!mb-6">
+                            <strong>Ease of Use:</strong> Clean UI/UX with an intuitive dashboard for fast adoption.
+                          </p>
+                          <p className="!mb-6">
+                            <strong>Training Sessions:</strong> Delivered hands-on training for teachers and school staff to ensure smooth onboarding.
+                          </p>
+
+                          <h3 className="!text-[calc(1.235rem_+_0.06vw)] font-bold xl:!text-[1.25rem] !leading-[1.4] !mb-3">
+                            Impact
+                          </h3>
+                          <p className="!mb-6">
+                            Increased efficiency in managing grades and reports. Reduced errors by eliminating manual grading processes. Improved transparency for parents, who can now track progress online anytime. Empowered teachers and coordinators with tools that save time and reduce administrative load.
+                          </p>
+
+                          <h3 className="!text-[calc(1.235rem_+_0.06vw)] font-bold xl:!text-[1.25rem] !leading-[1.4] !mb-3">
+                            Technology Stack
+                          </h3>
+                          <p className="!mb-6">
+                            <strong>Frontend:</strong> React.js<br />
+                            <strong>Backend:</strong> Laravel<br />
+                            <strong>Database:</strong> MySQL<br />
+                            <strong>Other:</strong> Secure authentication, PDF generation, role-based permissions
                           </p>
                         </div>
                         {/*/column */}
@@ -93,16 +136,13 @@ export default function CTIPYPSystemProjectPage() {
                           <ul className="pl-0 list-none">
                             <li>
                               <h5 className="!mb-1">Date</h5>
-                              <p>Oct 2024</p>
+                              <p>July 2025</p>
                             </li>
                             <li>
                               <h5 className="!mb-1">Client Name</h5>
                               <p>CTI School</p>
                             </li>
                           </ul>
-                          <a href="#" className="more hover">
-                            See Project
-                          </a>
                         </div>
                         {/*/column */}
                       </div>
