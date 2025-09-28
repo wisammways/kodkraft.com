@@ -114,6 +114,15 @@ export default function Nav() {
       </li>
       <li className="nav-item dropdown dropdown-mega">
         <Link
+          className={`nav-link !text-[.85rem] !tracking-[normal]   ${pathname.startsWith('/blog') ? "!text-[#54a8c7]" : ""
+            } `}
+          href={`${basePath}/blog`}
+        >
+          Blog
+        </Link>
+      </li>
+      <li className="nav-item dropdown dropdown-mega">
+        <Link
           className={`nav-link !text-[.85rem] !tracking-[normal]   ${demos.some((link) => link.href == pathname) ? "!text-[#54a8c7]" : ""
             } `}
           href={`${basePath}/contact`}
