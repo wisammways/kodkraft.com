@@ -95,6 +95,12 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://kodkraft.com/projects/fady-bader</loc>
+    <lastmod>2024-12-19T12:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 
   <!-- German project pages -->
   <url>
@@ -121,8 +127,36 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://kodkraft.com/de/projects/fady-bader</loc>
+    <lastmod>2024-12-19T12:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- English blog page -->
+  <url>
+    <loc>https://kodkraft.com/blog</loc>
+    <lastmod>2024-12-19T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- German blog page -->
+  <url>
+    <loc>https://kodkraft.com/de/blog</loc>
+    <lastmod>2024-12-19T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
   <!-- Blog posts -->
+  <url>
+    <loc>https://kodkraft.com/blog/vibe-coding-new-way-build-software</loc>
+    <lastmod>2025-10-15T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
   <url>
     <loc>https://kodkraft.com/blog/mastering-laravel-11-advanced-features-modern-web-development</loc>
     <lastmod>2025-09-25T12:00:00+00:00</lastmod>
@@ -154,56 +188,148 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kodkraft.com/blog/nodejs-20-performance-optimization-enterprise-applications</loc>
+    <loc>https://kodkraft.com/blog/vuejs-3-composition-api-modern-component-architecture</loc>
+    <lastmod>2025-07-20T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://kodkraft.com/blog/inertiajs-bridging-frontend-backend-development</loc>
+    <lastmod>2025-07-15T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://kodkraft.com/blog/website-performance-optimization-core-web-vitals-beyond</loc>
     <lastmod>2025-07-10T12:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kodkraft.com/blog/typescript-5-advanced-type-system-modern-development</loc>
+    <loc>https://kodkraft.com/blog/seo-mastery-technical-seo-content-strategy-2025</loc>
+    <lastmod>2025-07-05T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://kodkraft.com/blog/digital-marketing-trends-web-design-user-experience-2025</loc>
+    <lastmod>2025-06-30T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://kodkraft.com/blog/modern-api-design-restful-services-graphql-integration</loc>
     <lastmod>2025-06-25T12:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kodkraft.com/blog/docker-containerization-microservices-best-practices</loc>
+    <loc>https://kodkraft.com/blog/cloud-infrastructure-aws-azure-multi-cloud-strategies</loc>
+    <lastmod>2025-06-20T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://kodkraft.com/blog/cybersecurity-fundamentals-protecting-modern-web-applications</loc>
+    <lastmod>2025-06-15T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://kodkraft.com/blog/devops-excellence-cicd-pipelines-automated-deployment-strategies</loc>
     <lastmod>2025-06-10T12:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
+
+  <!-- German blog posts -->
   <url>
-    <loc>https://kodkraft.com/blog/postgresql-advanced-database-optimization-techniques</loc>
-    <lastmod>2025-05-25T12:00:00+00:00</lastmod>
+    <loc>https://kodkraft.com/de/blog/vibe-coding-new-way-build-software</loc>
+    <lastmod>2025-10-15T12:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kodkraft.com/blog/mongodb-scalable-document-database-solutions</loc>
-    <lastmod>2025-05-10T12:00:00+00:00</lastmod>
+    <loc>https://kodkraft.com/de/blog/mastering-laravel-11-advanced-features-modern-web-development</loc>
+    <lastmod>2025-09-25T12:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kodkraft.com/blog/kubernetes-container-orchestration-production-deployment</loc>
-    <lastmod>2025-04-25T12:00:00+00:00</lastmod>
+    <loc>https://kodkraft.com/de/blog/aspnet-core-8-building-scalable-enterprise-applications</loc>
+    <lastmod>2025-09-10T12:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kodkraft.com/blog/redis-caching-strategies-high-performance-applications</loc>
-    <lastmod>2025-04-10T12:00:00+00:00</lastmod>
+    <loc>https://kodkraft.com/de/blog/aws-ses-integration-complete-email-marketing-solution</loc>
+    <lastmod>2025-08-25T12:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kodkraft.com/blog/graphql-api-design-efficient-data-fetching</loc>
-    <lastmod>2025-03-25T12:00:00+00:00</lastmod>
+    <loc>https://kodkraft.com/de/blog/nextjs-15-revolutionary-full-stack-development-framework</loc>
+    <lastmod>2025-08-10T12:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kodkraft.com/blog/tailwind-css-modern-responsive-design-framework</loc>
-    <lastmod>2025-03-10T12:00:00+00:00</lastmod>
+    <loc>https://kodkraft.com/de/blog/reactjs-18-concurrent-features-modern-development-patterns</loc>
+    <lastmod>2025-07-25T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://kodkraft.com/de/blog/vuejs-3-composition-api-modern-component-architecture</loc>
+    <lastmod>2025-07-20T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://kodkraft.com/de/blog/inertiajs-bridging-frontend-backend-development</loc>
+    <lastmod>2025-07-15T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://kodkraft.com/de/blog/website-performance-optimization-core-web-vitals-beyond</loc>
+    <lastmod>2025-07-10T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://kodkraft.com/de/blog/seo-mastery-technical-seo-content-strategy-2025</loc>
+    <lastmod>2025-07-05T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://kodkraft.com/de/blog/digital-marketing-trends-web-design-user-experience-2025</loc>
+    <lastmod>2025-06-30T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://kodkraft.com/de/blog/modern-api-design-restful-services-graphql-integration</loc>
+    <lastmod>2025-06-25T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://kodkraft.com/de/blog/cloud-infrastructure-aws-azure-multi-cloud-strategies</loc>
+    <lastmod>2025-06-20T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://kodkraft.com/de/blog/cybersecurity-fundamentals-protecting-modern-web-applications</loc>
+    <lastmod>2025-06-15T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://kodkraft.com/de/blog/devops-excellence-cicd-pipelines-automated-deployment-strategies</loc>
+    <lastmod>2025-06-10T12:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -217,6 +343,20 @@
   </url>
   <url>
     <loc>https://kodkraft.com/blog/page/3</loc>
+    <lastmod>2024-12-19T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- German blog pagination pages -->
+  <url>
+    <loc>https://kodkraft.com/de/blog/page/2</loc>
+    <lastmod>2024-12-19T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://kodkraft.com/de/blog/page/3</loc>
     <lastmod>2024-12-19T12:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

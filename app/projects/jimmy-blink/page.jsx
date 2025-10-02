@@ -7,11 +7,19 @@ import Link from "next/link";
 import React from "react";
 
 export const metadata = {
-  title:
-    "Single Project 01 || Sandbox - Modern & Multipurpose React Next.js Template with Tailwind CSS",
-  description:
-    "Sandbox - Modern & Multipurpose React Next.js Template with Tailwind CSS",
+  metadataBase: new URL('https://kodkraft.com'),
+  title: "Jimmy Blink's Website - KodKraft Portfolio",
+  description: "Sound Smart is an illustrated book helping school students learn fun local phrases and idioms in French and Spanish. We created an engaging landing page using book illustrations.",
+  alternates: {
+    canonical: 'https://kodkraft.com/projects/jimmy-blink',
+    languages: {
+      'en': 'https://kodkraft.com/projects/jimmy-blink',
+      'de': 'https://kodkraft.com/de/projects/jimmy-blink',
+      'x-default': 'https://kodkraft.com/projects/jimmy-blink',
+    },
+  },
 };
+
 export default function SingleProjectPage() {
   return (
     <>

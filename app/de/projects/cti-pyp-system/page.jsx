@@ -11,10 +11,10 @@ import { usePathname } from "next/navigation";
 import { t, getBasePath } from "@/utlis/translations";
 
 const images = [
-  { src: "/assets/images/projects/5.jpg", alt: "CTI PYP Grading System" },
-  { src: "/assets/images/projects/5.jpg", alt: "CTI PYP Dashboard" },
-  { src: "/assets/images/projects/5.jpg", alt: "CTI PYP Analytics" },
-  { src: "/assets/images/projects/5.jpg", alt: "CTI PYP Reports" },
+  { src: "/assets/images/projects/cti-pyp/c1.png", alt: "CTI PYP Grading System" },
+  { src: "/assets/images/projects/cti-pyp/c2.png", alt: "CTI PYP Dashboard" },
+  { src: "/assets/images/projects/cti-pyp/c3.png", alt: "CTI PYP Analytics" },
+  { src: "/assets/images/projects/cti-pyp/c4.png", alt: "CTI PYP Reports" },
 ];
 
 
@@ -70,7 +70,7 @@ export default function CTIPYPSystemProjectPage() {
                     <Image
                       className="!rounded-[.4rem]"
                       alt="CTI PYP Grading System"
-                      src="/assets/images/projects/5.jpg"
+                      src="/assets/images/projects/cti-pyp/main.jpg"
                       width={2400}
                       height={1640}
                     />
@@ -78,35 +78,75 @@ export default function CTIPYPSystemProjectPage() {
                   <div className="flex flex-wrap mx-[-15px]">
                     <div className="xl:w-10/12 xl:!ml-[8.33333333%] lg:w-10/12 lg:!ml-[8.33333333%] w-full flex-[0_0_auto] !px-[15px] max-w-full">
                       <h2 className="!text-[calc(1.265rem_+_0.18vw)] font-bold xl:!text-[1.4rem] !leading-[1.35] !mb-4">
-                        About the Project
+                        Über das Projekt
                       </h2>
                       <div className="flex flex-wrap mx-0">
                         <div className="xl:w-9/12 lg:w-9/12 md:w-9/12 w-full flex-[0_0_auto] max-w-full">
-                          <p>
-                            The CTI Primary Years Programme (PYP) Grading System is a comprehensive educational platform designed specifically for international schools following the IB Primary Years Programme curriculum. Our goal was to create a sophisticated yet user-friendly system that handles the complex assessment requirements of the PYP framework.
+                          <p className="!mb-6">
+                            Die CTI PYP Grading Platform wurde als maßgeschneiderte Webanwendung entwickelt, um die Benotung und akademische Verwaltung für eine internationale Schule zu optimieren. Gebaut mit Laravel (Backend) und React.js (Frontend), bietet die Plattform ein sicheres, rollenbasiertes System für Administratoren, Lehrer, Koordinatoren, Schüler und Eltern.
                           </p>
-                          <p>
-                            We developed a robust grading platform that supports both formative and summative assessments, aligns with PYP learning outcomes, and provides detailed analytics for teachers, students, and parents. The system includes features for rubric-based assessment, portfolio management, and comprehensive reporting tools.
+
+                          <h3 className="!text-[calc(1.235rem_+_0.06vw)] font-bold xl:!text-[1.25rem] !leading-[1.4] !mb-3">
+                            Zielsetzungen
+                          </h3>
+                          <p className="!mb-6">
+                            Erstellung eines zentralisierten Systems zur Verwaltung von Schülernoten, Fächern und Semesterdaten. Bereitstellung unterschiedlicher Zugriffsebenen für Administratoren, Lehrer, Koordinatoren und Eltern. Verbesserung der Effizienz und Genauigkeit bei der Notenberichterstattung. Gewährleistung einer langfristigen Datenverwaltung über akademische Jahre hinweg. Bereitstellung einer benutzerfreundlichen Oberfläche, die für nicht-technisches Personal und Eltern zugänglich ist.
                           </p>
-                          <p>
-                            The platform integrates seamlessly with existing school management systems and provides real-time data visualization to help educators track student progress across all areas of learning. Built with modern security standards, it ensures student data privacy while enabling effective communication between all stakeholders in the educational process.
+
+                          <h3 className="!text-[calc(1.235rem_+_0.06vw)] font-bold xl:!text-[1.25rem] !leading-[1.4] !mb-3">
+                            Hauptfunktionen
+                          </h3>
+                          <p className="!mb-6">
+                            <strong>Rollenbasierte Zugriffskontrolle:</strong> Administratoren, Koordinatoren und Lehrer haben jeweils dedizierte Panels mit maßgeschneiderten Berechtigungen.
+                          </p>
+                          <p className="!mb-6">
+                            <strong>Lehrerzugang:</strong> Jeder Lehrer verwaltet nur seine zugewiesenen Schüler und Fächer.
+                          </p>
+                          <p className="!mb-6">
+                            <strong>Admin- & Koordinator-Tools:</strong> Verwaltung von Fächern, Semestern, Schülern und gesamten akademischen Daten über mehrere Jahre hinweg.
+                          </p>
+                          <p className="!mb-6">
+                            <strong>Elternportal:</strong> Eltern können sich anmelden, um die akademischen Ergebnisse ihrer Kinder einzusehen und PDF-Berichte herunterzuladen.
+                          </p>
+                          <p className="!mb-6">
+                            <strong>Datenkontinuität:</strong> Historische akademische Aufzeichnungen werden bewahrt, was eine reibungslose Verwaltung über Jahre hinweg ermöglicht.
+                          </p>
+                          <p className="!mb-6">
+                            <strong>Benutzerfreundlichkeit:</strong> Saubere UI/UX mit intuitivem Dashboard für schnelle Akzeptanz.
+                          </p>
+                          <p className="!mb-6">
+                            <strong>Schulungssitzungen:</strong> Praktische Schulungen für Lehrer und Schulpersonal wurden durchgeführt, um eine reibungslose Einführung zu gewährleisten.
+                          </p>
+
+                          <h3 className="!text-[calc(1.235rem_+_0.06vw)] font-bold xl:!text-[1.25rem] !leading-[1.4] !mb-3">
+                            Auswirkungen
+                          </h3>
+                          <p className="!mb-6">
+                            Erhöhte Effizienz bei der Verwaltung von Noten und Berichten. Reduzierte Fehler durch Eliminierung manueller Benotungsprozesse. Verbesserte Transparenz für Eltern, die jetzt jederzeit online den Fortschritt verfolgen können. Lehrer und Koordinatoren wurden mit Tools ausgestattet, die Zeit sparen und die Verwaltungslast reduzieren.
+                          </p>
+
+                          <h3 className="!text-[calc(1.235rem_+_0.06vw)] font-bold xl:!text-[1.25rem] !leading-[1.4] !mb-3">
+                            Technologie-Stack
+                          </h3>
+                          <p className="!mb-6">
+                            <strong>Frontend:</strong> React.js<br />
+                            <strong>Backend:</strong> Laravel<br />
+                            <strong>Datenbank:</strong> MySQL<br />
+                            <strong>Sonstiges:</strong> Sichere Authentifizierung, PDF-Generierung, rollenbasierte Berechtigungen
                           </p>
                         </div>
                         {/*/column */}
                         <div className="xl:w-2/12 lg:w-2/12 md:w-2/12 w-full flex-[0_0_auto] max-w-full !ml-auto">
                           <ul className="pl-0 list-none">
                             <li>
-                              <h5 className="!mb-1">Date</h5>
-                              <p>Oct 2024</p>
+                              <h5 className="!mb-1">Datum</h5>
+                              <p>Juli 2025</p>
                             </li>
                             <li>
-                              <h5 className="!mb-1">Client Name</h5>
+                              <h5 className="!mb-1">Kundenname</h5>
                               <p>CTI School</p>
                             </li>
                           </ul>
-                          <a href="#" className="more hover">
-                            See Project
-                          </a>
                         </div>
                         {/*/column */}
                       </div>
