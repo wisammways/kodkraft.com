@@ -3,7 +3,7 @@ import { projectData } from "@/data/projects";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { t } from "@/utlis/translations";
+import { t, getBasePath } from "@/utlis/translations";
 
 import React, { useEffect, useRef, useState } from "react";
 
@@ -27,6 +27,7 @@ const filters = [
 ];
 export default function Projects4() {
   const pathname = usePathname();
+  const basePath = getBasePath(pathname);
   
   const getTranslatedCategory = (category) => {
     switch (category) {
@@ -129,7 +130,7 @@ export default function Projects4() {
                 >
                   <figure className="lift rounded !mb-6 group overflow-hidden">
                     {isClickable && projectSlug ? (
-                      <Link href={`/projects/${projectSlug}`}>
+                      <Link href={`${basePath}/projects/${projectSlug}`}>
                         <Image
                           alt={project.title}
                           src={project.imageUrl}
@@ -162,7 +163,7 @@ export default function Projects4() {
                       {isClickable && projectSlug ? (
                         <h3 className="post-title">
                           <Link 
-                            href={`/projects/${projectSlug}`}
+                            href={`${basePath}/projects/${projectSlug}`}
                             className="!text-[#353451] !hover:text-[var(--current-color)] transition-colors"
                           >
                             {project.title}

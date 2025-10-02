@@ -3,7 +3,7 @@ import Image from "next/image";
 import Pagination from "@/components/common/Pagination";
 import { getPaginatedPosts, formatDateShort } from "@/lib/posts";
 
-export default function BlogIndex({ page = 1 }) {
+export default function BlogIndex({ page = 1, basePath = "/blog" }) {
   const { posts, totalPages, currentPage } = getPaginatedPosts({ page });
 
   return (
@@ -15,7 +15,7 @@ export default function BlogIndex({ page = 1 }) {
               <figure className="card-img-top overlay overlay-1 hover-scale group">
                 <Link
                   className="!text-[#343f52] hover:!text-[#605dba]"
-                  href={`/blog/${post.slug}`}
+                  href={`${basePath}/${post.slug}`}
                 >
                   <Image
                     className="!transition-all !duration-[0.35s] !ease-in-out group-hover:scale-105"
@@ -42,7 +42,7 @@ export default function BlogIndex({ page = 1 }) {
                   <h2 className="post-title !mt-1 !leading-[1.35] !mb-0">
                     <Link
                       className="!text-[#343f52] hover:!text-[#605dba]"
-                      href={`/blog/${post.slug}`}
+                      href={`${basePath}/${post.slug}`}
                     >
                       {post.title}
                     </Link>
@@ -77,7 +77,7 @@ export default function BlogIndex({ page = 1 }) {
             <Pagination 
               currentPage={currentPage}
               totalPages={totalPages}
-              basePath="/blog"
+              basePath={basePath}
             />
           </ul>
         </nav>
