@@ -1,10 +1,15 @@
+"use client";
 import Link from "next/link";
 import Image from "next/image";
 import Pagination from "@/components/common/Pagination";
 import { getPaginatedPosts, formatDateShort } from "@/lib/posts";
+import { usePathname } from "next/navigation";
+import { t, getBasePath } from "@/utlis/translations";
 
-export default function BlogIndex({ page = 1 }) {
-  const { posts, totalPages, currentPage } = getPaginatedPosts({ page });
+export default function BlogIndex({ page = 1, basePath = "/blog" }) {
+  const pathname = usePathname();
+  const language = pathname.startsWith('/de') ? 'de' : pathname.startsWith('/ar') ? 'ar' : 'en';
+  const { posts, totalPages, currentPage } = getPaginatedPosts({ page, language });
 
   return (
     <div className="xl:w-10/12 lg:w-10/12 w-full flex-[0_0_auto] !px-[15px] max-w-full !mx-auto">
@@ -15,7 +20,7 @@ export default function BlogIndex({ page = 1 }) {
               <figure className="card-img-top overlay overlay-1 hover-scale group">
                 <Link
                   className="!text-[#343f52] hover:!text-[#605dba]"
-                  href={`/blog/${post.slug}`}
+                  href={`${basePath}/${post.slug}`}
                 >
                   <Image
                     className="!transition-all !duration-[0.35s] !ease-in-out group-hover:scale-105"
@@ -27,7 +32,7 @@ export default function BlogIndex({ page = 1 }) {
                 </Link>
                 <figcaption className="group-hover:opacity-100 absolute w-full h-full opacity-0 text-center px-4 py-3 inset-0 z-[5] pointer-events-none p-2">
                   <h5 className="from-top !mb-0 absolute w-full translate-y-[-80%] p-[.75rem_1rem] left-0 top-2/4">
-                    Read More
+                    {t(pathname, 'blog.readMore')}
                   </h5>
                 </figcaption>
               </figure>
@@ -42,7 +47,7 @@ export default function BlogIndex({ page = 1 }) {
                   <h2 className="post-title !mt-1 !leading-[1.35] !mb-0">
                     <Link
                       className="!text-[#343f52] hover:!text-[#605dba]"
-                      href={`/blog/${post.slug}`}
+                      href={`${basePath}/${post.slug}`}
                     >
                       {post.title}
                     </Link>
@@ -57,7 +62,7 @@ export default function BlogIndex({ page = 1 }) {
                 <ul className="!text-[0.7rem] !text-[#aab0bc] m-0 p-0 list-none flex !mb-0">
                   <li className="post-date inline-block">
                     <i className="uil uil-calendar-alt pr-[0.2rem] align-[-.05rem] before:content-['\e9ba']" />
-                    <span>{formatDateShort(post.date)}</span>
+                    <span>{formatDateShort(post.date, language)}</span>
                   </li>
                   <li className="post-author inline-block !ml-4">
                     <i className="uil uil-user pr-[0.2rem] align-[-.05rem] before:content-['\eb3f']" />
@@ -77,7 +82,7 @@ export default function BlogIndex({ page = 1 }) {
             <Pagination 
               currentPage={currentPage}
               totalPages={totalPages}
-              basePath="/blog"
+              basePath={basePath}
             />
           </ul>
         </nav>
