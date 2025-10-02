@@ -8,10 +8,19 @@ import React from "react";
 import ServicesPageContent from "./ServicesPageContent";
 
 export const metadata = {
+  metadataBase: new URL('https://kodkraft.com'),
   title:
-    "Services - KodKraft - Leading Software Development Company in Lebanon",
+    "Dienstleistungen - KodKraft - Führendes Softwareentwicklungsunternehmen im Libanon",
   description:
-    "From responsive web development to SEO & branding, KodKraft delivers high-performance digital solutions tailored to your business goals. Explore our services.",
+    "Von responsiver Webentwicklung bis zu SEO & Branding liefert KodKraft leistungsstarke digitale Lösungen, die auf Ihre Geschäftsziele zugeschnitten sind.",
+  alternates: {
+    canonical: 'https://kodkraft.com/de/services',
+    languages: {
+      'en': 'https://kodkraft.com/services',
+      'de': 'https://kodkraft.com/de/services',
+      'x-default': 'https://kodkraft.com/services',
+    },
+  },
 };
 export default function ServicesPage() {
   return (
