@@ -4,11 +4,12 @@ import Image from "next/image";
 import Pagination from "@/components/common/Pagination";
 import { getPaginatedPosts, formatDateShort } from "@/lib/posts";
 import { usePathname } from "next/navigation";
-import { t } from "@/utlis/translations";
+import { t, getBasePath } from "@/utlis/translations";
 
 export default function BlogIndex({ page = 1, basePath = "/blog" }) {
   const pathname = usePathname();
-  const { posts, totalPages, currentPage } = getPaginatedPosts({ page });
+  const language = pathname.startsWith('/de') ? 'de' : pathname.startsWith('/ar') ? 'ar' : 'en';
+  const { posts, totalPages, currentPage } = getPaginatedPosts({ page, language });
 
   return (
     <div className="xl:w-10/12 lg:w-10/12 w-full flex-[0_0_auto] !px-[15px] max-w-full !mx-auto">
@@ -61,7 +62,7 @@ export default function BlogIndex({ page = 1, basePath = "/blog" }) {
                 <ul className="!text-[0.7rem] !text-[#aab0bc] m-0 p-0 list-none flex !mb-0">
                   <li className="post-date inline-block">
                     <i className="uil uil-calendar-alt pr-[0.2rem] align-[-.05rem] before:content-['\e9ba']" />
-                    <span>{formatDateShort(post.date)}</span>
+                    <span>{formatDateShort(post.date, language)}</span>
                   </li>
                   <li className="post-author inline-block !ml-4">
                     <i className="uil uil-user pr-[0.2rem] align-[-.05rem] before:content-['\eb3f']" />

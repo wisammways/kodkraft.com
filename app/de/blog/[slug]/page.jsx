@@ -6,9 +6,11 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import React from "react";
 
+const LANGUAGE = 'de';
+
 // Generate static paths for all blog posts
 export async function generateStaticParams() {
-  const posts = getAllPosts();
+  const posts = getAllPosts(LANGUAGE);
   return posts.map((post) => ({
     slug: post.slug,
   }));
@@ -16,7 +18,7 @@ export async function generateStaticParams() {
 
 // Generate metadata for each blog post
 export async function generateMetadata({ params }) {
-  const post = getPostBySlug(params.slug);
+  const post = getPostBySlug(params.slug, LANGUAGE);
   
   if (!post) {
     return {
@@ -55,7 +57,7 @@ export async function generateMetadata({ params }) {
 }
 
 export default function BlogPostDE({ params }) {
-  const post = getPostBySlug(params.slug);
+  const post = getPostBySlug(params.slug, LANGUAGE);
 
   if (!post) {
     notFound();
@@ -124,7 +126,7 @@ export default function BlogPostDE({ params }) {
                   <div className="post-meta !mb-6 flex flex-wrap items-center gap-4 text-[0.8rem]">
                     <span className="flex items-center">
                       <i className="uil uil-calendar-alt mr-2"></i>
-                      {formatDate(post.date)}
+                      {formatDate(post.date, LANGUAGE)}
                     </span>
                     {post.tags && post.tags.length > 0 && (
                       <div className="flex items-center gap-2">
