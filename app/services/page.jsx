@@ -3,14 +3,19 @@ import Footer5 from "@/components/footers/Footer5";
 import Header from "@/components/Header";
 import Services from "@/components/home/Services";
 import About from "@/components/homes/home-13/About";
-import Cta from "@/components/homes/home-4/Cta";
-import React from "react";
-
 export const metadata = {
-  title:
-    "Services - KodKraft - Leading Software Development Company in Lebanon",
+  metadataBase: new URL('https://kodkraft.com'),
+  title: "Our Services - KodKraft - Web Development, Mobile Apps, Branding & More",
   description:
-    "From responsive web development to SEO & branding, KodKraft delivers high-performance digital solutions tailored to your business goals. Explore our services.",
+    "Explore KodKraft's comprehensive services: web development, mobile apps, code review, branding, UX/UI design, and SEO optimization. Solutions tailored to your business needs.",
+  alternates: {
+    canonical: 'https://kodkraft.com/services',
+    languages: {
+      'en': 'https://kodkraft.com/services',
+      'de': 'https://kodkraft.com/de/services',
+      'x-default': 'https://kodkraft.com/services',
+    },
+  },
 };
 export default function ServicesPage() {
   return (

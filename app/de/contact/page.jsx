@@ -6,10 +6,19 @@ import React from "react";
 import ContactPageContent from "./ContactPageContent";
 
 export const metadata = {
+  metadataBase: new URL('https://kodkraft.com'),
   title:
-    "Contact us - KodKraft - Leading Software Development Company in Lebanon",
+    "Kontakt - KodKraft - Führendes Softwareentwicklungsunternehmen im Libanon",
   description:
-    "Ready to elevate your digital presence? Contact KodKraft’s team today for custom web, mobile, and branding solutions. Let’s collaborate!",
+    "Bereit, Ihre digitale Präsenz zu steigern? Kontaktieren Sie das KodKraft-Team noch heute für maßgeschneiderte Web-, Mobile- und Branding-Lösungen.",
+  alternates: {
+    canonical: 'https://kodkraft.com/de/contact',
+    languages: {
+      'en': 'https://kodkraft.com/contact',
+      'de': 'https://kodkraft.com/de/contact',
+      'x-default': 'https://kodkraft.com/contact',
+    },
+  },
 };
 export default function ContactPage() {
   return (

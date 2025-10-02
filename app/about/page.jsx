@@ -3,12 +3,19 @@ import Header from "@/components/Header";
 import Contact from "@/components/homes/home-15/Contact";
 import Image from "next/image";
 import React from "react";
-
 export const metadata = {
-  title:
-    "About us - KodKraft - Leading Software Development Company in Lebanon",
+  metadataBase: new URL('https://kodkraft.com'),
+  title: "About Us - KodKraft - Leading Software Development Company in Lebanon",
   description:
-    "Meet KodKraft – a passionate team of developers, designers & UX experts crafting tailored digital experiences that combine creativity, precision, and innovation.",
+    "Learn about KodKraft's mission to deliver exceptional digital solutions. Meet our talented team of developers, designers, and digital strategists committed to your success.",
+  alternates: {
+    canonical: 'https://kodkraft.com/about',
+    languages: {
+      'en': 'https://kodkraft.com/about',
+      'de': 'https://kodkraft.com/de/about',
+      'x-default': 'https://kodkraft.com/about',
+    },
+  },
 };
 
 export default function About() {

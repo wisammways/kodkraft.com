@@ -1,15 +1,16 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import BlogIndex from "./page/shared/BlogIndex";
+import BlogIndex from "@/app/blog/page/shared/BlogIndex";
 import React from "react";
+import Link from "next/link";
 
 export const metadata = {
   metadataBase: new URL('https://kodkraft.com'),
-  title: "Blog - KodKraft - Latest Web Development Insights",
+  title: "Blog - KodKraft - Neueste Webentwicklungs-Einblicke",
   description:
-    "Discover the latest trends in web development, from AI-powered tools like GitHub Copilot to modern frameworks like Laravel, React.js, Next.js, and WordPress. Stay updated with KodKraft's tech insights.",
+    "Entdecken Sie die neuesten Trends in der Webentwicklung, von KI-gestützten Tools wie GitHub Copilot bis hin zu modernen Frameworks wie Laravel, React.js, Next.js und WordPress.",
   alternates: {
-    canonical: 'https://kodkraft.com/blog',
+    canonical: 'https://kodkraft.com/de/blog',
     languages: {
       'en': 'https://kodkraft.com/blog',
       'de': 'https://kodkraft.com/de/blog',
@@ -18,7 +19,7 @@ export const metadata = {
   },
 };
 
-export default function Blog() {
+export default function BlogDE() {
   return (
     <>
       <div className="grow shrink-0">
@@ -32,17 +33,17 @@ export default function Blog() {
             <div className="flex flex-wrap mx-[-15px]">
               <div className="xl:w-8/12 lg:w-8/12 w-full flex-[0_0_auto] !px-[15px] max-w-full !mx-auto">
                 <h1 className="!text-[calc(1.365rem_+_1.38vw)] font-bold !leading-[1.2] xl:!text-[2.4rem] !mb-3 !text-white">
-                  Our Blog
+                  Unser Blog
                 </h1>
                 <p className="lead !text-[1.05rem] !leading-[1.6] font-medium !text-white">
-                  Discover the latest trends and insights in web development technology
+                  Entdecken Sie die neuesten Trends und Erkenntnisse in der Webentwicklungs-Technologie
                 </p>
                 <nav className="inline-block" aria-label="breadcrumb">
                   <ol className="breadcrumb flex flex-wrap bg-[none] p-0 !rounded-none list-none !mb-[20px]">
                     <li className="breadcrumb-item flex !text-[#60697b]">
-                      <a className="!text-white hover:text-white" href="/">
-                        Home
-                      </a>
+                      <Link className="!text-white hover:text-white" href="/de">
+                        Startseite
+                      </Link>
                     </li>
                     <li
                       className="breadcrumb-item flex !text-white !pl-2 before:font-normal before:!flex before:items-center before:text-[rgba(255,255,255,.5)] before:content-['\e931'] before:text-[0.9rem] before:-mt-px before:!pr-2 before:font-Unicons active"

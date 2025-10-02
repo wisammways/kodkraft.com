@@ -176,5 +176,28 @@ export const translations = {
     webPlatform: "Web Platform",
     landingPage: "Landing Page",
     website: "Website"
+  },
+
+  // Blog Section
+  blog: {
+    title: "Our Blog",
+    subtitle: "Discover the latest trends and insights in web development technology",
+    readMore: "Read More",
+    allPosts: "All Posts",
+    latestPosts: "Latest Posts",
+    categories: "Categories",
+    tags: "Tags",
+    relatedPosts: "Related Posts",
+    sharePost: "Share Post",
+    author: "Author",
+    publishedOn: "Published on",
+    readTime: "Read time",
+    comments: "Comments",
+    likes: "Likes",
+    previous: "Previous",
+    next: "Next",
+    backToBlog: "Back to Blog",
+    noPostsFound: "No posts found",
+    searchPlaceholder: "Search blog..."
   }
 };

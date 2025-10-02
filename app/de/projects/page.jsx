@@ -5,10 +5,19 @@ import React from "react";
 import ProjectsPageContent from "./ProjectsPageContent";
 
 export const metadata = {
+  metadataBase: new URL('https://kodkraft.com'),
   title:
-    "Projects - KodKraft - Leading Software Development Company in Lebanon",
+    "Projekte - KodKraft - Führendes Softwareentwicklungsunternehmen im Libanon",
   description:
-    "See KodKraft’s portfolio – beautifully crafted websites, apps, and branding projects designed for usability, performance, and business growth.",
+    "Sehen Sie KodKrafts Portfolio – wunderschön gestaltete Websites, Apps und Branding-Projekte, die auf Benutzerfreundlichkeit, Leistung und Geschäftswachstum ausgelegt sind.",
+  alternates: {
+    canonical: 'https://kodkraft.com/de/projects',
+    languages: {
+      'en': 'https://kodkraft.com/projects',
+      'de': 'https://kodkraft.com/de/projects',
+      'x-default': 'https://kodkraft.com/projects',
+    },
+  },
 };
 export default function ProjectsPage() {
   return (
