@@ -1,9 +1,13 @@
+"use client";
 import Link from "next/link";
 import Image from "next/image";
 import Pagination from "@/components/common/Pagination";
 import { getPaginatedPosts, formatDateShort } from "@/lib/posts";
+import { usePathname } from "next/navigation";
+import { t } from "@/utlis/translations";
 
 export default function BlogIndex({ page = 1, basePath = "/blog" }) {
+  const pathname = usePathname();
   const { posts, totalPages, currentPage } = getPaginatedPosts({ page });
 
   return (
@@ -27,7 +31,7 @@ export default function BlogIndex({ page = 1, basePath = "/blog" }) {
                 </Link>
                 <figcaption className="group-hover:opacity-100 absolute w-full h-full opacity-0 text-center px-4 py-3 inset-0 z-[5] pointer-events-none p-2">
                   <h5 className="from-top !mb-0 absolute w-full translate-y-[-80%] p-[.75rem_1rem] left-0 top-2/4">
-                    Read More
+                    {t(pathname, 'blog.readMore')}
                   </h5>
                 </figcaption>
               </figure>
