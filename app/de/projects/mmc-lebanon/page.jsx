@@ -12,10 +12,10 @@ import Link from "next/link";
 import React from "react";
 
 const images = [
-  { src: "/assets/images/projects/1.jpg", alt: "MMC Lebanon Website" },
-  { src: "/assets/images/projects/1.jpg", alt: "MMC Lebanon Design" },
-  { src: "/assets/images/projects/1.jpg", alt: "MMC Lebanon Mobile" },
-  { src: "/assets/images/projects/1.jpg", alt: "MMC Lebanon Features" },
+  { src: "/assets/images/projects/mmc-lebanon/1.jpg", alt: "MMC Lebanon Website" },
+  { src: "/assets/images/projects/mmc-lebanon/2.jpg", alt: "MMC Lebanon Design" },
+  { src: "/assets/images/projects/mmc-lebanon/3.jpg", alt: "MMC Lebanon Mobile" },
+  { src: "/assets/images/projects/mmc-lebanon/4.jpg", alt: "MMC Lebanon Features" },
 ];
 
 
@@ -71,7 +71,7 @@ export default function MMCLebanonProjectPage() {
                     <Image
                       className="!rounded-[.4rem]"
                       alt="MMC Lebanon Website"
-                      src="/assets/images/projects/1.jpg"
+                      src="/assets/images/projects/mmc-lebanon/mmc-main.jpg"
                       width={2400}
                       height={1640}
                     />
@@ -79,34 +79,49 @@ export default function MMCLebanonProjectPage() {
                   <div className="flex flex-wrap mx-[-15px]">
                     <div className="xl:w-10/12 xl:!ml-[8.33333333%] lg:w-10/12 lg:!ml-[8.33333333%] w-full flex-[0_0_auto] !px-[15px] max-w-full">
                       <h2 className="!text-[calc(1.265rem_+_0.18vw)] font-bold xl:!text-[1.4rem] !leading-[1.35] !mb-4">
-                        About the Project
+                        Über das Projekt
                       </h2>
                       <div className="flex flex-wrap mx-0">
                         <div className="xl:w-9/12 lg:w-9/12 md:w-9/12 w-full flex-[0_0_auto] max-w-full">
                           <p>
-                            MMC Lebanon is a leading medical center that required a modern, professional website to showcase their comprehensive healthcare services. Our goal was to create a trustworthy digital presence that reflects their medical expertise and caring approach.
+                            MMC Lebanon ist ein etablierter Immobilienentwickler im Libanon. Sie kamen mit dem Bedarf an einer modernen digitalen Präsenz zu uns, die ihren Ruf widerspiegelt und ihr vielfältiges Portfolio an Entwicklungen präsentiert. Unsere Herausforderung bestand darin, eine Website zu entwerfen und zu erstellen, die nicht nur ihre Flaggschiff-Projekte hervorhebt, sondern auch die Werte und Dienstleistungen kommuniziert, die MMC zu einem vertrauenswürdigen Namen im libanesischen Immobilienmarkt machen.
+                          </p>
+                          <h3 className="!text-[calc(1.125rem_+_0.18vw)] font-bold !leading-[1.35] !mb-4">
+                            Hauptziele
+                          </h3>
+                          <p>
+                            Das Hauptziel war es, eine Plattform zu schaffen, die MMCs Projekte in den Mittelpunkt stellt, mit besonderem Schwerpunkt auf der Ain Aar Entwicklung. Gleichzeitig musste die Website vollständig responsiv sein, für Suchmaschinen optimiert und mit der visuellen Identität der Marke übereinstimmen.
+                          </p>
+                          <h3 className="!text-[calc(1.125rem_+_0.18vw)] font-bold !leading-[1.35] !mb-4">
+                            Unser Ansatz
+                          </h3>
+                          <p>
+                            Wir begannen mit einer Content-First-Strategie und kartierten, wie Besucher die Projekte und Dienstleistungen erkunden würden. Das Design verwendet eine moderne, minimalistische Ästhetik und nutzt MMCs Markenfarben und Typografie, um Konsistenz und Wiedererkennung zu gewährleisten. Ein dedizierter Bereich wurde für das Ain Aar Projekt entwickelt, der es potenziellen Kunden ermöglicht, detaillierte Informationen, Bilder und Kontaktoptionen einfach zu finden.
                           </p>
                           <p>
-                            We designed a clean, accessible website with an intuitive navigation system that helps patients easily find information about medical services, book appointments, and access important health resources. The design emphasizes trust and professionalism through careful typography and a medical-appropriate color palette.
+                            Auf der technischen Seite haben wir SEO-bereite Strukturen implementiert, einschließlich sauberem Code, optimierten Metadaten und schnell ladenden Seiten, um höhere Suchrankings zu unterstützen. Die Website wurde sorgfältig für kleine Bildschirme angepasst, um ein nahtloses Browsing-Erlebnis auf Mobilgeräten und Tablets zu gewährleisten, die einen großen Teil des Webverkehrs im Libanon ausmachen.
                           </p>
+                          <h3 className="!text-[calc(1.125rem_+_0.18vw)] font-bold !leading-[1.35] !mb-4">
+                            Ergebnisse
+                          </h3>
                           <p>
-                            The website is fully responsive and optimized for both desktop and mobile users, ensuring patients can access vital information from any device. We integrated appointment booking functionality and contact forms to streamline patient communication with the medical center.
+                            Die fertige Website bietet eine professionelle, benutzerfreundliche Präsentation von MMC Lebanons Projekten und Dienstleistungen. Sie positioniert das Unternehmen als zukunftsorientierter Entwickler mit einer starken digitalen Präsenz und bietet Besuchern klare Wege, um sich über MMCs Immobilienangebote zu informieren und mit ihnen in Kontakt zu treten.
                           </p>
                         </div>
                         {/*/column */}
                         <div className="xl:w-2/12 lg:w-2/12 md:w-2/12 w-full flex-[0_0_auto] max-w-full !ml-auto">
                           <ul className="pl-0 list-none">
                             <li>
-                              <h5 className="!mb-1">Date</h5>
+                              <h5 className="!mb-1">Datum</h5>
                               <p>Jan 2025</p>
                             </li>
                             <li>
-                              <h5 className="!mb-1">Client Name</h5>
+                              <h5 className="!mb-1">Kundenname</h5>
                               <p>MMC Lebanon</p>
                             </li>
                           </ul>
-                          <a href="#" className="more hover">
-                            See Project
+                          <a href="https://mmclebanon.com/" target="_blank" className="more hover">
+                            Projekt ansehen
                           </a>
                         </div>
                         {/*/column */}

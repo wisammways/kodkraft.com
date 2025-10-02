@@ -12,10 +12,10 @@ import Link from "next/link";
 import React from "react";
 
 const images = [
-  { src: "/assets/images/projects/2.jpg", alt: "MerryCare Platform" },
-  { src: "/assets/images/projects/2.jpg", alt: "MerryCare Dashboard" },
-  { src: "/assets/images/projects/2.jpg", alt: "MerryCare Mobile App" },
-  { src: "/assets/images/projects/2.jpg", alt: "MerryCare Features" },
+  { src: "/assets/images/projects/merrycare/m1.jpg", alt: "MerryCare Platform" },
+  { src: "/assets/images/projects/merrycare/m2.jpg", alt: "MerryCare Dashboard" },
+  { src: "/assets/images/projects/merrycare/m3.jpg", alt: "MerryCare Mobile App" },
+  { src: "/assets/images/projects/merrycare/m4.jpg", alt: "MerryCare Features" },
 ];
 
 
@@ -35,7 +35,7 @@ export default function MerryCareProjectPage() {
             <div className="flex flex-wrap mx-[-15px]">
               <div className="xl:w-8/12 lg:w-8/12 w-full flex-[0_0_auto] !px-[15px] max-w-full !mx-auto">
                 <h1 className="!text-[calc(1.365rem_+_1.38vw)] font-bold !leading-[1.2] xl:!text-[2.4rem] !mb-3 !text-white">
-                  MerryCare Platform
+                  MerryCare Website
                 </h1>
                 <nav className="inline-block" aria-label="breadcrumb">
                   <ol className="breadcrumb flex flex-wrap bg-[none] p-0 !rounded-none list-none !mb-[20px]">
@@ -48,7 +48,7 @@ export default function MerryCareProjectPage() {
                       className="breadcrumb-item flex !text-white !pl-2 before:font-normal before:!flex before:items-center before:text-[rgba(255,255,255,.5)] before:content-['\e931'] before:text-[0.9rem] before:-mt-px before:!pr-2 before:font-Unicons active"
                       aria-current="page"
                     >
-                      MerryCare Platform
+                      MerryCare Website
                     </li>
                   </ol>
                 </nav>
@@ -71,7 +71,7 @@ export default function MerryCareProjectPage() {
                     <Image
                       className="!rounded-[.4rem]"
                       alt="MerryCare Platform"
-                      src="/assets/images/projects/2.jpg"
+                      src="/assets/images/projects/merrycare/main.jpg"
                       width={2400}
                       height={1640}
                     />
@@ -79,34 +79,52 @@ export default function MerryCareProjectPage() {
                   <div className="flex flex-wrap mx-[-15px]">
                     <div className="xl:w-10/12 xl:!ml-[8.33333333%] lg:w-10/12 lg:!ml-[8.33333333%] w-full flex-[0_0_auto] !px-[15px] max-w-full">
                       <h2 className="!text-[calc(1.265rem_+_0.18vw)] font-bold xl:!text-[1.4rem] !leading-[1.35] !mb-4">
-                        About the Project
+                        Über das Projekt
                       </h2>
                       <div className="flex flex-wrap mx-0">
                         <div className="xl:w-9/12 lg:w-9/12 md:w-9/12 w-full flex-[0_0_auto] max-w-full">
-                          <p>
-                            MerryCare is an innovative healthcare platform designed to streamline patient care and improve healthcare delivery. Our challenge was to create a comprehensive digital solution that could handle complex healthcare workflows while remaining intuitive for medical professionals and patients alike.
-                          </p>
-                          <p>
-                            We developed a robust platform featuring patient management systems, appointment scheduling, medical records management, and telemedicine capabilities. The interface prioritizes clarity and efficiency, with role-based access controls ensuring data security and HIPAA compliance.
-                          </p>
-                          <p>
-                            The platform includes advanced features such as automated reminders, prescription management, and real-time communication tools between healthcare providers and patients. Built with scalability in mind, MerryCare can accommodate healthcare facilities of all sizes, from small clinics to large hospital networks.
-                          </p>
+
+                          <p>Merry Care ist ein in Melbourne ansässiger Dienstleister, der sich der Unterstützung von Menschen mit Behinderungen in ihrem täglichen Leben widmet. Ihre Dienstleistungen umfassen wesentliche Bereiche wie Haushaltsaufgaben, tägliche Lebensführung und Lebenskompetenzen, innovative Gemeinschaftsteilnahme, Reise und Transport und mehr.</p>
+
+                          <h3>Projektziel</h3>
+
+                          <p>Merry Care kam mit einer klaren Mission zu uns: eine benutzerfreundliche, inklusive und barrierefreie Website zu erstellen, die ihre Werte von Fürsorge, Gemeinschaft und Empowerment widerspiegelt. Die Website musste ein breites Spektrum von Nutzern ansprechen, darunter Menschen mit Behinderungen, ihre Familien und Betreuer.</p>
+
+                          <h3>Unser Ansatz</h3>
+
+                          <p>Wir haben eine Website entworfen und entwickelt, die Barrierefreiheit, Klarheit und Inklusivität priorisiert. Unser Fokus lag nicht nur auf visueller Attraktivität, sondern auch darauf, sicherzustellen, dass die Website funktional, intuitiv und für alle Benutzer leicht zu navigieren ist.</p>
+
+                          <h3>Hauptfunktionen</h3>
+
+                          <p>Barrierefreiheits-Umschalter: Benutzerdefinierte Einstellungen für hohen Kontrast, schärfere und größere Schriftarten und anpassbare Layouts, um sicherzustellen, dass die Website für Menschen mit unterschiedlichen visuellen Bedürfnissen nutzbar ist.</p>
+
+                          <p>Inklusives Design: Sorgfältige Auswahl von Schriftarten, Farbpaletten und Layouts, um Barrierefreiheitsstandards (WCAG-Konformität) zu erfüllen und gleichzeitig eine saubere und professionelle Ästhetik beizubehalten.</p>
+
+                          <p>Einfacher Informationszugriff: Klare Navigationsstruktur und Servicebeschreibungen, die Informationen leicht verständlich und mit minimalen Klicks erreichbar machen.</p>
+
+                          <p>Mehrsprachige Unterstützung: Englische und arabische Sprachversionen, um Melbournes vielfältige Gemeinschaft zu bedienen.</p>
+
+                          <p>Mobilfreundlich: Vollständig responsives Design, das ein reibungsloses Erlebnis auf Mobiltelefonen und Tablets gewährleistet.</p>
+
+                          <h3>Ergebnis</h3>
+
+                          <p>Die fertige Website bietet Merry Care eine digitale Präsenz, die sowohl inklusiv als auch professionell ist. Sie spiegelt ihr Engagement für die Unterstützung von Menschen mit Behinderungen wider und stellt gleichzeitig sicher, dass ihre Dienstleistungen und Ressourcen für jeden, jederzeit und überall zugänglich sind.</p>
+
                         </div>
                         {/*/column */}
                         <div className="xl:w-2/12 lg:w-2/12 md:w-2/12 w-full flex-[0_0_auto] max-w-full !ml-auto">
                           <ul className="pl-0 list-none">
                             <li>
-                              <h5 className="!mb-1">Date</h5>
-                              <p>Nov 2024</p>
+                              <h5 className="!mb-1">Datum</h5>
+                              <p>Nov 2022</p>
                             </li>
                             <li>
-                              <h5 className="!mb-1">Client Name</h5>
-                              <p>MerryCare</p>
+                              <h5 className="!mb-1">Kundenname</h5>
+                              <p>Merry Care, Melbourne, Australien</p>
                             </li>
                           </ul>
-                          <a href="#" className="more hover">
-                            See Project
+                          <a href="https://merrycare.net.au/" target="_blank" className="more hover">
+                            Projekt ansehen
                           </a>
                         </div>
                         {/*/column */}

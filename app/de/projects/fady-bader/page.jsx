@@ -79,34 +79,34 @@ export default function FadyBaderProjectPage() {
                   <div className="flex flex-wrap mx-[-15px]">
                     <div className="xl:w-10/12 xl:!ml-[8.33333333%] lg:w-10/12 lg:!ml-[8.33333333%] w-full flex-[0_0_auto] !px-[15px] max-w-full">
                       <h2 className="!text-[calc(1.265rem_+_0.18vw)] font-bold xl:!text-[1.4rem] !leading-[1.35] !mb-4">
-                        About the Project
+                        Über das Projekt
                       </h2>
                       <div className="flex flex-wrap mx-0">
                         <div className="xl:w-9/12 lg:w-9/12 md:w-9/12 w-full flex-[0_0_auto] max-w-full">
                           <p>
-                            Fady Bader is a talented artist and designer who needed a stunning portfolio website to showcase his creative work and attract potential clients. The challenge was to create a digital space that reflects his artistic vision while maintaining professional credibility.
+                            Fady Bader ist ein talentierter Künstler und Designer, der eine beeindruckende Portfolio-Website benötigte, um seine kreativen Arbeiten zu präsentieren und potenzielle Kunden anzuziehen. Die Herausforderung bestand darin, einen digitalen Raum zu schaffen, der seine künstlerische Vision widerspiegelt und gleichzeitig professionelle Glaubwürdigkeit bewahrt.
                           </p>
                           <p>
-                            We designed a visually striking portfolio that puts his artwork front and center. The website features a clean, modern layout with intuitive navigation that allows visitors to easily browse through different categories of his work, from graphic design to fine art.
+                            Wir haben ein visuell beeindruckendes Portfolio entworfen, das seine Kunstwerke in den Mittelpunkt stellt. Die Website verfügt über ein sauberes, modernes Layout mit intuitiver Navigation, die es Besuchern ermöglicht, einfach durch verschiedene Kategorien seiner Arbeit zu browsen, von Grafikdesign bis hin zu bildender Kunst.
                           </p>
                           <p>
-                            The portfolio includes an integrated gallery system with lightbox functionality, allowing visitors to view artwork in detail. We also implemented a contact system for project inquiries and ensured the site is fully responsive across all devices to reach the widest possible audience.
+                            Das Portfolio umfasst ein integriertes Galeriesystem mit Lightbox-Funktionalität, das es Besuchern ermöglicht, Kunstwerke im Detail zu betrachten. Wir haben auch ein Kontaktsystem für Projektanfragen implementiert und sichergestellt, dass die Website auf allen Geräten vollständig responsiv ist, um das größtmögliche Publikum zu erreichen.
                           </p>
                         </div>
                         {/*/column */}
                         <div className="xl:w-2/12 lg:w-2/12 md:w-2/12 w-full flex-[0_0_auto] max-w-full !ml-auto">
                           <ul className="pl-0 list-none">
                             <li>
-                              <h5 className="!mb-1">Date</h5>
-                              <p>Dec 2024</p>
+                              <h5 className="!mb-1">Datum</h5>
+                              <p>Dez 2024</p>
                             </li>
                             <li>
-                              <h5 className="!mb-1">Client Name</h5>
+                              <h5 className="!mb-1">Kundenname</h5>
                               <p>Fady Bader</p>
                             </li>
                           </ul>
                           <a href="#" className="more hover">
-                            See Project
+                            Projekt ansehen
                           </a>
                         </div>
                         {/*/column */}
