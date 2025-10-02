@@ -30,8 +30,17 @@ export async function generateMetadata({ params }) {
   }
   
   return {
+    metadataBase: new URL('https://kodkraft.com'),
     title: `Blog - Page ${page} - KodKraft`,
     description: `Page ${page} of KodKraft's web development blog featuring insights on Laravel, React.js, Next.js, and modern web technologies.`,
+    alternates: {
+      canonical: `https://kodkraft.com/blog/page/${page}`,
+      languages: {
+        'en': `https://kodkraft.com/blog/page/${page}`,
+        'de': `https://kodkraft.com/de/blog/page/${page}`,
+        'x-default': `https://kodkraft.com/blog/page/${page}`,
+      },
+    },
   };
 }
 

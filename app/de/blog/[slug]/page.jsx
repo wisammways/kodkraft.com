@@ -20,7 +20,7 @@ export async function generateMetadata({ params }) {
   
   if (!post) {
     return {
-      title: "Post Not Found - KodKraft Blog",
+      title: "Beitrag nicht gefunden - KodKraft Blog",
     };
   }
 
@@ -29,7 +29,7 @@ export async function generateMetadata({ params }) {
     title: `${post.title} - KodKraft Blog`,
     description: post.excerpt,
     alternates: {
-      canonical: `https://kodkraft.com/blog/${params.slug}`,
+      canonical: `https://kodkraft.com/de/blog/${params.slug}`,
       languages: {
         'en': `https://kodkraft.com/blog/${params.slug}`,
         'de': `https://kodkraft.com/de/blog/${params.slug}`,
@@ -54,7 +54,7 @@ export async function generateMetadata({ params }) {
   };
 }
 
-export default function BlogPost({ params }) {
+export default function BlogPostDE({ params }) {
   const post = getPostBySlug(params.slug);
 
   if (!post) {
@@ -82,12 +82,12 @@ export default function BlogPost({ params }) {
                 <nav className="inline-block" aria-label="breadcrumb">
                   <ol className="breadcrumb flex flex-wrap bg-[none] p-0 !rounded-none list-none !mb-[20px]">
                     <li className="breadcrumb-item flex !text-[#60697b]">
-                      <Link className="!text-white hover:text-white" href="/">
-                        Home
+                      <Link className="!text-white hover:text-white" href="/de">
+                        Startseite
                       </Link>
                     </li>
                     <li className="breadcrumb-item flex !text-[rgba(255,255,255,.5)] !pl-2 before:font-normal before:!flex before:items-center before:text-[rgba(255,255,255,.5)] before:content-['\e931'] before:text-[0.9rem] before:-mt-px before:!pr-2 before:font-Unicons">
-                      <Link className="!text-white hover:text-white" href="/blog">
+                      <Link className="!text-white hover:text-white" href="/de/blog">
                         Blog
                       </Link>
                     </li>
@@ -108,68 +108,52 @@ export default function BlogPost({ params }) {
           <div className="container py-[4.5rem] xl:!py-24 lg:!py-24 md:!py-24">
             <div className="flex flex-wrap mx-[-15px]">
               <div className="xl:w-10/12 lg:w-10/12 w-full flex-[0_0_auto] !px-[15px] max-w-full !mx-auto">
-                <div className="blog single !mt-[-7rem]">
-                  <div className="card">
-                    <figure className="card-img-top">
-                      <Image
-                        alt={post.title}
-                        src={post.hero}
-                        width={960}
-                        height={600}
-                        className="w-full h-auto"
-                      />
-                    </figure>
-                    <div className="card-body flex-[1_1_auto] p-[40px] xl:!p-[2.5rem] lg:!p-[2.5rem] md:!p-[2.5rem]">
-                      <div className="classic-view">
-                        <article className="post">
-                          <div className="post-content !mb-5">
-                            <div className="!relative">
-                              <div 
-                                className="blog-content prose prose-lg max-w-none"
-                                dangerouslySetInnerHTML={{ __html: post.bodyHtml }}
-                              />
-                            </div>
-                          </div>
-                          <div className="post-footer xl:!flex xl:!flex-row xl:!justify-between lg:!flex lg:!flex-row lg:!justify-between md:!flex md:!flex-row md:!justify-between !items-center !mt-8">
-                            <div>
-                              <ul className="pl-0 list-none tag-list !mb-0">
-                                <li className="!mt-0 !mb-[0.45rem] !mr-[0.2rem] inline-block">
-                                  <span className="!text-[0.7rem] font-bold uppercase !tracking-[0.02rem] !text-[#aab0bc]">
-                                    Tags:
-                                  </span>
-                                </li>
-                                {post.tags.map((tag, index) => (
-                                  <li key={index} className="!mt-0 !mb-[0.45rem] !mr-[0.2rem] inline-block">
-                                    <span className="btn btn-soft-ash btn-sm !rounded-[50rem] !text-[0.7rem] !mb-0 !mr-[0.2rem]">
-                                      {tag}
-                                    </span>
-                                  </li>
-                                ))}
-                              </ul>
-                            </div>
-                            <div className="!mb-0 !mt-2 xl:!mt-0 lg:!mt-0 md:!mt-0">
-                              <div className="dropdown share-dropdown btn-group">
-                                <span className="!text-[0.7rem] font-bold uppercase !tracking-[0.02rem] !text-[#aab0bc] !mr-3">
-                                  Published: {formatDate(post.date)}
-                                </span>
-                              </div>
-                            </div>
-                          </div>
-                        </article>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <article className="!mb-[4.5rem] xl:!mb-24 lg:!mb-24 md:!mb-24">
+                  {/* Hero Image */}
+                  <figure className="!mb-10">
+                    <Image
+                      src={post.hero}
+                      alt={post.title}
+                      width={1200}
+                      height={600}
+                      className="rounded-lg"
+                    />
+                  </figure>
 
-                <nav className="flex !justify-between !items-center !mt-12" aria-label="pagination">
+                  {/* Post Meta */}
+                  <div className="post-meta !mb-6 flex flex-wrap items-center gap-4 text-[0.8rem]">
+                    <span className="flex items-center">
+                      <i className="uil uil-calendar-alt mr-2"></i>
+                      {formatDate(post.date)}
+                    </span>
+                    {post.tags && post.tags.length > 0 && (
+                      <div className="flex items-center gap-2">
+                        <i className="uil uil-tag-alt"></i>
+                        {post.tags.map((tag, index) => (
+                          <span key={index} className="badge bg-[#e5e5e5] text-[#60697b] !px-3 !py-1 rounded-full">
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+
+                  {/* Post Content */}
+                  <div 
+                    className="prose prose-lg max-w-none"
+                    dangerouslySetInnerHTML={{ __html: post.bodyHtml }}
+                  />
+                </article>
+
+                {/* Back to Blog */}
+                <div className="!mt-10">
                   <Link
-                    href="/blog"
-                    className="btn btn-soft-primary !rounded-[50rem] !mb-0 hover:translate-y-[-0.15rem] hover:shadow-[0_0.25rem_0.75rem_rgba(30,34,40,0.15)]"
+                    href="/de/blog"
+                    className="btn btn-sm btn-soft-primary rounded-pill"
                   >
-                    <i className="uil uil-arrow-left before:content-['\e949'] !text-[0.7rem] !mr-1" />
-                    Back to Blog
+                    ← Zurück zum Blog
                   </Link>
-                </nav>
+                </div>
               </div>
             </div>
           </div>

@@ -4,10 +4,19 @@ import Projects4 from "@/components/projects/Projects4";
 import React from "react";
 
 export const metadata = {
+  metadataBase: new URL('https://kodkraft.com'),
   title:
     "Projects - KodKraft - Leading Software Development Company in Lebanon",
   description:
-    "See KodKraft’s portfolio – beautifully crafted websites, apps, and branding projects designed for usability, performance, and business growth.",
+    "See KodKraft's portfolio – beautifully crafted websites, apps, and branding projects designed for usability, performance, and business growth.",
+  alternates: {
+    canonical: 'https://kodkraft.com/projects',
+    languages: {
+      'en': 'https://kodkraft.com/projects',
+      'de': 'https://kodkraft.com/de/projects',
+      'x-default': 'https://kodkraft.com/projects',
+    },
+  },
 };
 export default function ProjectsPage() {
   return (

@@ -176,5 +176,28 @@ export const translations = {
     webPlatform: "Web-Plattform",
     landingPage: "Landing Page",
     website: "Website"
+  },
+
+  // Blog Section
+  blog: {
+    title: "Unser Blog",
+    subtitle: "Entdecken Sie die neuesten Trends und Erkenntnisse in der Webentwicklungs-Technologie",
+    readMore: "Mehr lesen",
+    allPosts: "Alle Beiträge",
+    latestPosts: "Neueste Beiträge",
+    categories: "Kategorien",
+    tags: "Schlagwörter",
+    relatedPosts: "Verwandte Beiträge",
+    sharePost: "Beitrag teilen",
+    author: "Autor",
+    publishedOn: "Veröffentlicht am",
+    readTime: "Lesezeit",
+    comments: "Kommentare",
+    likes: "Likes",
+    previous: "Vorherige",
+    next: "Nächste",
+    backToBlog: "Zurück zum Blog",
+    noPostsFound: "Keine Beiträge gefunden",
+    searchPlaceholder: "Blog durchsuchen..."
   }
 };

@@ -8,10 +8,19 @@ import Footer from "@/components/Footer";
 import Clients3 from "@/components/blocks/clients/Clients3";
 
 export const metadata = {
+  metadataBase: new URL('https://kodkraft.com'),
   title:
     "KodKraft - Leading Software Development Company in Lebanon",
   description:
-    "KodKraft crafts stunning, user-friendly websites & apps. Skilled developers, designers, and UX specialists united to drive your digital success. Let’s build something great!",
+    "KodKraft crafts stunning, user-friendly websites & apps. Skilled developers, designers, and UX specialists united to drive your digital success. Let's build something great!",
+  alternates: {
+    canonical: 'https://kodkraft.com',
+    languages: {
+      'en': 'https://kodkraft.com',
+      'de': 'https://kodkraft.com/de',
+      'x-default': 'https://kodkraft.com',
+    },
+  },
 };
 
 export default function Home() {

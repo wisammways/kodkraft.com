@@ -3,13 +3,19 @@ import Contact1 from "@/components/contact/Contact1";
 import Footer5 from "@/components/footers/Footer5";
 import Header from "@/components/Header";
 
-import React from "react";
-
 export const metadata = {
-  title:
-    "Contact us - KodKraft - Leading Software Development Company in Lebanon",
+  metadataBase: new URL('https://kodkraft.com'),
+  title: "Contact Us - KodKraft - Let's Build Something Great Together",
   description:
-    "Ready to elevate your digital presence? Contact KodKraft’s team today for custom web, mobile, and branding solutions. Let’s collaborate!",
+    "Get in touch with KodKraft to discuss your project. Our team is ready to help you achieve your digital goals with innovative solutions.",
+  alternates: {
+    canonical: 'https://kodkraft.com/contact',
+    languages: {
+      'en': 'https://kodkraft.com/contact',
+      'de': 'https://kodkraft.com/de/contact',
+      'x-default': 'https://kodkraft.com/contact',
+    },
+  },
 };
 export default function ContactPage() {
   return (
