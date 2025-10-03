@@ -106,5 +106,18 @@ export const translations = {
     readMore: "اقرأ المزيد",
     learnMore: "اعرف المزيد",
     getStarted: "ابدأ الآن"
+  },
+
+  // Portfolio Section
+  portfolio: {
+    title: "مشاريعنا",
+    subtitle: "استكشف بعض أعمالنا الحديثة"
+  },
+
+  // Project Categories
+  projectCategories: {
+    webPlatform: "منصة ويب",
+    landingPage: "صفحة هبوط",
+    website: "موقع إلكتروني"
   }
 };

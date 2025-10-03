@@ -1,6 +1,7 @@
 import React from "react";
 import Hero from "@/components/home/Hero";
 import Services from "@/components/home/Services";
+import Portfolio from "@/components/home/Portfolio";
 import Technology from "@/components/home/Technology";
 import OurValue from "@/components/home/OurValue";
 import Header from "@/components/Header";
@@ -25,6 +26,8 @@ export default function Home() {
           <Hero />
 
           <Services />
+
+          <Portfolio />
 
           <Technology />
 
