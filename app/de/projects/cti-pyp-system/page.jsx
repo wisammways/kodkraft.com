@@ -2,9 +2,9 @@
 
 import Image from "next/image";
 import { Gallery, Item } from "react-photoswipe-gallery";
-import Footer5 from "@/components/footers/Footer5";
-import Header from "@/components/Header";
-import ProjectNavigation from "@/components/projects/ProjectNavigation";
+import Footer5 from "@/components/used/footers/Footer5";
+import Header from "@/components/used/Header";
+import ProjectNavigation from "@/components/used/projects/ProjectNavigation";
 import Link from "next/link";
 import React from "react";
 import { usePathname } from "next/navigation";

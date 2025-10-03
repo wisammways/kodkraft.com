@@ -1,6 +1,6 @@
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
-import Projects4 from "@/components/projects/Projects4";
+import Footer from "@/components/used/Footer";
+import Header from "@/components/used/Header";
+import Projects4 from "@/components/used/projects/Projects4";
 import React from "react";
 
 export const metadata = {

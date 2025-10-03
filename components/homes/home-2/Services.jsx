@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import ModalVideo from "@/components/common/ModalVideo";
+import ModalVideo from "@/components/used/common/ModalVideo";
 export default function Services() {
   const [isOpen, setIsOpen] = useState(false);
   return (

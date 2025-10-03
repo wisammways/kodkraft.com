@@ -1,5 +1,5 @@
 "use client";
-import Counter from "@/components/common/Counter";
+import Counter from "@/components/used/common/Counter";
 import { testimonials } from "@/data/testimonials";
 import Image from "next/image";
 import React from "react";

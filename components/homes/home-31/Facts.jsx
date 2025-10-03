@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { facts2 } from "@/data/facts";
-import Counter from "@/components/common/Counter";
+import Counter from "@/components/used/common/Counter";
 export default function Facts() {
   return (
     <>

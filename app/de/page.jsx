@@ -1,12 +1,12 @@
 import React from "react";
-import Hero from "@/components/home/Hero";
-import Services from "@/components/home/Services";
-import Portfolio from "@/components/home/Portfolio";
-import Technology from "@/components/home/Technology";
-import OurValue from "@/components/home/OurValue";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-import Clients3 from "@/components/blocks/clients/Clients3";
+import Hero from "@/components/used/home/Hero";
+import Services from "@/components/used/home/Services";
+import Portfolio from "@/components/used/home/Portfolio";
+import Technology from "@/components/used/home/Technology";
+import OurValue from "@/components/used/home/OurValue";
+import Header from "@/components/used/Header";
+import Footer from "@/components/used/Footer";
+import Clients3 from "@/components/used/blocks/clients/Clients3";
 
 export const metadata = {
   metadataBase: new URL('https://kodkraft.com'),

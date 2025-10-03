@@ -1,6 +1,6 @@
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
-import Contact from "@/components/homes/home-15/Contact";
+import Footer from "@/components/used/Footer";
+import Header from "@/components/used/Header";
+import Contact from "@/components/used/homes/home-15/Contact";
 import Image from "next/image";
 import React from "react";
 

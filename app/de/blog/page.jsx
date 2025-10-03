@@ -1,5 +1,5 @@
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
+import Footer from "@/components/used/Footer";
+import Header from "@/components/used/Header";
 import BlogIndex from "@/app/blog/page/shared/BlogIndex";
 import React from "react";
 import Link from "next/link";

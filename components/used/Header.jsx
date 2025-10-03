@@ -3,7 +3,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { socialLinks } from "@/data/socials";
-import Nav from "./Nav";
+import Nav from "../Nav";
 import { usePathname } from "next/navigation";
 import { getBasePath, t } from "@/utlis/translations";
 

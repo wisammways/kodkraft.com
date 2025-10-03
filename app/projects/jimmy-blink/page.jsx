@@ -1,7 +1,7 @@
-import Footer5 from "@/components/footers/Footer5";
-import Header from "@/components/Header";
-import ProjectDetails from "@/components/projects/ProjectDetails";
-import ProjectNavigation from "@/components/projects/ProjectNavigation";
+import Footer5 from "@/components/used/footers/Footer5";
+import Header from "@/components/used/Header";
+import ProjectDetails from "@/components/used/projects/ProjectDetails";
+import ProjectNavigation from "@/components/used/projects/ProjectNavigation";
 import Link from "next/link";
 
 import React from "react";
