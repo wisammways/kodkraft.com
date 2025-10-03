@@ -1,5 +1,5 @@
 "use client";
-import ModalVideo from "@/components/used/common/ModalVideo";
+import ModalVideo from "@/components/common/ModalVideo";
 import React, { useState } from "react";
 
 export default function Cta({

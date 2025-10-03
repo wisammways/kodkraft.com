@@ -1,7 +1,7 @@
-import Cta from "@/components/used/common/Cta";
-import Contact1 from "@/components/used/contact/Contact1";
-import Footer5 from "@/components/used/footers/Footer5";
-import Header from "@/components/used/Header";
+import Cta from "@/components/common/Cta";
+import Contact1 from "@/components/contact/Contact1";
+import Footer5 from "@/components/footers/Footer5";
+import Header from "@/components/Header";
 
 export const metadata = {
   metadataBase: new URL('https://kodkraft.com'),

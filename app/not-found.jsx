@@ -1,5 +1,5 @@
-import Footer from "@/components/used/Footer";
-import Header from "@/components/used/Header";
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";

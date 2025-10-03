@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import ModalVideo from "@/components/used/common/ModalVideo";
+import ModalVideo from "@/components/common/ModalVideo";
 export default function Features() {
   const [isOpen, setIsOpen] = useState(false);
   return (

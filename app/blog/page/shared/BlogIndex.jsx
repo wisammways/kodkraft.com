@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import Pagination from "@/components/used/common/Pagination";
+import Pagination from "@/components/common/Pagination";
 import { getPaginatedPosts, formatDateShort } from "@/lib/posts";
 import { usePathname } from "next/navigation";
 import { t, getBasePath } from "@/utlis/translations";

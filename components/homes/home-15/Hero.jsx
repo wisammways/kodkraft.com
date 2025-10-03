@@ -1,5 +1,5 @@
 "use client";
-import ModalVideo from "@/components/used/common/ModalVideo";
+import ModalVideo from "@/components/common/ModalVideo";
 import Link from "next/link";
 import { useState } from "react";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";

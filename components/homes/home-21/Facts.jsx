@@ -1,7 +1,7 @@
 import React from "react";
 import Projects from "./Projects";
 import Image from "next/image";
-import Counter from "@/components/used/common/Counter";
+import Counter from "@/components/common/Counter";
 import { teamMembers2 } from "@/data/team";
 export default function Facts() {
   return (

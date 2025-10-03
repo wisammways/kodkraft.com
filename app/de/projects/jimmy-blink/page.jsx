@@ -1,10 +1,10 @@
 "use client";
-import Footer5 from "@/components/used/footers/Footer5";
+import Footer5 from "@/components/footers/Footer5";
 
 import { usePathname } from "next/navigation";
 import { t, getBasePath } from "@/utlis/translations";
-import Header from "@/components/used/Header";
-import ProjectNavigation from "@/components/used/projects/ProjectNavigation";
+import Header from "@/components/Header";
+import ProjectNavigation from "@/components/projects/ProjectNavigation";
 import Link from "next/link";
 import Image from "next/image";
 import { Gallery, Item } from "react-photoswipe-gallery";

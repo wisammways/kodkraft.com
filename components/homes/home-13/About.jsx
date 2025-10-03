@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import { facts } from "@/data/facts";
-import Counter from "@/components/used/common/Counter";
+import Counter from "@/components/common/Counter";
 import { features } from "@/data/features";
 import { steps } from "@/data/process";
 import { usePathname } from "next/navigation";

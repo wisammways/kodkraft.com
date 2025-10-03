@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { posts3, posts5, posts6 } from "@/data/blogs";
 import { socialLinks } from "@/data/socials";
-import Pagination from "@/components/used/common/Pagination";
+import Pagination from "@/components/common/Pagination";
 export default function Blogs() {
   return (
     <>

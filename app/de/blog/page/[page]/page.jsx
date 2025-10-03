@@ -1,5 +1,5 @@
-import Footer from "@/components/used/Footer";
-import Header from "@/components/used/Header";
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
 import BlogIndex from "@/app/blog/page/shared/BlogIndex";
 import { getAllPosts } from "@/lib/posts";
 import { notFound } from "next/navigation";

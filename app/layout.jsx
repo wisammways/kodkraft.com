@@ -5,7 +5,7 @@ import "photoswipe/dist/photoswipe.css";
 import iTooltip from "itooltip";
 import { usePathname } from "next/navigation";
 import scrollQue from "../utlis/scrollCue.min.js";
-import ProgressWrap from "@/components/used/common/ProgressWrap";
+import ProgressWrap from "@/components/common/ProgressWrap";
 import initPlayer from "@/utlis/initPlayer";
 import { GoogleTagManager } from '@next/third-parties/google'
 import { getCurrentLanguage, isRTL } from "@/utlis/translations";

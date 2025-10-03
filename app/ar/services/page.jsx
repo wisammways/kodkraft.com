@@ -1,9 +1,9 @@
-import Pricing from "@/components/used/common/Pricing";
-import Footer5 from "@/components/used/footers/Footer5";
-import Header from "@/components/used/Header";
-import Services from "@/components/used/home/Services";
-import About from "@/components/used/homes/home-13/About";
-import Cta from "@/components/used/homes/home-4/Cta";
+import Pricing from "@/components/common/Pricing";
+import Footer5 from "@/components/footers/Footer5";
+import Header from "@/components/Header";
+import Services from "@/components/home/Services";
+import About from "@/components/homes/home-13/About";
+import Cta from "@/components/homes/home-4/Cta";
 import React from "react";
 
 export const metadata = {
