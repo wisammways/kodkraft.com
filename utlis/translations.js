@@ -2,6 +2,7 @@
 import { translations as enTranslations } from '@/data/translations/en';
 import { translations as deTranslations } from '@/data/translations/de';
 import { translations as arTranslations } from '@/data/translations/ar';
+import { translations as frTranslations } from '@/data/translations/fr';
 
 /**
  * Get translations for the current language based on URL path
@@ -13,6 +14,8 @@ export function getTranslations(pathname) {
     return deTranslations;
   } else if (pathname?.startsWith('/ar')) {
     return arTranslations;
+  } else if (pathname?.startsWith('/fr')) {
+    return frTranslations;
   }
   return enTranslations;
 }
@@ -34,7 +37,9 @@ export function t(pathname, keyPath) {
     if (value && typeof value === 'object' && key in value) {
       value = value[key];
     } else {
-      const currentLang = pathname?.startsWith('/de') ? 'de' : pathname?.startsWith('/ar') ? 'ar' : 'en';
+      const currentLang = pathname?.startsWith('/de') ? 'de' : 
+                         pathname?.startsWith('/ar') ? 'ar' : 
+                         pathname?.startsWith('/fr') ? 'fr' : 'en';
       console.warn(`Translation key "${keyPath}" not found for language ${currentLang}`);
       return keyPath; // Return the key path as fallback
     }
@@ -62,6 +67,15 @@ export function isArabic(pathname) {
 }
 
 /**
+ * Check if current path is French
+ * @param {string} pathname - The current URL pathname
+ * @returns {boolean} - True if French, false otherwise
+ */
+export function isFrench(pathname) {
+  return pathname?.startsWith('/fr');
+}
+
+/**
  * Check if current language is RTL
  * @param {string} pathname - The current URL pathname
  * @returns {boolean} - True if RTL language (Arabic), false otherwise
@@ -73,21 +87,23 @@ export function isRTL(pathname) {
 /**
  * Get current language code
  * @param {string} pathname - The current URL pathname
- * @returns {string} - Language code ('en', 'de', 'ar')
+ * @returns {string} - Language code ('en', 'de', 'ar', 'fr')
  */
 export function getCurrentLanguage(pathname) {
   if (pathname?.startsWith('/de')) return 'de';
   if (pathname?.startsWith('/ar')) return 'ar';
+  if (pathname?.startsWith('/fr')) return 'fr';
   return 'en';
 }
 
 /**
  * Get the base path for the current language
  * @param {string} pathname - The current URL pathname
- * @returns {string} - The base path ('/de' for German, '/ar' for Arabic, '' for English)
+ * @returns {string} - The base path ('/de' for German, '/ar' for Arabic, '/fr' for French, '' for English)
  */
 export function getBasePath(pathname) {
   if (pathname?.startsWith('/de')) return '/de';
   if (pathname?.startsWith('/ar')) return '/ar';
+  if (pathname?.startsWith('/fr')) return '/fr';
   return '';
 }
