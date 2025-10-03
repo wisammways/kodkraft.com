@@ -178,6 +178,12 @@ export const translations = {
     website: "Website"
   },
 
+  // Portfolio Section
+  portfolio: {
+    title: "Unsere Projekte",
+    subtitle: "Entdecken Sie einige unserer neuesten Arbeiten"
+  },
+
   // Blog Section
   blog: {
     title: "Unser Blog",
