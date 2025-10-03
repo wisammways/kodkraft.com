@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import ProgressCircle from "../common/CircularProgress";
+import ProgressCircle from "../../common/CircularProgress";
 import { usePathname } from "next/navigation";
 import { t } from "@/utlis/translations";
 

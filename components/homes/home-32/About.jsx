@@ -1,5 +1,5 @@
 "use client";
-import ModalVideo from "@/components/common/ModalVideo";
+import ModalVideo from "@/components/used/common/ModalVideo";
 import React, { useState } from "react";
 
 import Image from "next/image";

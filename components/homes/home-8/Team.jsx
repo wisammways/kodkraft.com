@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Counter from "@/components/common/Counter";
+import Counter from "@/components/used/common/Counter";
 export default function Team() {
   return (
     <>

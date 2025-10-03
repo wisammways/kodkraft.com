@@ -1,4 +1,4 @@
-import Counter from "@/components/common/Counter";
+import Counter from "@/components/used/common/Counter";
 import { facts } from "@/data/facts";
 import Image from "next/image";
 import React from "react";

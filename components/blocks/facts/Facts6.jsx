@@ -1,4 +1,4 @@
-import Counter from "@/components/common/Counter";
+import Counter from "@/components/used/common/Counter";
 import React from "react";
 
 export default function Facts6() {

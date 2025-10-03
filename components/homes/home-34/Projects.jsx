@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { projects9 } from "@/data/projects";
-import Counter from "@/components/common/Counter";
+import Counter from "@/components/used/common/Counter";
 export default function Projects() {
   return (
     <section className="wrapper !bg-[#ffffff]" id="demos">
