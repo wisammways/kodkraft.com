@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import "../public/assets/style.css";
 import "photoswipe/dist/photoswipe.css";
 import iTooltip from "itooltip";
@@ -10,12 +10,18 @@ import initPlayer from "@/utlis/initPlayer";
 import { GoogleTagManager } from '@next/third-parties/google'
 import { getCurrentLanguage, isRTL } from "@/utlis/translations";
 
-export default async function RootLayout({ children }) {
+export default function RootLayout({ children }) {
   const pathname = usePathname();
   
   // Determine current language and direction
-  const currentLang = getCurrentLanguage(pathname);
-  const isRtl = isRTL(pathname);
+  const [currentLang, setCurrentLang] = useState('en');
+  const [isRtl, setIsRtl] = useState(false);
+  
+  // Update language on pathname change
+  useEffect(() => {
+    setCurrentLang(getCurrentLanguage(pathname));
+    setIsRtl(isRTL(pathname));
+  }, [pathname]);
   
   useEffect(() => {
     if (typeof window !== "undefined") {

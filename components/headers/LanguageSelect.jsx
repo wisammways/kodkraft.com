@@ -11,8 +11,8 @@ export default function LanguageSelect({ color = "#605dba" }) {
   // Define language mappings
   const languages = [
     { code: "En", label: "English" },
-    { code: "De", label: "Deutsch" },
-    {/* code: "Ar", label: "العربية" */}
+    { code: "De", label: "Deutsch" }
+    // { code: "Ar", label: "العربية" }
   ];
 
   // Detect current language based on pathname
