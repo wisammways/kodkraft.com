@@ -6,6 +6,4 @@ Sitemap: https://kodkraft.com/sitemap.xml
 
 # Block incomplete project pages
 Disallow: /projects/fady-bader
-Disallow: /projects/cti-pyp-system
 Disallow: /de/projects/fady-bader
-Disallow: /de/projects/cti-pyp-system
