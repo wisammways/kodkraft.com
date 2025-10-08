@@ -15,7 +15,19 @@ const images = [
   { src: "/assets/images/projects/cti-pyp/c4.png", alt: "CTI PYP Reports" },
 ];
 
-
+export const metadata = {
+  metadataBase: new URL('https://kodkraft.com'),
+  title: "CTI PYP Grading System - Custom Web Application for Academic Management",
+  description: "Discover the CTI PYP Grading System, a custom web application designed to streamline academic management processes. Built with user experience and efficiency in mind.",
+  alternates: {
+    canonical: 'https://kodkraft.com/projects/cti-pyp-system',
+    languages: {
+      'en': 'https://kodkraft.com/projects/cti-pyp-system',
+      'de': 'https://kodkraft.com/de/projects/cti-pyp-system',
+      'x-default': 'https://kodkraft.com/projects/cti-pyp-system',
+    },
+  },
+};
 
 export default function CTIPYPSystemProjectPage() {
   return (

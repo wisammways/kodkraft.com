@@ -15,7 +15,19 @@ const images = [
   { src: "/assets/images/projects/mmc-lebanon/4.jpg", alt: "MMC Lebanon Features" },
 ];
 
-
+export const metadata = {
+  metadataBase: new URL('https://kodkraft.com'),
+  title: "MMC Lebanon Website - KodKraft",
+  description: "Discover the MMC Lebanon website, a modern digital platform showcasing real estate projects with a focus on Ain Aar. Designed for optimal user experience and SEO performance.",
+  alternates: {
+    canonical: 'https://kodkraft.com/projects/mmc-lebanon',
+    languages: {
+      'en': 'https://kodkraft.com/projects/mmc-lebanon',
+      'de': 'https://kodkraft.com/de/projects/mmc-lebanon',
+      'x-default': 'https://kodkraft.com/projects/mmc-lebanon',
+    },
+  },
+};
 
 export default function MMCLebanonProjectPage() {
   return (

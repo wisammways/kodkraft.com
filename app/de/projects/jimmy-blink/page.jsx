@@ -18,6 +18,20 @@ const images = [
   { src: "/assets/images/projects/jimmy-blink/j4.jpg", alt: "image" },
 ];
 
+export const metadata = {
+  metadataBase: new URL('https://kodkraft.com'),
+  title: "Jimmy Blink Website - KodKraft Portfolio",
+  description: "Sound Smart ist ein illustriertes Buch, das Schülern hilft, lustige lokale Phrasen und Redewendungen auf Französisch und Spanisch zu lernen. Wir haben eine ansprechende Landing Page erstellt.",
+  alternates: {
+    canonical: 'https://kodkraft.com/de/projects/jimmy-blink',
+    languages: {
+      'en': 'https://kodkraft.com/projects/jimmy-blink',
+      'de': 'https://kodkraft.com/de/projects/jimmy-blink',
+      'x-default': 'https://kodkraft.com/projects/jimmy-blink',
+    },
+  },
+};
+
 export default function SingleProjectPage() {
   const pathname = usePathname();
   const basePath = getBasePath(pathname);

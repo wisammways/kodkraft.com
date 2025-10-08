@@ -17,14 +17,6 @@ export default function Header() {
           <div className="navbar-brand">
             <Link href={basePath === '' ? '/' : basePath}>
               <Image
-                className="logo-dark"
-                srcSet="/assets/img/logo-purple@2x.png 2x"
-                alt="image"
-                src="/assets/img/logo-purple.png"
-                width={134}
-                height={26}
-              />
-              <Image
                 className="logo-light"
                 alt="image"
                 src="/assets/img/logo.svg"

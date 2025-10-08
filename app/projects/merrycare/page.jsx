@@ -15,7 +15,19 @@ const images = [
   { src: "/assets/images/projects/merrycare/m4.jpg", alt: "MerryCare Features" },
 ];
 
-
+export const metadata = {
+  metadataBase: new URL('https://kodkraft.com'),
+  title: "MerryCare Website - KodKraft",
+  description: "Merry Care is a Melbourne-based service provider dedicated to supporting people with disabilities in their daily lives.",
+  alternates: {
+    canonical: 'https://kodkraft.com/projects/merrycare',
+    languages: {
+      'en': 'https://kodkraft.com/projects/merrycare',
+      'de': 'https://kodkraft.com/de/projects/merrycare',
+      'x-default': 'https://kodkraft.com/projects/merrycare',
+    },
+  },
+};
 
 export default function MerryCareProjectPage() {
   return (
