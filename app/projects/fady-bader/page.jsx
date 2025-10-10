@@ -1,21 +1,23 @@
-"use client";
-
 import Image from "next/image";
-import { Gallery, Item } from "react-photoswipe-gallery";
 import Footer5 from "@/components/used/footers/Footer5";
 import Header from "@/components/used/Header";
 import ProjectNavigation from "@/components/used/projects/ProjectNavigation";
 import Link from "next/link";
-import React from "react";
+import FadyBaderGallery from "./FadyBaderGallery";
 
-const images = [
-  { src: "/assets/images/projects/3.jpg", alt: "Fady Bader Portfolio" },
-  { src: "/assets/images/projects/3.jpg", alt: "Fady Bader Design" },
-  { src: "/assets/images/projects/3.jpg", alt: "Fady Bader Gallery" },
-  { src: "/assets/images/projects/3.jpg", alt: "Fady Bader Contact" },
-];
-
-
+export const metadata = {
+  metadataBase: new URL('https://kodkraft.com'),
+  title: "Fady Bader Portfolio - KodKraft",
+  description: "Explore the Fady Bader portfolio, showcasing creative design work and professional achievements.",
+  alternates: {
+    canonical: 'https://kodkraft.com/projects/fady-bader',
+    languages: {
+      'en': 'https://kodkraft.com/projects/fady-bader',
+      'de': 'https://kodkraft.com/de/projects/fady-bader',
+      'x-default': 'https://kodkraft.com/projects/fady-bader',
+    },
+  },
+};
 
 export default function FadyBaderProjectPage() {
   return (
@@ -111,38 +113,7 @@ export default function FadyBaderProjectPage() {
                     {/* /column */}
                   </div>
                   {/*/.row */}
-                  <Gallery>
-                    <div className="flex flex-wrap mx-[-15px] md:mx-[-15px] !mt-[25px]">
-                      {images.map((image, index) => (
-                        <div
-                          key={index}
-                          className="item xl:w-6/12 lg:w-6/12 md:w-6/12 w-full flex-[0_0_auto] !px-[15px] max-w-full !mt-[30px]"
-                        >
-                          <Item
-                            original={image.src}
-                            thumbnail={image.src}
-                            width={960}
-                            height={640}
-                          >
-                            {({ ref, open }) => (
-                              <figure className="overflow-hidden translate-y-0 group rounded cursor-dark">
-                                <a onClick={open} data-gallery="project-fady">
-                                  <Image
-                                    className="transition-all duration-[0.35s] ease-in-out group-hover:scale-105"
-                                    alt={image.alt}
-                                    src={image.src}
-                                    width={960}
-                                    ref={ref}
-                                    height={640}
-                                  />
-                                </a>
-                              </figure>
-                            )}
-                          </Item>
-                        </div>
-                      ))}
-                    </div>
-                  </Gallery>
+                  <FadyBaderGallery />
                 </article>
                 {/* /.project */}
               </div>

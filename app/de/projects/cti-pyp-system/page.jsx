@@ -17,7 +17,7 @@ const images = [
   { src: "/assets/images/projects/cti-pyp/c4.png", alt: "CTI PYP Reports" },
 ];
 
-export const metadata = {
+/*export const metadata = {
   metadataBase: new URL('https://kodkraft.com'),
   title: "CTI PYP Benotungssystem - Maßgeschneiderte Webanwendung für akademische Verwaltung",
   description: "Entdecken Sie das CTI PYP Benotungssystem, eine maßgeschneiderte Webanwendung zur Optimierung akademischer Verwaltungsprozesse. Entwickelt mit Fokus auf Benutzererfahrung und Effizienz.",
@@ -29,7 +29,7 @@ export const metadata = {
       'x-default': 'https://kodkraft.com/projects/cti-pyp-system',
     },
   },
-};
+};*/
 
 export default function CTIPYPSystemProjectPage() {
   const pathname = usePathname();

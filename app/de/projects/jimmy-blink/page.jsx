@@ -7,30 +7,7 @@ import Header from "@/components/used/Header";
 import ProjectNavigation from "@/components/used/projects/ProjectNavigation";
 import Link from "next/link";
 import Image from "next/image";
-import { Gallery, Item } from "react-photoswipe-gallery";
-
-import React from "react";
-
-const images = [
-  { src: "/assets/images/projects/jimmy-blink/j1.jpg", alt: "image" },
-  { src: "/assets/images/projects/jimmy-blink/j2.jpg", alt: "image" },
-  { src: "/assets/images/projects/jimmy-blink/j3.jpg", alt: "image" },
-  { src: "/assets/images/projects/jimmy-blink/j4.jpg", alt: "image" },
-];
-
-export const metadata = {
-  metadataBase: new URL('https://kodkraft.com'),
-  title: "Jimmy Blink Website - KodKraft Portfolio",
-  description: "Sound Smart ist ein illustriertes Buch, das Schülern hilft, lustige lokale Phrasen und Redewendungen auf Französisch und Spanisch zu lernen. Wir haben eine ansprechende Landing Page erstellt.",
-  alternates: {
-    canonical: 'https://kodkraft.com/de/projects/jimmy-blink',
-    languages: {
-      'en': 'https://kodkraft.com/projects/jimmy-blink',
-      'de': 'https://kodkraft.com/de/projects/jimmy-blink',
-      'x-default': 'https://kodkraft.com/projects/jimmy-blink',
-    },
-  },
-};
+import JimmyBlinkGallery from "./JimmyBlinkGallery";
 
 export default function SingleProjectPage() {
   const pathname = usePathname();
@@ -128,38 +105,7 @@ export default function SingleProjectPage() {
                     {/* /column */}
                   </div>
                   {/*/.row */}
-                  <Gallery>
-                    <div className="flex flex-wrap mx-[-15px] md:mx-[-15px] !mt-[25px]">
-                      {images.map((image, index) => (
-                        <div
-                          key={index}
-                          className="item xl:w-6/12 lg:w-6/12 md:w-6/12 w-full flex-[0_0_auto] !px-[15px] max-w-full !mt-[30px]"
-                        >
-                          <Item
-                            original={image.src}
-                            thumbnail={image.src}
-                            width={960}
-                            height={640}
-                          >
-                            {({ ref, open }) => (
-                              <figure className="overflow-hidden translate-y-0 group rounded cursor-dark">
-                                <a onClick={open} data-gallery="project-1">
-                                  <Image
-                                    className="transition-all duration-[0.35s] ease-in-out group-hover:scale-105"
-                                    alt={image.alt}
-                                    src={image.src}
-                                    width={960}
-                                    ref={ref}
-                                    height={640}
-                                  />
-                                </a>
-                              </figure>
-                            )}
-                          </Item>
-                        </div>
-                      ))}
-                    </div>{" "}
-                  </Gallery>
+                  <JimmyBlinkGallery />
                 </article>
                 {/* /.project */}
               </div>
