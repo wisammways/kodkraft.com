@@ -225,13 +225,17 @@ export default function RootLayout({ children }) {
     <html lang={currentLang} dir={isRtl ? 'rtl' : 'ltr'}>
       <head>
         <link
-          href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700"
+          href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Manrope:wght@400;500;700"
           rel="stylesheet"
         />
-        {/* Add Cairo font for Arabic RTL support */}
+        <link
+          href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@1,300;1,400;1,500;1,600;1,700&display=swap"
+          rel="stylesheet"
+        />
+        {/* Add Arabic font for better RTL support */}
         {isRtl && (
           <link
-            href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;500;600;700&display=swap"
             rel="stylesheet"
           />
         )}
