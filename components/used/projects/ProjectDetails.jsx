@@ -26,7 +26,7 @@ export default function ProjectDetails() {
                 />
               </figure>
               <div className="flex flex-wrap mx-[-15px]">
-                <div className="xl:w-10/12 xl:!ml-[8.33333333%] lg:w-10/12 lg:!ml-[8.33333333%] w-full flex-[0_0_auto] !px-[15px] max-w-full">
+                <div className="xl:w-10/12 xl:!ml-[8.33333333%] rtl:xl:!ml-0 rtl:xl:!mr-[8.33333333%] lg:w-10/12 lg:!ml-[8.33333333%] rtl:lg:!ml-0 rtl:lg:!mr-[8.33333333%] w-full flex-[0_0_auto] !px-[15px] max-w-full">
                   <h2 className="!text-[calc(1.265rem_+_0.18vw)] font-bold xl:!text-[1.4rem] !leading-[1.35] !mb-4">
                     About the Project
                   </h2>
@@ -43,8 +43,8 @@ export default function ProjectDetails() {
                       </p>
                     </div>
                     {/*/column */}
-                    <div className="xl:w-2/12 lg:w-2/12 md:w-2/12 w-full flex-[0_0_auto] max-w-full !ml-auto">
-                      <ul className="pl-0 list-none">
+                    <div className="xl:w-2/12 lg:w-2/12 md:w-2/12 w-full flex-[0_0_auto] max-w-full !ml-auto rtl:!ml-0 rtl:!mr-auto">
+                      <ul className="pl-0 rtl:pl-0 list-none">
                         <li>
                           <h5 className="!mb-1">Date</h5>
                           <p>Feb 2025</p>

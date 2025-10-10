@@ -34,7 +34,7 @@ export default function Hero() {
         >
           <div className="flex flex-wrap mx-0 !mt-[-70px] items-center">
             <div
-              className="md:w-10/12 md:!ml-[8.33333333%] lg:!ml-0 lg:w-6/12 xl:!ml-0 xl:w-6/12 w-full flex-[0_0_auto] max-w-full content text-center lg:text-left xl:text-left !mt-[70px]"
+              className="md:w-10/12 md:!ml-[8.33333333%] lg:!ml-0 lg:w-6/12 xl:!ml-0 xl:w-6/12 w-full flex-[0_0_auto] max-w-full content text-center lg:text-left rtl:lg:text-right xl:text-left rtl:xl:text-right !mt-[70px]"
               data-cues="slideInDown"
               data-group="page-title"
               data-delay={600}
@@ -43,7 +43,7 @@ export default function Hero() {
                 {t(pathname, 'hero.title')}<br />
                 {t(pathname, 'hero.titleLine2')}
               </h1>
-              <p className="lead text-[1.05rem] !leading-[1.5] font-medium !mb-7 xl:!pr-10">
+              <p className="lead text-[1.05rem] !leading-[1.5] font-medium !mb-7 xl:!pr-10 rtl:xl:!pr-0 rtl:xl:!pl-10">
                 {t(pathname, 'hero.subtitle')}
               </p>
               <div
@@ -55,7 +55,7 @@ export default function Hero() {
                 <span>
                   <Link
                     href={`#services`}
-                    className="btn btn-lg btn-white !rounded-[50rem] !mr-2"
+                    className="btn btn-lg btn-white !rounded-[50rem] !mr-2 rtl:!mr-0 rtl:!ml-2"
                   >
                     {t(pathname, 'hero.whatWeDo')}
                   </Link>
@@ -71,7 +71,7 @@ export default function Hero() {
               </div>
             </div>
             {/*/column */}
-            <div className="xl:w-5/12 lg:w-5/12 w-full flex-[0_0_auto] max-w-full xl:!ml-[8.33333333%] lg:!ml-[8.33333333%] !mt-[70px]">
+            <div className="xl:w-5/12 lg:w-5/12 w-full flex-[0_0_auto] max-w-full xl:!ml-[8.33333333%] lg:!ml-[8.33333333%] rtl:lg:!ml-0 rtl:lg:!mr-[7%] !mt-[70px]">
               <div className="swiper-container dots-over !shadow-[0_0.25rem_1.75rem_rgba(30,34,40,0.07)] relative z-10">
                 <Swiper
                   className="swiper"

@@ -71,7 +71,7 @@ export default function Portfolio() {
     <section className="wrapper !bg-[#ffffff] angled upper-end lower-end relative border-0 before:top-[-4rem] before:border-l-transparent before:border-r-[100vw] before:border-t-[4rem] before:border-[#fefefe] before:content-[''] before:block before:absolute before:z-0 before:!border-y-transparent before:border-0 before:border-solid before:right-0 after:bottom-[-4rem] after:border-l-transparent after:border-r-[100vw] after:border-b-[4rem] after:border-[#fefefe] after:content-[''] after:block after:absolute after:z-0 after:!border-y-transparent after:border-0 after:border-solid after:right-0">
       <div className="container pb-[4.5rem] pt-[2.25rem] xl:!pb-24 xl:!pt-12 lg:!pb-24 lg:!pt-12 md:!pb-24 md:!pt-12">
         <div className="flex flex-wrap mx-[-15px] !text-center !mb-12">
-          <div className="md:w-10/12 xl:w-8/12 lg:w-8/12 w-full flex-[0_0_auto] !px-[15px] max-w-full xl:!ml-[16.66666667%] lg:!ml-[16.66666667%] md:!ml-[8.33333333%]">
+          <div className="md:w-10/12 xl:w-8/12 lg:w-8/12 w-full flex-[0_0_auto] !px-[15px] max-w-full xl:!ml-[16.66666667%] rtl:xl:!ml-0 rtl:xl:!mr-[16.66666667%] lg:!ml-[16.66666667%] rtl:lg:!ml-0 rtl:lg:!mr-[16.66666667%] md:!ml-[8.33333333%] rtl:md:!ml-0 rtl:md:!mr-[8.33333333%]">
             <h2 className="!text-[0.8rem] !tracking-[0.02rem] !leading-[1.35] uppercase text-gradient gradient-1 !mb-3">
               {t(pathname, 'portfolio.title')}
             </h2>
@@ -107,11 +107,11 @@ export default function Portfolio() {
                   <div className="project-details flex justify-center flex-col">
                     <div className="post-header">
                       <div
-                        className="inline-flex uppercase !tracking-[0.02rem] text-[0.7rem] font-bold relative align-top !pl-[1.4rem] opacity-100  before:content-[''] before:absolute before:inline-block before:translate-y-[-60%] before:w-3 before:h-[0.05rem] before:left-0 before:top-2/4 before:bg-[#7cb798] !mb-2"
+                        className="inline-flex uppercase !tracking-[0.02rem] text-[0.7rem] font-bold relative align-top !pl-[1.4rem] opacity-100  before:content-[''] before:absolute before:inline-block before:translate-y-[-60%] before:w-3 before:h-[0.05rem] before:left-0 rtl:before:left-auto rtl:before:right-0 before:top-2/4 before:bg-[#7cb798] !mb-2"
                         style={{ color: project.categoryColor }}
                       >
                         <span
-                          className="before:content-[''] before:absolute before:inline-block before:translate-y-[-60%] before:w-3 before:h-[0.05rem] before:left-0 before:top-2/4"
+                          className="before:content-[''] before:absolute before:inline-block before:translate-y-[-60%] before:w-3 before:h-[0.05rem] before:left-0 rtl:before:left-auto rtl:before:right-0 before:top-2/4"
                           style={{ color: project.categoryColor }}
                         >
                           {getTranslatedCategory(project.category)}

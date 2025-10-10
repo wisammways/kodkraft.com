@@ -43,7 +43,7 @@ export default function Header() {
                 aria-label="Close"
               />
             </div>
-            <div className="offcanvas-body xl:!ml-auto lg:!ml-auto flex flex-col !h-full">
+            <div className="offcanvas-body xl:!ml-auto lg:!ml-auto rtl:xl:!ml-0 rtl:lg:!ml-0 rtl:xl:!mr-auto rtl:lg:!mr-auto flex flex-col !h-full">
               <Nav />
               {/* /.navbar-nav */}
               <div className="offcanvas-footer xl:!hidden lg:!hidden">

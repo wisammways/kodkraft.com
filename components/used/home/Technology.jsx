@@ -22,7 +22,7 @@ export default function Technology() {
                             />
                         </figure>
                     </div>
-                    <div className="xl:w-6/12 lg:w-6/12 w-full flex-[0_0_auto] px-[7.5px] max-w-full xl:!pl-[7%] lg:!pl-[7%]">
+                    <div className="xl:w-6/12 lg:w-6/12 w-full flex-[0_0_auto] px-[7.5px] max-w-full xl:!pl-[7%] rtl:xl:!pl-0 rtl:xl:!pr-[7%] lg:!pl-[7%] rtl:lg:!pl-0 rtl:lg:!pr-[7%]">
                         <h2 className="!text-[0.8rem] !tracking-[0.02rem] !leading-[1.35] uppercase text-gradient gradient-1 !mb-3">
                             {t(pathname, 'technology.title')}
                         </h2>
@@ -34,32 +34,32 @@ export default function Technology() {
                         </p>
                         <div className="flex flex-wrap mx-[-15px] !mt-[-15px]">
                             <div className="xl:w-6/12 w-full flex-[0_0_auto] !mt-[15px] xl:!px-[20px] !px-[15px] max-w-full">
-                                <ul className="pl-0 list-none bullet-bg bullet-soft-primary !mb-0">
-                                    <li className="relative !pl-6">
+                                <ul className="pl-0 rtl:pl-0 list-none bullet-bg bullet-soft-primary !mb-0">
+                                    <li className="relative !pl-6 rtl:!pl-0 rtl:!pr-6">
                                         <span>
-                                            <i className="uil uil-check w-4 h-4 text-[0.8rem] leading-none !tracking-[normal] !text-center flex justify-center items-center bg-secondary !text-white rounded-[100%] top-[0.2rem] before:content-['\e9dd'] before:align-middle before:table-cell absolute left-0" />
+                                            <i className="uil uil-check w-4 h-4 text-[0.8rem] leading-none !tracking-[normal] !text-center flex justify-center items-center bg-secondary !text-white rounded-[100%] top-[0.2rem] before:content-['\e9dd'] before:align-middle before:table-cell absolute left-0 rtl:left-auto rtl:right-0" />
                                         </span>
                                         <span>{t(pathname, 'technology.features.futureProof')}</span>
                                     </li>
-                                    <li className="relative !pl-6 !mt-3">
+                                    <li className="relative !pl-6 rtl:!pl-0 rtl:!pr-6 !mt-3">
                                         <span>
-                                            <i className="uil uil-check w-4 h-4 text-[0.8rem] leading-none !tracking-[normal] !text-center flex justify-center items-center bg-secondary !text-white rounded-[100%] top-[0.2rem] before:content-['\e9dd'] before:align-middle before:table-cell absolute left-0" />
+                                            <i className="uil uil-check w-4 h-4 text-[0.8rem] leading-none !tracking-[normal] !text-center flex justify-center items-center bg-secondary !text-white rounded-[100%] top-[0.2rem] before:content-['\e9dd'] before:align-middle before:table-cell absolute left-0 rtl:left-auto rtl:right-0" />
                                         </span>
                                         <span>{t(pathname, 'technology.features.highPerformance')}</span>
                                     </li>
                                 </ul>
                             </div>
                             <div className="xl:w-6/12 w-full flex-[0_0_auto] !mt-[15px] xl:!px-[20px] !px-[15px] max-w-full">
-                                <ul className="pl-0 list-none bullet-bg bullet-soft-primary !mb-0">
-                                    <li className="relative !pl-6">
+                                <ul className="pl-0 rtl:pl-0 list-none bullet-bg bullet-soft-primary !mb-0">
+                                    <li className="relative !pl-6 rtl:!pl-0 rtl:!pr-6">
                                         <span>
-                                            <i className="uil uil-check w-4 h-4 text-[0.8rem] leading-none !tracking-[normal] !text-center flex justify-center items-center bg-secondary !text-white rounded-[100%] top-[0.2rem] before:content-['\e9dd'] before:align-middle before:table-cell absolute left-0" />
+                                            <i className="uil uil-check w-4 h-4 text-[0.8rem] leading-none !tracking-[normal] !text-center flex justify-center items-center bg-secondary !text-white rounded-[100%] top-[0.2rem] before:content-['\e9dd'] before:align-middle before:table-cell absolute left-0 rtl:left-auto rtl:right-0" />
                                         </span>
                                         <span>{t(pathname, 'technology.features.seamlessIntegration')}</span>
                                     </li>
-                                    <li className="relative !pl-6 !mt-3">
+                                    <li className="relative !pl-6 rtl:!pl-0 rtl:!pr-6 !mt-3">
                                         <span>
-                                            <i className="uil uil-check w-4 h-4 text-[0.8rem] leading-none !tracking-[normal] !text-center flex justify-center items-center bg-secondary !text-white rounded-[100%] top-[0.2rem] before:content-['\e9dd'] before:align-middle before:table-cell absolute left-0" />
+                                            <i className="uil uil-check w-4 h-4 text-[0.8rem] leading-none !tracking-[normal] !text-center flex justify-center items-center bg-secondary !text-white rounded-[100%] top-[0.2rem] before:content-['\e9dd'] before:align-middle before:table-cell absolute left-0 rtl:left-auto rtl:right-0" />
                                         </span>
                                         <span>{t(pathname, 'technology.features.crossPlatform')}</span>
                                     </li>

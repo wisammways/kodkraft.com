@@ -13,7 +13,7 @@ export default function OurValue() {
             <div className="container pt-[75px] md:pt-25 pb-[75px] md:pb-25">
                 <div className="flex flex-wrap mx-[-7.5px] items-center">
                     <div className="flex flex-wrap xl:mx-[-20px] lg:mx-[-20px] md:mx-[-20px] !mt-[-50px] items-center">
-                        <div className="xl:w-6/12 lg:w-6/12 w-full flex-[0_0_auto] xl:!px-[20px] lg:!px-[20px] md:!px-[20px] !px-[15px] max-w-full xl:!ml-[8.33333333%] lg:!ml-[8.33333333%] xl:!order-2 lg:!order-2 !relative !mt-[50px]">
+                        <div className="xl:w-6/12 lg:w-6/12 w-full flex-[0_0_auto] xl:!px-[20px] lg:!px-[20px] md:!px-[20px] !px-[15px] max-w-full xl:!ml-[8.33333333%] rtl:xl:!ml-0 rtl:xl:!mr-[8.33333333%] lg:!ml-[8.33333333%] rtl:lg:!ml-0 rtl:lg:!mr-[8.33333333%] xl:!order-2 lg:!order-2 !relative !mt-[50px]">
                             <figure className="rounded-[0.4rem]">
                                 <Image
                                     className="max-w-full h-auto rounded-[0.4rem]"
@@ -24,8 +24,8 @@ export default function OurValue() {
                                 />
                             </figure>
                             <div
-                                className="card !shadow-[0_0.25rem_1.75rem_rgba(30,34,40,0.07)] !absolute xl:block lg:block md:block max-sm:!hidden"
-                                style={{ top: "15%", left: "-7%" }}
+                                className="card !shadow-[0_0.25rem_1.75rem_rgba(30,34,40,0.07)] !absolute xl:block lg:block md:block max-sm:!hidden left-[-7%] rtl:left-auto rtl:right-[-7%]"
+                                style={{ top: "15%" }}
                             >
                                 <div className="card-body py-4 px-5">
                                     <div className="flex flex-row items-center">
@@ -34,7 +34,7 @@ export default function OurValue() {
                                                 xmlns="http://www.w3.org/2000/svg"
                                                 viewBox="0 0 256 234.66"
                                                 data-inject-url="https://sandbox-tailwind-template.netlify.app/assets/img/icons/solid/cloud-group.svg"
-                                                className="svg-inject icon-svg !w-[2.2rem] !h-[2.2rem] solid-duo text-grape-fuchsia mr-3"
+                                                className="svg-inject icon-svg !w-[2.2rem] !h-[2.2rem] solid-duo text-grape-fuchsia mr-3 rtl:mr-0 rtl:ml-3"
                                             >
                                                 <circle
                                                     className="fill-secondary"
@@ -78,8 +78,8 @@ export default function OurValue() {
                             </div>
                             {/*/.card */}
                             <div
-                                className="card !shadow-[0_0.25rem_1.75rem_rgba(30,34,40,0.07)] !absolute !text-center xl:block lg:block md:block max-sm:!hidden"
-                                style={{ bottom: "10%", left: "-10%" }}
+                                className="card !shadow-[0_0.25rem_1.75rem_rgba(30,34,40,0.07)] !absolute !text-center xl:block lg:block md:block max-sm:!hidden left-[-10%] rtl:left-auto rtl:right-[-10%]"
+                                style={{ bottom: "10%" }}
                             >
                                 <div className="card-body p-6">
                                     <div className="progressbar semi-circle fuchsia !relative !mb-3 !m-[0_auto_1rem] !w-[8.5rem] !h-[4.25rem]">
@@ -96,24 +96,24 @@ export default function OurValue() {
                             <h2 className="!text-[0.8rem] !tracking-[0.02rem] !leading-[1.35] uppercase text-gradient gradient-1 !mb-3">
                                 {t(pathname, 'ourValue.title')}
                             </h2>
-                            <h3 className="xl:!text-[1.9rem] !text-[calc(1.315rem_+_0.78vw)] font-semibold !leading-[1.25] !tracking-[normal] !mb-4 xl:mr-[-1.25rem] lg:mr-[-1.25rem]">
+                            <h3 className="xl:!text-[1.9rem] !text-[calc(1.315rem_+_0.78vw)] font-semibold !leading-[1.25] !tracking-[normal] !mb-4 xl:mr-[-1.25rem] rtl:xl:mr-0 rtl:xl:ml-[-1.25rem] lg:mr-[-1.25rem] rtl:lg:mr-0 rtl:lg:ml-[-1.25rem]">
                                 {t(pathname, 'ourValue.subtitle')}<br />
                                 {t(pathname, 'ourValue.subtitleLine2')}
                             </h3>
                             <p className="!mb-6">
                                 {t(pathname, 'ourValue.description')}
                             </p>
-                            <ul className="pl-0 list-none bullet-bg bullet-soft-primary">
-                                <li className="relative !pl-6">
-                                    <i className="uil uil-check absolute left-0 w-4 h-4 text-[0.8rem] leading-none !tracking-[normal] !text-center flex items-center justify-center bg-secondary !text-white rounded-[100%] top-[0.2rem] before:content-['\e9dd'] before:align-middle before:table-cell" />
+                            <ul className="pl-0 rtl:pl-0 list-none bullet-bg bullet-soft-primary">
+                                <li className="relative !pl-6 rtl:!pl-0 rtl:!pr-6">
+                                    <i className="uil uil-check absolute left-0 rtl:left-auto rtl:right-0 w-4 h-4 text-[0.8rem] leading-none !tracking-[normal] !text-center flex items-center justify-center bg-secondary !text-white rounded-[100%] top-[0.2rem] before:content-['\e9dd'] before:align-middle before:table-cell" />
                                     {t(pathname, 'ourValue.features.masterpiece')}
                                 </li>
-                                <li className="relative !pl-6">
-                                    <i className="uil uil-check absolute left-0 w-4 h-4 text-[0.8rem] leading-none !tracking-[normal] !text-center flex items-center justify-center bg-secondary !text-white rounded-[100%] top-[0.2rem] before:content-['\e9dd'] before:align-middle before:table-cell" />
+                                <li className="relative !pl-6 rtl:!pl-0 rtl:!pr-6">
+                                    <i className="uil uil-check absolute left-0 rtl:left-auto rtl:right-0 w-4 h-4 text-[0.8rem] leading-none !tracking-[normal] !text-center flex items-center justify-center bg-secondary !text-white rounded-[100%] top-[0.2rem] before:content-['\e9dd'] before:align-middle before:table-cell" />
                                     {t(pathname, 'ourValue.features.details')}
                                 </li>
-                                <li className="relative !pl-6">
-                                    <i className="uil uil-check absolute left-0 w-4 h-4 text-[0.8rem] leading-none !tracking-[normal] !text-center flex items-center justify-center bg-secondary !text-white rounded-[100%] top-[0.2rem] before:content-['\e9dd'] before:align-middle before:table-cell" />
+                                <li className="relative !pl-6 rtl:!pl-0 rtl:!pr-6">
+                                    <i className="uil uil-check absolute left-0 rtl:left-auto rtl:right-0 w-4 h-4 text-[0.8rem] leading-none !tracking-[normal] !text-center flex items-center justify-center bg-secondary !text-white rounded-[100%] top-[0.2rem] before:content-['\e9dd'] before:align-middle before:table-cell" />
                                     {t(pathname, 'ourValue.features.intuitive')}
                                 </li>
                             </ul>

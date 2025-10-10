@@ -24,7 +24,7 @@ export default function Contact1() {
                   <div className="p-10 xl:!p-[4.5rem] lg:!p-[4.5rem] md:!p-12">
                     <div className="flex flex-row">
                       <div>
-                        <div className="icon !text-[#605dba] xl:!text-[1.4rem] !text-[calc(1.265rem_+_0.18vw)] !mr-4 !mt-[-0.25rem]">
+                        <div className="icon !text-[#605dba] xl:!text-[1.4rem] !text-[calc(1.265rem_+_0.18vw)] !mr-4 rtl:!mr-0 rtl:!ml-4 !mt-[-0.25rem]">
                           <i className="uil uil-location-pin-alt before:content-['\ebd8']" />
                         </div>
                       </div>
@@ -40,7 +40,7 @@ export default function Contact1() {
                     {/*/div */}
                     <div className="flex flex-row">
                       <div>
-                        <div className="icon !text-[#605dba] xl:!text-[1.4rem] !text-[calc(1.265rem_+_0.18vw)] !mr-4 !mt-[-0.25rem]">
+                        <div className="icon !text-[#605dba] xl:!text-[1.4rem] !text-[calc(1.265rem_+_0.18vw)] !mr-4 rtl:!mr-0 rtl:!ml-4 !mt-[-0.25rem]">
                           <i className="uil uil-phone-volume before:content-['\ec50']" />
                         </div>
                       </div>
@@ -52,7 +52,7 @@ export default function Contact1() {
                     {/*/div */}
                     <div className="flex flex-row">
                       <div>
-                        <div className="icon !text-[#605dba] xl:!text-[1.4rem] !text-[calc(1.265rem_+_0.18vw)] !mr-4 !mt-[-0.25rem]">
+                        <div className="icon !text-[#605dba] xl:!text-[1.4rem] !text-[calc(1.265rem_+_0.18vw)] !mr-4 rtl:!mr-0 rtl:!ml-4 !mt-[-0.25rem]">
                           <i className="uil uil-envelope before:content-['\eac8']" />
                         </div>
                       </div>

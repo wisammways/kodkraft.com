@@ -62,7 +62,7 @@ export default function Footer5({ hasMarginTop = true }) {
             <div className="md:w-4/12 xl:w-3/12 lg:w-3/12 w-full flex-[0_0_auto] !px-[15px] max-w-full xl:!mt-0 lg:!mt-0 !mt-[30px]">
               <div className="widget !text-[#cacaca]">
                 <h4 className="widget-title !text-white !mb-3">{t(pathname, 'footer.getInTouch')}</h4>
-                <address className="xl:!pr-20 xxl:!pr-28 not-italic !leading-[inherit] block !mb-4">
+                <address className="xl:!pr-20 rtl:xl:!pr-0 rtl:xl:!pl-20 xxl:!pr-28 rtl:xxl:!pr-0 rtl:xxl:!pl-28 not-italic !leading-[inherit] block !mb-4">
                   Mar Mekhael, Beirut, Lebanon
                 </address>
                 <a
@@ -85,7 +85,7 @@ export default function Footer5({ hasMarginTop = true }) {
             <div className="md:w-4/12 xl:w-3/12 lg:w-3/12 w-full flex-[0_0_auto] !px-[15px] max-w-full xl:!mt-0 lg:!mt-0 !mt-[30px]">
               <div className="widget !text-[#cacaca]">
                 <h4 className="widget-title !text-white !mb-3">{t(pathname, 'footer.learnMore')}</h4>
-                <ul className="pl-0 list-none !mb-0">
+                <ul className="pl-0 rtl:pl-0 list-none !mb-0">
                   {footerLinksWithTranslations.map((elm, i) => (
                     <li className={i != 0 ? "!mt-[0.35rem]" : ""} key={i}>
                       <Link
@@ -117,17 +117,17 @@ export default function Footer5({ hasMarginTop = true }) {
                       onSubmit={(e) => e.preventDefault()}
                     >
                       <div id="mc_embed_signup_scroll2">
-                        <div className="!text-left input-group form-floating !relative flex flex-wrap items-stretch w-full">
+                        <div className="!text-left rtl:!text-right input-group form-floating !relative flex flex-wrap items-stretch w-full">
                           <input
                             type="email"
                             defaultValue=""
                             name="EMAIL"
-                            className="required email form-control block w-full text-[12px] font-medium !leading-[1.7] appearance-none bg-clip-padding shadow-[0_0_1.25rem_rgba(30,34,40,0.04)] px-4 py-[0.6rem] rounded-[0.4rem] motion-reduce:transition-none focus:shadow-[0_0_1.25rem_rgba(30,34,40,0.04),unset] disabled:bg-[#aab0bc] disabled:opacity-100 file:!mt-[-0.6rem] file:mr-[-1rem] file:!mb-[-0.6rem] file:ml-[-1rem] file:!text-[#60697b] file:bg-[#fefefe] file:pointer-events-none file:transition-all file:duration-[0.2s] file:ease-in-out file:px-4 file:py-[0.6rem] file:rounded-none motion-reduce:file:transition-none placeholder:!text-[#959ca9] placeholder:opacity-100 border border-solid !border-[rgba(255,255,255,0.1)] !text-[#cacaca] bg-[rgba(255,255,255,.03)] focus-visible:!border-[rgba(63,120,224,0.5)]"
+                            className="required email form-control block w-full text-[12px] font-medium !leading-[1.7] appearance-none bg-clip-padding shadow-[0_0_1.25rem_rgba(30,34,40,0.04)] px-4 py-[0.6rem] rounded-[0.4rem] motion-reduce:transition-none focus:shadow-[0_0_1.25rem_rgba(30,34,40,0.04),unset] disabled:bg-[#aab0bc] disabled:opacity-100 file:!mt-[-0.6rem] file:mr-[-1rem] rtl:file:mr-0 rtl:file:ml-[-1rem] file:!mb-[-0.6rem] file:ml-[-1rem] rtl:file:ml-0 rtl:file:mr-[-1rem] file:!text-[#60697b] file:bg-[#fefefe] file:pointer-events-none file:transition-all file:duration-[0.2s] file:ease-in-out file:px-4 file:py-[0.6rem] file:rounded-none motion-reduce:file:transition-none placeholder:!text-[#959ca9] placeholder:opacity-100 border border-solid !border-[rgba(255,255,255,0.1)] !text-[#cacaca] bg-[rgba(255,255,255,.03)] focus-visible:!border-[rgba(63,120,224,0.5)]"
                             placeholder=""
                             id="mce-EMAIL2"
                           />
                           <label
-                            className="!ml-[0.05rem] !text-[#959ca9] text-[.75rem] absolute z-[2] h-full overflow-hidden text-start text-ellipsis whitespace-nowrap pointer-events-none origin-[0_0] px-4 py-[0.6rem] left-0 top-0"
+                            className="!ml-[0.05rem] rtl:!ml-0 rtl:!mr-[0.05rem] !text-[#959ca9] text-[.75rem] absolute z-[2] h-full overflow-hidden text-start text-ellipsis whitespace-nowrap pointer-events-none origin-[0_0] px-4 py-[0.6rem] left-0 top-0"
                             htmlFor="mce-EMAIL2"
                           >
                             {t(pathname, 'footer.emailAddress')}

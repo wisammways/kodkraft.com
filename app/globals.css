@@ -10716,6 +10716,7 @@ footer.bg-dark {
 [dir="rtl"] body {
   direction: rtl;
   text-align: right;
+  font-family: 'Cairo', sans-serif;
 }
 
 /* RTL Text alignment */
@@ -10821,7 +10822,7 @@ footer.bg-dark {
 
 /* RTL Navigation adjustments */
 [dir="rtl"] .navbar-nav {
-  flex-direction: row-reverse;
+  flex-direction: row;
 }
 
 [dir="rtl"] .dropdown-menu {
@@ -10832,10 +10833,7 @@ footer.bg-dark {
 [dir="rtl"] .dropdown-toggle::after {
   margin-right: 0.255em;
   margin-left: 0;
-  border-left: 0.3em solid;
-  border-right: 0;
-  border-bottom: 0.3em solid transparent;
-  border-top: 0.3em solid transparent;
+  border: 0;
 }
 
 /* RTL Form adjustments */
