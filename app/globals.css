@@ -1,15 +1,9 @@
 @import "tailwindcss";
 @theme {
-  --font-IBMPlexSerif: "IBM Plex Serif", "serif";
-  --font-SpaceGrotesk: "Space Grotesk", "sans-serif";
   --font-Manrope: "Urbanist", "sans-serif"; /*Manrope*/
+  --font-Cairo: "Cairo", "sans-serif"; /* Arabic font */
   --font-Unicons: "Unicons";
-  --font-Monospace: "SFMono-Regular,Menlo,Monaco,Consolas", "Liberation Mono",
-    "Courier New", "monospace";
-  --font-Custom: "Custom";
   --font-DMSerif: "DM Serif Display";
-  --font-SansSerif: "sans-serif";
-  --font-THICCCBOI: "THICCCBOI", "sans-serif";
   --font-Urbanist: "Urbanist", "sans-serif";
   /* Default Color */
   --color-*: initial;
@@ -187,6 +181,27 @@ body {
   -moz-osx-font-smoothing: grayscale;
   word-spacing: 0.05rem;
 }
+
+/* Arabic RTL Font Override */
+body.rtl {
+  @apply font-Cairo;
+}
+
+body.rtl h1,
+body.rtl h2,
+body.rtl h3,
+body.rtl h4,
+body.rtl h5,
+body.rtl h6,
+body.rtl .h1,
+body.rtl .h2,
+body.rtl .h3,
+body.rtl .h4,
+body.rtl .h5,
+body.rtl .h6 {
+  font-family: 'Cairo', sans-serif;
+}
+
 hr {
   @apply text-[rgba(164,174,198,0.2)] border-t-[1px] opacity-100 mx-0 my-[4.5rem] border-0 border-solid;
 }
@@ -10821,7 +10836,7 @@ footer.bg-dark {
 
 /* RTL Navigation adjustments */
 [dir="rtl"] .navbar-nav {
-  flex-direction: row-reverse;
+  flex-direction: row;
 }
 
 [dir="rtl"] .dropdown-menu {
