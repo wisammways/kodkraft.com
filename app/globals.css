@@ -1,7 +1,5 @@
 @import "tailwindcss";
 @theme {
-  --font-IBMPlexSerif: "IBM Plex Serif", "serif";
-  --font-SpaceGrotesk: "Space Grotesk", "sans-serif";
   --font-Manrope: "Urbanist", "sans-serif"; /*Manrope*/
   --font-Unicons: "Unicons";
   --font-Monospace: "SFMono-Regular,Menlo,Monaco,Consolas", "Liberation Mono",
@@ -9,7 +7,6 @@
   --font-Custom: "Custom";
   --font-DMSerif: "DM Serif Display";
   --font-SansSerif: "sans-serif";
-  --font-THICCCBOI: "THICCCBOI", "sans-serif";
   --font-Urbanist: "Urbanist", "sans-serif";
   /* Default Color */
   --color-*: initial;

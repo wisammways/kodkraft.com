@@ -45,9 +45,6 @@
 .font-space * {
   word-spacing: normal !important;
 }
-.font-space em {
-  font-family: "IBM Plex Serif", serif;
-}
 .font-space .counter-wrapper p,
 .font-space .lead,
 .font-space .nav-tabs.nav-tabs-bg .nav-link p,
