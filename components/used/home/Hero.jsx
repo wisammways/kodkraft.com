@@ -37,7 +37,7 @@ export default function Hero() {
               className="md:w-10/12 md:!ml-[8.33333333%] lg:!ml-0 lg:w-6/12 xl:!ml-0 xl:w-6/12 w-full flex-[0_0_auto] max-w-full content text-center lg:text-left rtl:lg:text-right xl:text-left rtl:xl:text-right !mt-[70px]"
               data-cues="slideInDown"
               data-group="page-title"
-              data-delay={600}
+              data-speed={200}
             >
               <h1 className="xl:!text-[2.2rem] !text-[calc(1.345rem_+_1.14vw)] font-bold !leading-[1.25] !mb-5 !text-white">
                 {t(pathname, 'hero.title')}<br />
@@ -50,7 +50,7 @@ export default function Hero() {
                 className="flex justify-center lg:!justify-start xl:!justify-start"
                 data-cues="slideInDown"
                 data-group="page-title-buttons"
-                data-delay={900}
+                data-delay={300}
               >
                 <span>
                   <Link
