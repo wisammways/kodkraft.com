@@ -6,7 +6,6 @@ import Technology from "@/components/used/home/Technology";
 import OurValue from "@/components/used/home/OurValue";
 import Header from "@/components/used/Header";
 import Footer from "@/components/used/Footer";
-import Clients3 from "@/components/used/blocks/clients/Clients3";
 
 export const metadata = {
   metadataBase: new URL('https://kodkraft.com'),
