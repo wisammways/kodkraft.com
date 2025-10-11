@@ -1,8 +1,8 @@
-import Pricing from "@/components/used/common/Pricing";
 import Footer5 from "@/components/used/footers/Footer5";
 import Header from "@/components/used/Header";
 import Services from "@/components/used/home/Services";
 import About from "@/components/used/homes/home-13/About";
+
 export const metadata = {
   metadataBase: new URL('https://kodkraft.com'),
   title: "Our Services - KodKraft - Web Development, Mobile Apps, Branding & More",
@@ -17,6 +17,7 @@ export const metadata = {
     },
   },
 };
+
 export default function ServicesPage() {
   return (
     <>

@@ -1,9 +1,7 @@
-import Pricing from "@/components/used/common/Pricing";
 import Footer5 from "@/components/used/footers/Footer5";
 import Header from "@/components/used/Header";
 import Services from "@/components/used/home/Services";
 import About from "@/components/used/homes/home-13/About";
-import Cta from "@/components/used/homes/home-4/Cta";
 import React from "react";
 import ServicesPageContent from "./ServicesPageContent";
 

@@ -224,10 +224,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang={currentLang} dir={isRtl ? 'rtl' : 'ltr'}>
       <head>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700"
-          rel="stylesheet"
-        />
         {/* Add Arabic font for better RTL support */}
         {isRtl && (
           <link

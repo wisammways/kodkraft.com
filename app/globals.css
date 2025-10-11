@@ -1,11 +1,6 @@
 @import "tailwindcss";
 @theme {
-  --font-Manrope: "Urbanist", "sans-serif"; /*Manrope*/
   --font-Unicons: "Unicons";
-  --font-Monospace: "SFMono-Regular,Menlo,Monaco,Consolas", "Liberation Mono",
-    "Courier New", "monospace";
-  --font-Custom: "Custom";
-  --font-DMSerif: "DM Serif Display";
   --font-SansSerif: "sans-serif";
   --font-Urbanist: "Urbanist", "sans-serif";
   /* Default Color */
@@ -176,7 +171,7 @@ body {
   @apply flex flex-col;
 }
 body {
-  @apply text-[0.9rem] font-medium leading-[1.7] text-[#60697b] bg-[#fefefe] m-0 font-Manrope;
+  @apply text-[0.9rem] font-medium leading-[1.7] text-[#60697b] bg-[#fefefe] m-0 font-Urbanist;
 }
 body {
   @apply overflow-x-hidden;
@@ -265,12 +260,6 @@ a:hover {
 a:not([href]):not([class]),
 a:not([href]):not([class]):hover {
   @apply text-inherit no-underline;
-}
-code,
-kbd,
-pre,
-samp {
-  @apply text-[1em] font-Monospace;
 }
 pre {
   @apply block overflow-auto text-[0.65rem] text-[#273444] mt-0 mb-4;
@@ -1394,7 +1383,7 @@ article .post-meta li.ms-auto:before {
   @apply pt-2 pb-4 px-[0.2rem];
 }
 .code-wrapper .btn-clipboard {
-  @apply absolute cursor-pointer text-[0.6rem] z-[3] px-[0.45rem] py-[0.1rem] right-2 top-2 font-Manrope transform-none hover:text-[#262b32] hover:bg-[white] hover:border-[white];
+  @apply absolute cursor-pointer text-[0.6rem] z-[3] px-[0.45rem] py-[0.1rem] right-2 top-2 font-Urbanist transform-none hover:text-[#262b32] hover:bg-[white] hover:border-[white];
 }
 .code-wrapper pre {
   @apply mb-0;
@@ -1453,7 +1442,7 @@ mark.doc {
   @apply text-[0.85rem] content-["\e952"];
 }
 .terminal:before {
-  @apply content-["\e905"] text-[0.8rem] font-Custom;
+  @apply content-["\e905"] text-[0.8rem] font-Urbanist;
 }
 .folder:before {
   @apply content-["\eb34"];
@@ -3239,7 +3228,7 @@ button.hamburger:before {
 }
 
 .tooltip {
-  @apply p-[0.5rem_0.75rem] text-white bg-[#605dba] opacity-[0.98] rounded-[0.4rem] font-medium pointer-events-none font-Manrope;
+  @apply p-[0.5rem_0.75rem] text-white bg-[#605dba] opacity-[0.98] rounded-[0.4rem] font-medium pointer-events-none font-Urbanist;
 }
 .bs-tooltip-auto[data-popper-placement^="top"] .tooltip-arrow,
 .bs-tooltip-top .tooltip-arrow {
@@ -3282,7 +3271,7 @@ button.hamburger:before {
   @apply border-l-[#605dba] [border-width:calc(0.8rem*.5)0_calc(0.8rem*.5)_0.4rem] -left-px;
 }
 .popover {
-  @apply z-[1070] block max-w-[276px] not-italic font-medium leading-[1.7] text-left text-start no-underline normal-case tracking-[normal] break-normal whitespace-normal text-[0.8rem] bg-white bg-clip-padding border shadow-[0rem_0rem_1.25rem_rgba(30,34,40,0.04)] rounded-[0.4rem] border-solid border-[rgba(164,174,198,0.2)] [word-wrap:break-word] font-Manrope;
+  @apply z-[1070] block max-w-[276px] not-italic font-medium leading-[1.7] text-left text-start no-underline normal-case tracking-[normal] break-normal whitespace-normal text-[0.8rem] bg-white bg-clip-padding border shadow-[0rem_0rem_1.25rem_rgba(30,34,40,0.04)] rounded-[0.4rem] border-solid border-[rgba(164,174,198,0.2)] [word-wrap:break-word] font-Urbanist;
   text-shadow: none;
   word-spacing: normal;
   line-break: auto;
@@ -4272,7 +4261,7 @@ img.svg-inject {
 }
 [class*=" icn-"],
 [class^="icn-"] {
-  @apply !font-Custom;
+  @apply !font-Urbanist;
 }
 .uil-eye:before {
   @apply content-["\eae1"];
@@ -4772,7 +4761,7 @@ footer [class*="col-"] .widget + .widget {
   @apply mt-8 mb-0 mx-0 pl-14 pr-0 py-0 list-none;
 }
 #comments ul.children li.comment {
-  @apply relative before:block before:content-["\e904"] before:text-[calc(1.325rem_+_0.9vw)] before:absolute before:left-[-2.5rem] before:top-[-1.25rem] before:text-[rgba(164,174,198,0.25)] before:font-Custom;
+  @apply relative before:block before:content-["\e904"] before:text-[calc(1.325rem_+_0.9vw)] before:absolute before:left-[-2.5rem] before:top-[-1.25rem] before:text-[rgba(164,174,198,0.25)] before:font-Urbanist;
 }
 #comments .post-meta {
   @apply m-0;
