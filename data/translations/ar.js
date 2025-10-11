@@ -11,16 +11,16 @@ export const translations = {
   // Hero Section
   hero: {
     title: "نبرمج الويب،",
-    titleLine2: "نصنع نمو الأعمال",
+    titleLine2: "نحقق نمو الأعمال",
     subtitle: "نتشارك معك لتحويل حضورك الرقمي إلى أداة قوية للنمو والنجاح. دعنا نبني شيئاً مذهلاً معاً.",
-    whatWeDo: "ما نقوم به",
+    whatWeDo: "خدماتنا",
     contactUs: "تواصل معنا"
   },
 
   // Services Section
   services: {
     title: "خدماتنا",
-    subtitle: "حلول تدفع النمو",
+    subtitle: "حلول تحقق النمو",
     webDev: {
       title: "تطوير المواقع",
       description: "إنشاء مواقع ويب متجاوبة وسهلة الاستخدام مصممة خصيصاً لتلبية احتياجات وأهداف عملك."
@@ -31,7 +31,7 @@ export const translations = {
     },
     codeReview: {
       title: "مراجعة الكود والصيانة",
-      description: "ضمان كود سلس وعالي الأداء يعزز الموثوقية والأمان وتجربة المستخدم."
+      description: "ضمان كود موثوق وعالي الأداء يعزز الموثوقية والأمان وتجربة المستخدم."
     },
     branding: {
       title: "العلامة التجارية والهوية",
