@@ -68,9 +68,8 @@ export default function About() {
                     <figure className="!rounded-[.4rem] shadow-[0_0_1.25rem_rgba(30,34,40,0.04)] relative">
                       <Image
                         className="!rounded-[.4rem]"
-                        srcSet="/assets/img/photos/about2@2x.jpg 2x"
                         alt="image"
-                        src="/assets/img/photos/about2.jpg"
+                        src="/assets/images/team.jpg"
                         width={450}
                         height={450}
                       />
