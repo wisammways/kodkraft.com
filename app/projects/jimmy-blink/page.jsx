@@ -8,7 +8,7 @@ import React from "react";
 
 export const metadata = {
   metadataBase: new URL('https://kodkraft.com'),
-  title: "Jimmy Blink's Website - KodKraft Portfolio",
+  title: "Jimmy Blink's Website - KodKraft",
   description: "Sound Smart is an illustrated book helping school students learn fun local phrases and idioms in French and Spanish. We created an engaging landing page using book illustrations.",
   alternates: {
     canonical: 'https://kodkraft.com/projects/jimmy-blink',

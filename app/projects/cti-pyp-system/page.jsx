@@ -7,7 +7,7 @@ import CTIPYPGallery from "./CTIPYPGallery";
 
 export const metadata = {
   metadataBase: new URL('https://kodkraft.com'),
-  title: "CTI PYP Grading System - Custom Web Application for Academic Management",
+  title: "CTI PYP Grading System - Academic Management - KodKraft",
   description: "Discover the CTI PYP Grading System, a custom web application designed to streamline academic management processes. Built with user experience and efficiency in mind.",
   alternates: {
     canonical: 'https://kodkraft.com/projects/cti-pyp-system',
