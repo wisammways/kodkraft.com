@@ -5,7 +5,7 @@ import React from "react";
 
 export const metadata = {
   title:
-    "404 - KodKraft - Leading Software Development Company in Lebanon",
+    "404 - KodKraft - Leading Software Development Company in the Middle East (MENA)",
   description:
     "KodKraft crafts stunning, user-friendly websites & apps. Skilled developers, designers, and UX specialists united to drive your digital success. Let’s build something great!",
 };

@@ -10,7 +10,7 @@ import Footer from "@/components/used/Footer";
 export const metadata = {
   metadataBase: new URL('https://kodkraft.com'),
   title:
-    "KodKraft - Leading Software Development Company in Lebanon",
+    "KodKraft - Leading Software Development Company in the Middle East (MENA)",
   description:
     "KodKraft crafts stunning, user-friendly websites & apps. Skilled developers, designers, and UX specialists united to drive your digital success. Let's build something great!",
   alternates: {

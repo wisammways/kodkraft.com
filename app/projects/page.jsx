@@ -6,7 +6,7 @@ import React from "react";
 export const metadata = {
   metadataBase: new URL('https://kodkraft.com'),
   title:
-    "Projects - KodKraft - Leading Software Development Company in Lebanon",
+    "Projects - KodKraft - Leading Software Development Company in the Middle East (MENA)",
   description:
     "See KodKraft's portfolio – beautifully crafted websites, apps, and branding projects designed for usability, performance, and business growth.",
   alternates: {

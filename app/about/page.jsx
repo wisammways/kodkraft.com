@@ -5,7 +5,7 @@ import Image from "next/image";
 import React from "react";
 export const metadata = {
   metadataBase: new URL('https://kodkraft.com'),
-  title: "About Us - KodKraft - Leading Software Development Company in Lebanon",
+  title: "About Us - KodKraft - Leading Software Development Company in the Middle East (MENA)",
   description:
     "Learn about KodKraft's mission to deliver exceptional digital solutions. Meet our talented team of developers, designers, and digital strategists committed to your success.",
   alternates: {
