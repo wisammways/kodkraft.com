@@ -7,3 +7,4 @@ Sitemap: https://kodkraft.com/sitemap.xml
 # Block incomplete project pages
 Disallow: /projects/fady-bader
 Disallow: /de/projects/fady-bader
+Disallow: /ar/projects/fady-bader
